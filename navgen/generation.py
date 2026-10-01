@@ -7,7 +7,7 @@ from typing import Callable, Iterable
 
 try:
     from rdkit import Chem
-    from rdkit.Chem import AllChem, DataStructs
+    from rdkit.Chem import AllChem, DataStructs, rdFingerprintGenerator
 except ImportError:  # pragma: no cover - fallback for minimal environments
     Chem = None
     AllChem = None
@@ -266,6 +266,7 @@ def pairwise_similarity(smiles_a: str, smiles_b: str) -> float:
     mol_b = Chem.MolFromSmiles(smiles_b)
     if mol_a is None or mol_b is None:
         return 0.0
-    fp_a = AllChem.GetMorganFingerprintAsBitVect(mol_a, 2, nBits=2048)
-    fp_b = AllChem.GetMorganFingerprintAsBitVect(mol_b, 2, nBits=2048)
+    generator = rdFingerprintGenerator.GetMorganGenerator(radius=2, fpSize=2048)
+    fp_a = generator.GetFingerprint(mol_a)
+    fp_b = generator.GetFingerprint(mol_b)
     return DataStructs.TanimotoSimilarity(fp_a, fp_b)

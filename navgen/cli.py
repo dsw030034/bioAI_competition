@@ -38,50 +38,27 @@ def _prepare_reinvent(args: argparse.Namespace) -> int:
 
 
 def _score_stdin(args: argparse.Namespace) -> int:
-    cfg = load_config(args.config) if args.config else {"filter_config": None}
-    filters = cfg["filter_config"]
-    protein_scorer = None
-    site_profile = None
-    if args.config and cfg.get("protein_sequence_file"):
-        protein_scorer = ProteinWordScorer(load_protein_sequence(cfg["protein_sequence_file"]))
-    if args.config and cfg.get("site_profile_file"):
-        site_profile = load_site_profile(cfg["site_profile_file"])
-    lines = [line.strip() for line in sys.stdin if line.strip()]
+    from .shared_scoring import ProjectScorer
+    scorer = ProjectScorer(args.config)
     rewards = []
-    for line in lines:
-        smiles = line
+    for line in sys.stdin.read().splitlines():
+        smiles = line.strip()
         try:
-            parsed = json.loads(line)
+            parsed = json.loads(smiles)
             if isinstance(parsed, dict):
                 smiles = str(parsed.get("smiles", parsed.get("SMILES", "")))
         except json.JSONDecodeError:
             pass
-        if not smiles:
-            rewards.append(0.0)
-            continue
-        mol = Chem.MolFromSmiles(smiles) if Chem is not None else smiles
-        if Chem is not None and mol is None:
-            rewards.append(0.0)
-            continue
-        protein_metrics = protein_scorer.score(smiles) if protein_scorer else None
-        site_metrics = score_site_c(mol, site_profile) if site_profile else None
-        _, metrics = score_candidate(mol, None, filters or None, protein_metrics, site_metrics)
-        rewards.append(float(metrics["reward"]))
-    print(json.dumps({"version": 1, "payload": {"nav18_reward": rewards}}))
+        rewards.append(scorer.score(smiles)["reward"])
+    print(json.dumps({"version": 1, "payload": {"nav18_reward": rewards}}, allow_nan=False))
     return 0
 
 
 def _score_reinvent_file(args: argparse.Namespace) -> int:
     import pandas as pd
 
-    cfg = load_config(args.config)
-    filters = cfg["filter_config"]
-    protein_scorer = (
-        ProteinWordScorer(load_protein_sequence(cfg["protein_sequence_file"]))
-        if cfg.get("protein_sequence_file")
-        else None
-    )
-    site_profile = load_site_profile(cfg["site_profile_file"]) if cfg.get("site_profile_file") else None
+    from .shared_scoring import ProjectScorer
+    scorer = ProjectScorer(args.config)
     frame = pd.read_csv(args.input)
     smiles_column = args.smiles_column
     if smiles_column not in frame.columns:
@@ -89,14 +66,8 @@ def _score_reinvent_file(args: argparse.Namespace) -> int:
     rows = []
     for value in frame[smiles_column].fillna(""):
         smiles = str(value).strip()
-        mol = Chem.MolFromSmiles(smiles) if Chem is not None and smiles else None
-        if mol is None:
-            rows.append({"smiles": smiles, "project_reward": 0.0, "valid": False})
-            continue
-        protein_metrics = protein_scorer.score(smiles) if protein_scorer else None
-        site_metrics = score_site_c(mol, site_profile) if site_profile else None
-        _, metrics = score_candidate(mol, None, filters, protein_metrics, site_metrics)
-        rows.append({"smiles": smiles, "project_reward": metrics["reward"], "valid": True, **metrics})
+        metrics = scorer.score(smiles)
+        rows.append({"smiles": smiles, "project_reward": metrics["reward"], **metrics})
     scored = pd.concat([frame.reset_index(drop=True), pd.DataFrame(rows)], axis=1)
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     scored.to_csv(args.output, index=False)
@@ -114,16 +85,16 @@ def main() -> int:
     gen.set_defaults(func=_generate)
 
     prep = subparsers.add_parser("prepare-reinvent", help="Create REINVENT4 sampling and learning config stubs")
-    prep.add_argument("--config", help="Project config file", default=None)
+    prep.add_argument("--config", help="Project config file", required=True)
     prep.add_argument("--prior", required=True, help="Mol2Mol prior file path")
     prep.add_argument("--output", required=True, help="Output directory for reinforcement-learning config")
     prep.add_argument("--device", default="cpu")
     prep.add_argument("--num-smiles", type=int, default=1000)
-    prep.add_argument("--python", default="python", help="Python executable in the scoring environment")
+    prep.add_argument("--python", default=None, help="Python executable in the scoring environment")
     prep.set_defaults(func=_prepare_reinvent)
 
     score = subparsers.add_parser("score-stdin", help="Score SMILES for REINVENT4 ExternalProcess")
-    score.add_argument("--config", help="Project JSON configuration for the shared scorer")
+    score.add_argument("--config", required=True, help="Project JSON configuration for the shared scorer")
     score.set_defaults(func=_score_stdin)
 
     score_file = subparsers.add_parser("score-reinvent-file", help="Apply the project scorer to a REINVENT4 CSV")

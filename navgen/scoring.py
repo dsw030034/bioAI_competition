@@ -16,6 +16,7 @@ except ImportError:  # pragma: no cover - fallback for minimal environments
     sascorer = None
 
 from .config import FilterConfig
+from .generation import pairwise_similarity
 
 
 def _double_sigmoid(value: float, low: float, high: float) -> float:
@@ -137,7 +138,7 @@ def score_candidate(
     if seed_mol is not None:
         seed_text = str(seed_mol)
         candidate_text = str(mol)
-        similarity = _string_similarity(seed_text, candidate_text) if Chem is None else Chem.DataStructs.TanimotoSimilarity(Chem.RDKFingerprint(seed_mol), Chem.RDKFingerprint(mol))
+        similarity = _string_similarity(seed_text, candidate_text) if Chem is None else pairwise_similarity(Chem.MolToSmiles(seed_mol), Chem.MolToSmiles(mol))
         metrics["similarity_to_seed"] = float(similarity)
         if similarity < cfg.similarity_min:
             passed = False
@@ -182,4 +183,6 @@ def score_candidate(
         )
     metrics["passed"] = passed
     metrics["reasons"] = reasons
+    if not passed:
+        metrics["reward"] = 0.0
     return passed, metrics

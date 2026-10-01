@@ -1,0 +1,13 @@
+run_type = "sampling"
+device = "cuda:0"
+seed = 20261015
+
+[parameters]
+model_file = "/root/shared-nvme/nav18/models/mol2mol_medium_similarity.prior"
+smiles_file = "/root/shared-nvme/nav18/runs/a803467_mol2mol_20261001_5x200/batch_05/seed.smi"
+sample_strategy = "multinomial"
+temperature = 1.0
+output_file = "/root/shared-nvme/nav18/runs/a803467_mol2mol_20261001_5x200/batch_05/sampling_mol2mol.csv"
+num_smiles = 200
+unique_molecules = false
+randomize_smiles = true

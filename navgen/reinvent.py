@@ -2,6 +2,11 @@ from __future__ import annotations
 
 from pathlib import Path
 import json
+import shlex
+import sys
+
+from .config import load_config
+from .generation import load_seed_smiles
 
 
 def _toml_string(value: str | Path) -> str:
@@ -14,19 +19,30 @@ def prepare_reinvent_config(
     device: str = "cpu",
     num_smiles: int = 1000,
     project_config: str | Path | None = None,
-    python_path: str = "python",
+    python_path: str | None = None,
 ) -> dict[str, str]:
-    output_root = Path(output_dir)
+    if not project_config:
+        raise ValueError("project_config is required: never substitute a demo seed")
+    config = load_config(project_config)
+    seeds = load_seed_smiles(config["seed_file"])
+    output_root = Path(output_dir).resolve()
+    if output_root.exists() and any(output_root.iterdir()):
+        raise FileExistsError(f"Refusing to overwrite {output_root}")
     output_root.mkdir(parents=True, exist_ok=True)
     sampling = output_root / "sampling.toml"
     learning = output_root / "staged_learning.toml"
     input_smiles = output_root / "mol2mol_inputs.smi"
-    input_smiles.write_text("O=C(Nc1ccccc1)c1ccccc1\n", encoding="utf-8")
+    input_smiles.write_text("\n".join(seeds) + "\n", encoding="utf-8")
+    snapshot = {k: v for k, v in config.items() if k != "filter_config"}
+    snapshot["seed_file"] = str(input_smiles)
+    score_config = output_root / "project_config.json"
+    score_config.write_text(json.dumps(snapshot, indent=2), encoding="utf-8")
     prior = Path(prior_path).resolve()
     sampling_output = output_root / "sampling_mol2mol.csv"
-    score_command = f"{python_path} -m navgen score-stdin"
-    if project_config:
-        score_command += f" --config {_toml_string(Path(project_config).resolve())}"
+    executable = str(Path(python_path or sys.executable).resolve())
+    entry = Path(__file__).resolve().parents[1] / "scripts" / "score_bridge.py"
+    score_args = shlex.join([entry.as_posix(), "--config", score_config.as_posix()])
+    score_command = shlex.join([executable, str(entry), "--config", str(score_config)])
 
     sampling.write_text(
         "\n".join(
@@ -41,7 +57,7 @@ def prepare_reinvent_config(
                 "temperature = 1.0",
                 f"output_file = {_toml_string(sampling_output)}",
                 f"num_smiles = {num_smiles}",
-                "unique_molecules = true",
+                "unique_molecules = false",
                 "randomize_smiles = true",
             ]
         ),
@@ -57,7 +73,7 @@ def prepare_reinvent_config(
                 "[parameters]",
                 f"prior_file = {_toml_string(prior)}",
                 f"agent_file = {_toml_string(prior)}",
-                f"summary_csv_prefix = {_toml_string(output_root / "rl_run")}",
+                f"summary_csv_prefix = {_toml_string(output_root / 'rl_run')}",
                 f"smiles_file = {_toml_string(input_smiles)}",
                 "batch_size = 64",
                 "randomize_smiles = true",
@@ -68,16 +84,17 @@ def prepare_reinvent_config(
                 "rate = 0.0001",
                 "",
                 "[diversity_filter]",
-                'type = "IdenticalMurckoScaffold"',
+                'type = "PenalizeSameSmiles"',
                 "bucket_size = 25",
                 "minscore = 0.4",
+                "penalty_multiplier = 0.5",
                 "",
                 "[[stage]]",
                 f"chkpt_file = {_toml_string(output_root / 'stage1.chkpt')}",
                 'termination = "simple"',
-                "max_score = 0.75",
-                "min_steps = 5",
-                "max_steps = 50",
+                "max_score = 0.95",
+                "min_steps = 25",
+                "max_steps = 100",
                 "",
                 "[stage.scoring]",
                 'type = "geometric_mean"',
@@ -115,6 +132,17 @@ def prepare_reinvent_config(
         ),
         encoding="utf-8",
     )
+    # One shared project scorer; do not double-count QED/MW/logP components.
+    header = learning.read_text(encoding="utf-8").split("[[stage.scoring.component]]", 1)[0]
+    learning.write_text(header + "\n".join([
+        "[[stage.scoring.component]]",
+        "[stage.scoring.component.ExternalProcess]",
+        "[[stage.scoring.component.ExternalProcess.endpoint]]",
+        'name = "A803467 constrained reward"', "weight = 1.0",
+        f"params.executable = {_toml_string(executable)}",
+        f"params.args = {_toml_string(score_args)}",
+        'params.property = "nav18_reward"', "",
+    ]), encoding="utf-8")
     return {
         "sampling": str(sampling),
         "staged_learning": str(learning),

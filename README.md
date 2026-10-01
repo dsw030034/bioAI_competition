@@ -1,4 +1,14 @@
+> Docking 当前入口与验证状态见 [DOCKING_VALIDATION.md](DOCKING_VALIDATION.md)。旧示例配置不代表已通过结构验证。
+
+> **当前生成入口**：首轮 A-803467 单系列、多方法、暂不打分，见 [A803467_GENERATION.md](docs/A803467_GENERATION.md)。统一运行 `python -m navgen.series_generation --config configs/a803467_generation.json --output outputs/new_generation_run`；远程 Mol2Mol 用 [MOL2MOL_REMOTE.md](docs/MOL2MOL_REMOTE.md)。下文旧入口与奖励流程不作为本轮默认流程。
+
+> **最新扩容结果**：保留旧库并完成位点词表扩充、双侧砌块组合和远程 5×200 条 Mol2Mol 采样，合并为 **2,944 个非母体唯一结构**，见 [GENERATION_EXPANSION.md](docs/GENERATION_EXPANSION.md)。首轮三方法贡献与核心约束审计见 [GENERATION_SPACE_AUDIT.md](docs/GENERATION_SPACE_AUDIT.md)。
+
+> **队友更新入口**：先看 [协作与复现说明](docs/TEAM_QUICKSTART.md)。已将候选总表、7 页代表图、原始采样及必要输入发布到 [results/a803467_20261001](results/a803467_20261001/README.md)，可在本机 CPU 重建全库，无需访问原远程账号。`outputs/` 仍作为本地运行目录。
+
 # Nav1.8 小分子生成模块
+
+> 下文为早期实现与命令记录；当前生成以顶部链接和 [协作与复现说明](docs/TEAM_QUICKSTART.md) 为准。[ROUND2.md](ROUND2.md) 保留第二轮阶段方案，ShEPhERD 尚未实际运行。
 
 依据《课题汇报_Nav1.8小分子生成算法设计.md》的第 4–9 节实现。输入孔道位点种子，输出带来源、二维性质、奖励分和可选三维构象的候选库，供 Nav1.8 / Nav1.5 下游对接和下一轮生成使用。
 

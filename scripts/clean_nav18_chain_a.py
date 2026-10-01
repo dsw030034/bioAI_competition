@@ -40,58 +40,12 @@ def is_standard_residue(name: str) -> bool:
 
 
 def clean_chain_a_pdb(input_path: Path, output_path: Path) -> None:
-    lines = input_path.read_text(encoding='utf-8', errors='ignore').splitlines()
-    residues: dict[int, dict[str, set[str]]] = defaultdict(lambda: defaultdict(set))
-    for line in lines:
-        if not line.startswith('ATOM'):
-            continue
-        if line[21:22] != 'A':
-            continue
-        res_name = line[17:20].strip()
-        if not is_standard_residue(res_name):
-            continue
-        res_index = int(line[22:26])
-        atom_name = line[12:16].strip()
-        residues[res_index][res_name].add(atom_name)
-
-    kept_resids = []
-    for res_index, res_to_atoms in sorted(residues.items()):
-        for res_name, atom_names in res_to_atoms.items():
-            required = RESIDUE_REQUIRED[res_name]
-            if required.issubset(atom_names):
-                kept_resids.append((res_index, res_name))
-                break
-
-    kept_resids.sort(key=lambda item: item[0])
-    old_to_new = {old_index: idx + 1 for idx, (old_index, _) in enumerate(kept_resids)}
-
-    out_lines: list[str] = []
-    atom_index = 1
-    for line in lines:
-        if not line.startswith('ATOM'):
-            continue
-        if line[21:22] != 'A':
-            continue
-        res_name = line[17:20].strip()
-        if not is_standard_residue(res_name):
-            continue
-        res_index = int(line[22:26])
-        if res_index not in old_to_new:
-            continue
-        new_res_index = old_to_new[res_index]
-        atom_name = line[12:16].strip()
-        if atom_name == 'OXT':
-            continue
-        # Keep the original coordinates and atom fields exactly as encoded, but replace the
-        # residue sequence number with a continuous chain-A numbering so the cleaned structure is
-        # accepted by downstream receptor preparation tools.
-        new_line = line[:6] + f"{atom_index:5d}" + line[11:17] + f"{res_name:<3s}" + " A" + f"{new_res_index:4d}" + line[26:]
-        out_lines.append(new_line.rstrip())
-        atom_index += 1
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text('\n'.join(out_lines) + '\n', encoding='utf-8')
-    print(f"Wrote {output_path} with {len(out_lines)} ATOM lines and {len(old_to_new)} residues.")
+    # This command selects a chain only; chemical repair is a separate audited step.
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from navgen.docking_validation import select_chain
+    residues, atoms = select_chain(input_path, output_path, "A")
+    print(f"Wrote {output_path}: {residues} residues, {atoms} atoms; original IDs retained.")
 
 
 if __name__ == '__main__':

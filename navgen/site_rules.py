@@ -53,7 +53,8 @@ def score_site_c(mol: Any, profile: dict[str, Any]) -> dict[str, Any]:
     carbonyl = mol.HasSubstructMatch(Chem.MolFromSmarts("[CX3](=O)[#6,#7,#8]"))
     amide = mol.HasSubstructMatch(Chem.MolFromSmarts("[CX3](=O)[NX3]"))
     aromatic_rings = rdMolDescriptors.CalcNumAromaticRings(mol)
-    basic = any(atom.GetAtomicNum() == 7 and atom.GetFormalCharge() >= 0 for atom in mol.GetAtoms())
+    # A coarse amine/pyridine motif, not a pKa prediction. Exclude amides/sulfonamides.
+    basic = mol.HasSubstructMatch(Chem.MolFromSmarts("[$([N;X3;!$(N-C=O);!$(N-S(=O)=O);!$(N-P=O)]),$([n;H0;+0]),$([N;+1]) ]".replace(" ", "")))
     halogen = any(atom.GetAtomicNum() in (9, 17, 35, 53) for atom in mol.GetAtoms())
     logp = Crippen.MolLogP(mol)
     mw = Descriptors.MolWt(mol)

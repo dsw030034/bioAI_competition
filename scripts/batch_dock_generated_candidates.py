@@ -23,7 +23,7 @@ def _resolve_path(base: Path, value: str) -> Path:
 
 
 def _subprocess_path(path: Path) -> str:
-    return str(path.resolve().relative_to(ROOT))
+    return str(path.resolve())
 
 
 def parse_affinity(stdout: str) -> float | None:

@@ -1,0 +1,15 @@
+{
+  "receptors": "../outputs/docking_validation/receptors_v2",
+  "vina_executable": "../vina_1.2.7_win.exe",
+  "output_root": "../outputs/docking_validation/runs",
+  "candidate_csv": "../outputs/round2_reaction/evaluation_final/candidates.csv",
+  "receptor_names": ["nav15_qdn_protonated"],
+  "reference_conformers": 3,
+  "candidate_conformers": 3,
+  "embedding_seed": 20260930,
+  "vina_seeds": [20260930, 20261001, 20261002],
+  "exhaustiveness": 8,
+  "cpu_per_job": 2,
+  "workers": 4,
+  "timeout_seconds": 600
+}

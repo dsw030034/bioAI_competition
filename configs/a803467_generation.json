@@ -1,0 +1,17 @@
+{
+  "series_id": "a803467",
+  "seed_id": "A-803467",
+  "seed_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+  "attachment_scaffold": "[*:1]c1ccc(-c2ccc(C(=O)[NH]c3cc([*:2])cc([*:3])c3)o2)cc1",
+  "round2_core_smarts": "O=C(Nc1ccccc1)c1ccco1",
+  "sites": [
+    {"label": 1, "name": "distal_phenyl_para", "original": "Cl", "fragments": ["Cl", "F", "Br", "C(F)(F)F", "C#N", "C", ""]},
+    {"label": 2, "name": "anilide_meta_a", "original": "OC", "fragments": ["OC", "O", "OCC", "OC(C)C", "F", ""]},
+    {"label": 3, "name": "anilide_meta_b", "original": "OC", "fragments": ["OC", "O", "OCC", "OC(C)C", "F", ""]}
+  ],
+  "methods": ["site_single", "site_pair", "amide_recombination"],
+  "budget_per_method": 200,
+  "random_seed": 20260930,
+  "blocks": "../data/round2_building_blocks.csv",
+  "scope_note": "Strict library preserves all three rings, their connections and secondary amide NH. Only the original three substitution sites vary. Round2-core-only products form a separate expanded library. These are design constraints, not validated SAR."
+}

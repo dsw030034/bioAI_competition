@@ -1,2 +1,7 @@
 *.pdb whitespace=-trailing-space
 *.SDF whitespace=-trailing-space
+*.sdf whitespace=-trailing-space
+*.mol whitespace=-trailing-space
+# Published input snapshots have SHA256 manifests; preserve their exact bytes.
+results/** -text whitespace=cr-at-eol,-trailing-space,-blank-at-eof
+data/round2_building_blocks.csv whitespace=-blank-at-eof

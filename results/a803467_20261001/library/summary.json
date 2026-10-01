@@ -1,0 +1,182 @@
+{
+  "series_id": "a803467",
+  "rdkit_version": "2026.03.6",
+  "historical_raw_rows": 236,
+  "new_raw_rows": 5399,
+  "total_raw_rows": 5635,
+  "previous_unique_retained": 134,
+  "total_unique_retained": 2944,
+  "new_unique_vs_baseline": 2810,
+  "unique_by_scope": {
+    "expanded_round2": 1072,
+    "strict": 1543,
+    "outside_series": 329
+  },
+  "new_unique_by_scope": {
+    "expanded_round2": 1034,
+    "strict": 1464,
+    "outside_series": 312
+  },
+  "methods_new_run": {
+    "site_single": {
+      "raw_rows": 40,
+      "unique_parseable_including_seed": 25,
+      "statuses": {
+        "strict": 40
+      },
+      "budget": 100,
+      "truncated": false,
+      "counting_scope": "site assignments including symmetry duplicates"
+    },
+    "site_pair": {
+      "raw_rows": 525,
+      "unique_parseable_including_seed": 270,
+      "statuses": {
+        "strict": 525
+      },
+      "budget": 1000,
+      "truncated": false,
+      "counting_scope": "site assignments including symmetry duplicates"
+    },
+    "site_triple": {
+      "raw_rows": 2250,
+      "unique_parseable_including_seed": 1200,
+      "statuses": {
+        "strict": 2250
+      },
+      "budget": 3000,
+      "truncated": false,
+      "counting_scope": "site assignments including symmetry duplicates"
+    },
+    "amide_cross_product": {
+      "raw_rows": 1584,
+      "unique_parseable_including_seed": 1584,
+      "statuses": {
+        "strict": 406,
+        "expanded_round2": 916,
+        "outside_series": 261,
+        "seed_copy": 1
+      },
+      "budget": 2500,
+      "truncated": false,
+      "counting_scope": "reaction products including failures"
+    },
+    "mol2mol": {
+      "raw_rows": 1000,
+      "unique_parseable_including_seed": 352,
+      "statuses": {
+        "outside_series": 162,
+        "strict": 398,
+        "expanded_round2": 438,
+        "seed_copy": 1,
+        "invalid": 1
+      },
+      "budget": 1000,
+      "truncated": false,
+      "counting_scope": "raw sampling rows"
+    }
+  },
+  "virtual_blocks": {
+    "acid": 24,
+    "amine": 66
+  },
+  "reaction_pairs": 1584,
+  "strict_changed_site_counts": {
+    "3": 1220,
+    "2": 296,
+    "1": 27
+  },
+  "baseline_lineage_sha256": "37fc19b70f0aaa1393a6ad1f5206d622aafa9a74217b8813f88f8ad8f2281125",
+  "config_sha256": "5c7b0676c895f0dd97c3d028c654a976d602495ed46e2190ebfe6b0c9742d405",
+  "base_blocks_sha256": "85c75438a1a27a5ffda7cd993886bb3921016df34ffa50f24a1d8e9e18fe44b2",
+  "sampling": {
+    "file": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\remote_mol2mol_scaleup_20261001\\sampling_combined.csv",
+    "sha256": "c5be2e8c9373bf77696da19e4b07d83d80f1034e6b96d287ad81ba531bbbfd97",
+    "manifest": {
+      "status": "completed",
+      "completed_batches": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_rows": 1000,
+      "combined_sha256": "c5be2e8c9373bf77696da19e4b07d83d80f1034e6b96d287ad81ba531bbbfd97",
+      "unique_excluding_seed": 351,
+      "new_vs_baseline": 299,
+      "batch_statistics": [
+        {
+          "batch": 1,
+          "random_seed": 20261011,
+          "raw_rows": 200,
+          "invalid_rows": 0,
+          "batch_unique_including_seed": 116,
+          "new_vs_previous_batches_excluding_seed": 116,
+          "new_vs_previous_batches_and_baseline": 88,
+          "new_vs_previous_batches_and_baseline_fraction": 0.44,
+          "cumulative_unique_excluding_seed": 116,
+          "cumulative_new_vs_baseline": 88
+        },
+        {
+          "batch": 2,
+          "random_seed": 20261012,
+          "raw_rows": 200,
+          "invalid_rows": 0,
+          "batch_unique_including_seed": 110,
+          "new_vs_previous_batches_excluding_seed": 75,
+          "new_vs_previous_batches_and_baseline": 60,
+          "new_vs_previous_batches_and_baseline_fraction": 0.3,
+          "cumulative_unique_excluding_seed": 191,
+          "cumulative_new_vs_baseline": 148
+        },
+        {
+          "batch": 3,
+          "random_seed": 20261013,
+          "raw_rows": 200,
+          "invalid_rows": 0,
+          "batch_unique_including_seed": 107,
+          "new_vs_previous_batches_excluding_seed": 60,
+          "new_vs_previous_batches_and_baseline": 56,
+          "new_vs_previous_batches_and_baseline_fraction": 0.28,
+          "cumulative_unique_excluding_seed": 251,
+          "cumulative_new_vs_baseline": 204
+        },
+        {
+          "batch": 4,
+          "random_seed": 20261014,
+          "raw_rows": 200,
+          "invalid_rows": 0,
+          "batch_unique_including_seed": 109,
+          "new_vs_previous_batches_excluding_seed": 52,
+          "new_vs_previous_batches_and_baseline": 50,
+          "new_vs_previous_batches_and_baseline_fraction": 0.25,
+          "cumulative_unique_excluding_seed": 303,
+          "cumulative_new_vs_baseline": 254
+        },
+        {
+          "batch": 5,
+          "random_seed": 20261015,
+          "raw_rows": 200,
+          "invalid_rows": 1,
+          "batch_unique_including_seed": 105,
+          "new_vs_previous_batches_excluding_seed": 48,
+          "new_vs_previous_batches_and_baseline": 45,
+          "new_vs_previous_batches_and_baseline_fraction": 0.225,
+          "cumulative_unique_excluding_seed": 351,
+          "cumulative_new_vs_baseline": 299
+        }
+      ]
+    }
+  },
+  "scoring": "none",
+  "code_sha256": {
+    "generation_expansion.py": "4d7e1a96690d018ea755bfbf9d1cbf1b0b0519eaba4e48f75121b03f78952319",
+    "expansion_blocks.py": "f2c61d00fa10050ac65d0826dc5b8c6a4a64078ae82eaf2ccf5b3a4369b23d9a",
+    "generation_audit.py": "19aac0da7ccccb1d65c8108b87f4c32c38f83194ba33234ec1e3de930e2e8957",
+    "series_generation.py": "82f9012ac92b0daddf77f93804377c4c211287d20bcad4d5c4111690758a76bd"
+  },
+  "ranking": "none; IDs only",
+  "sdf_coordinates": "2D depiction only",
+  "review_context": "User broadly reviewed prior comparison figures and asked to retain existing structures; no individual activity or synthesis approval implied."
+}
