@@ -1,6 +1,6 @@
 # 完整项目共享与环境恢复
 
-本次发布准备包含整个 `bioAI_competition` 项目根目录，并保留既有生成仓库的提交历史。生成模块位于 `nav1p8-molecule-generator/`，对接模块位于 `nav18_full_pipeline/`；请从对应子目录运行命令。远端可使用新建的完整项目仓库，最终地址以仓库页面为准；本文本身不表示上传已完成。
+本次发布包含整个 `bioAI_competition` 项目根目录，并保留既有生成仓库的提交历史。生成模块位于 `nav1p8-molecule-generator/`，对接模块位于 `nav18_full_pipeline/`；请从对应子目录运行命令。完整项目仓库为 [dsw030034/bioAI_competition](https://github.com/dsw030034/bioAI_competition)。
 
 上传范围包括项目代码、文档、研究资料、历史归档、受体与参考配体、生成结果、全部对接姿势、日志、审计和模型文件。原来被 `.gitignore` 忽略的研究产物在本次发布中显式纳入，不仅上传筛选后的候选。
 
@@ -10,7 +10,7 @@
 
 ```powershell
 git lfs install
-git clone <完整项目仓库地址> bioAI_competition
+git clone https://github.com/dsw030034/bioAI_competition.git bioAI_competition
 Set-Location bioAI_competition
 git lfs pull
 ```
