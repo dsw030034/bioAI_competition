@@ -1,0 +1,23 @@
+{
+  "command": [
+    "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+    "-m",
+    "meeko.cli.mk_prepare_receptor",
+    "--read_pdb",
+    "outputs\\receptors_20261002\\nav18\\meeko_input.pdb",
+    "-p",
+    "outputs\\receptors_20261002\\nav18\\receptor.pdbqt",
+    "--write_pdb",
+    "outputs\\receptors_20261002\\nav18\\prepared.pdb",
+    "-j",
+    "outputs\\receptors_20261002\\nav18\\receptor.json",
+    "--default_altloc",
+    "A"
+  ],
+  "python": "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+  "returncode": 1,
+  "stdout": "Template padding will be used.\n\u001b[32m gasteiger charges will be read from template file \n \u001b[0m\n\nError: Creation of data structure for receptor failed.\n\nDetails:\n- Template matching failed for: ['A:124']\nThese residues can be ignored with option --delete_bad_res or --delete_bad_res_from_box_radius.\n\nRecommendations:\n1. (for batch processing) Use -a/--allow_bad_res to automatically remove residues\nthat do not match templates, and --default_altloc to set\na default altloc variant. Use these at your own risk.\n\n2. (processing individual structure) Inspecting and fixing the input structure is recommended.\nUse --wanted_altloc to set variants for specific residues.\n\n\n",
+  "stderr": "No template matched for residue_key='A:124'\ntried 3 templates for residue_key='A:124'excess_H_ok=False\nILE        heavy_miss=0 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={15}\nNILE       heavy_miss=0 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={17, 4}\nCILE       heavy_miss=1 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={16, 1}\n\nmatched with excess inter-residue bond(s): A:124\n",
+  "status": "failed",
+  "elapsed_seconds": 8.766000000000531
+}

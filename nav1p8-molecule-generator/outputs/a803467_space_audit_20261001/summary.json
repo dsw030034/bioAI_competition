@@ -1,0 +1,190 @@
+{
+  "raw_records": 236,
+  "unique_by_scope": {
+    "expanded_round2": 38,
+    "strict": 79,
+    "outside_series": 17,
+    "seed_copy": 1
+  },
+  "contributions": [
+    {
+      "method": "site_enumeration",
+      "scope": "strict",
+      "raw_rows": 101,
+      "unique_structures": 56,
+      "exclusive_structures": 42,
+      "shared_structures": 14
+    },
+    {
+      "method": "site_enumeration",
+      "scope": "expanded_round2",
+      "raw_rows": 0,
+      "unique_structures": 0,
+      "exclusive_structures": 0,
+      "shared_structures": 0
+    },
+    {
+      "method": "site_enumeration",
+      "scope": "outside_series",
+      "raw_rows": 0,
+      "unique_structures": 0,
+      "exclusive_structures": 0,
+      "shared_structures": 0
+    },
+    {
+      "method": "site_enumeration",
+      "scope": "seed_copy",
+      "raw_rows": 0,
+      "unique_structures": 0,
+      "exclusive_structures": 0,
+      "shared_structures": 0
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "strict",
+      "raw_rows": 18,
+      "unique_structures": 18,
+      "exclusive_structures": 7,
+      "shared_structures": 11
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "expanded_round2",
+      "raw_rows": 9,
+      "unique_structures": 9,
+      "exclusive_structures": 8,
+      "shared_structures": 1
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "outside_series",
+      "raw_rows": 6,
+      "unique_structures": 6,
+      "exclusive_structures": 6,
+      "shared_structures": 0
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "seed_copy",
+      "raw_rows": 2,
+      "unique_structures": 1,
+      "exclusive_structures": 1,
+      "shared_structures": 0
+    },
+    {
+      "method": "mol2mol",
+      "scope": "strict",
+      "raw_rows": 41,
+      "unique_structures": 20,
+      "exclusive_structures": 16,
+      "shared_structures": 4
+    },
+    {
+      "method": "mol2mol",
+      "scope": "expanded_round2",
+      "raw_rows": 39,
+      "unique_structures": 30,
+      "exclusive_structures": 29,
+      "shared_structures": 1
+    },
+    {
+      "method": "mol2mol",
+      "scope": "outside_series",
+      "raw_rows": 20,
+      "unique_structures": 11,
+      "exclusive_structures": 11,
+      "shared_structures": 0
+    },
+    {
+      "method": "mol2mol",
+      "scope": "seed_copy",
+      "raw_rows": 0,
+      "unique_structures": 0,
+      "exclusive_structures": 0,
+      "shared_structures": 0
+    }
+  ],
+  "constraint_counts_multilabel": [
+    {
+      "scope": "expanded_round2",
+      "reason": "amide_NH_changed",
+      "description": "二级酰胺 NH 改变",
+      "unique_structures": 3
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "bridge_or_fusion",
+      "description": "外部片段跨位点连接或形成稠环",
+      "unique_structures": 9
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "full_core_missing",
+      "description": "完整三环核心不匹配",
+      "unique_structures": 1
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "non_single_attachment",
+      "description": "取代基连接键不是单键",
+      "unique_structures": 3
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "offsite_substitution",
+      "description": "声明位点以外出现取代",
+      "unique_structures": 35
+    },
+    {
+      "scope": "outside_series",
+      "reason": "full_core_missing",
+      "description": "完整三环核心不匹配",
+      "unique_structures": 17
+    },
+    {
+      "scope": "outside_series",
+      "reason": "round2_core_missing",
+      "description": "旧 ROUND2 核心也不匹配",
+      "unique_structures": 17
+    }
+  ],
+  "overlap_patterns": {
+    "strict": {
+      "mol2mol": 16,
+      "site_enumeration": 42,
+      "amide_recombination": 7,
+      "amide_recombination+site_enumeration": 10,
+      "mol2mol+site_enumeration": 3,
+      "amide_recombination+mol2mol+site_enumeration": 1
+    },
+    "expanded_round2": {
+      "mol2mol": 29,
+      "amide_recombination+mol2mol": 1,
+      "amide_recombination": 8
+    },
+    "outside_series": {
+      "mol2mol": 11,
+      "amide_recombination": 6
+    }
+  },
+  "strict_changed_site_counts": {
+    "3": 7,
+    "2": 54,
+    "1": 18
+  },
+  "strict_outside_vocabulary": 23,
+  "invalid_rows": 0,
+  "source": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\a803467_with_mol2mol_20261001",
+  "input_sha256": {
+    "config_snapshot.json": "d9621519900b5462576a68d3446461dcbf55c88cc11085a02e2d2a3533887e14",
+    "lineage.jsonl": "37fc19b70f0aaa1393a6ad1f5206d622aafa9a74217b8813f88f8ad8f2281125",
+    "summary.json": "6594ae7b8679c79aa233320d2017861dd661de4f283a7288956638c8412d04fb"
+  },
+  "rdkit_version": "2026.03.6",
+  "scoring": "none",
+  "novelty_scope": "this batch only",
+  "pilot_count": 16,
+  "depicted_structures": 134,
+  "png_pages": 48,
+  "module_sha256": "1fc676dd2cdb6e6bedbc8db75fea418f23b73ff89b39178a39daa5b7c80dc6b0"
+}

@@ -1,0 +1,12 @@
+run_type = "sampling"
+device = "cpu"
+
+[parameters]
+model_file = "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\models\\reinvent4\\mol2mol_medium_similarity.prior"
+smiles_file = "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\round2_mol2mol_prepared\\mol2mol_inputs.smi"
+sample_strategy = "multinomial"
+temperature = 1.0
+output_file = "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\round2_mol2mol_prepared\\sampling_mol2mol.csv"
+num_smiles = 300
+unique_molecules = false
+randomize_smiles = true

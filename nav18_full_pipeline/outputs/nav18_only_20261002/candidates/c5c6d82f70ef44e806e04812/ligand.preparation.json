@@ -1,0 +1,118 @@
+{
+  "signature": {
+    "smiles": "COc1ccc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)cc1",
+    "candidate_id": "cfb32c50c5e927c3",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "cfb32c50c5e927c3",
+    "smiles": "COc1ccc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)cc1",
+    "input_smiles": "COc1ccc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)cc1",
+    "state_smiles": "COc1ccc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)cc1",
+    "state_id": "cfb32c50c5e927c3:input:cfb32c50c5e9",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 744536767,
+    "requested_conformers": 20,
+    "embedded_conformers": 5,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "cfb32c50c5e927c3",
+      "state_id": "cfb32c50c5e927c3:input:cfb32c50c5e9",
+      "conformer_id": "cfb32c50c5e927c3:input:cfb32c50c5e9:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 59.10505944157599,
+      "relative_energy_same_state": 7.121841831877603
+    },
+    {
+      "candidate_id": "cfb32c50c5e927c3",
+      "state_id": "cfb32c50c5e927c3:input:cfb32c50c5e9",
+      "conformer_id": "cfb32c50c5e927c3:input:cfb32c50c5e9:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 59.79479413389119,
+      "relative_energy_same_state": 7.811576524192802
+    },
+    {
+      "candidate_id": "cfb32c50c5e927c3",
+      "state_id": "cfb32c50c5e927c3:input:cfb32c50c5e9",
+      "conformer_id": "cfb32c50c5e927c3:input:cfb32c50c5e9:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 51.983217623631134,
+      "relative_energy_same_state": 1.39327482884255e-08,
+      "duplicate_of": "cfb32c50c5e927c3:input:cfb32c50c5e9:c004"
+    },
+    {
+      "candidate_id": "cfb32c50c5e927c3",
+      "state_id": "cfb32c50c5e927c3:input:cfb32c50c5e9",
+      "conformer_id": "cfb32c50c5e927c3:input:cfb32c50c5e9:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 52.50276946769378,
+      "relative_energy_same_state": 0.5195518579953955,
+      "duplicate_of": "cfb32c50c5e927c3:input:cfb32c50c5e9:c004"
+    },
+    {
+      "candidate_id": "cfb32c50c5e927c3",
+      "state_id": "cfb32c50c5e927c3:input:cfb32c50c5e9",
+      "conformer_id": "cfb32c50c5e927c3:input:cfb32c50c5e9:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 51.983217609698386,
+      "relative_energy_same_state": 0.0
+    }
+  ],
+  "selected_conformer_id": "cfb32c50c5e927c3:input:cfb32c50c5e9:c004",
+  "files": {
+    "ligand.pdbqt": "3d2cffc2b9d90db3583d17001f29f816662b9e75cd7e953564e05e1e81c94120",
+    "ligand.sdf": "0e669849479eec2c137660556d2bd36ee9faf9f51ee4688a78bb6a1d2b03cf0f"
+  }
+}

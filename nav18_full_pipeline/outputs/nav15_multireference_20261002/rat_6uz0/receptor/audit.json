@@ -1,0 +1,554 @@
+{
+  "signature": {
+    "source_sha256": "2616f35c7b1fbdc999075fbdf369aba564f457e3b37d15461ebae4b6d9a4075e",
+    "chain": "A",
+    "center": [
+      138.95567857142854,
+      136.95260714285715,
+      135.48789285714287
+    ],
+    "size": 24.0,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "geometry_sha256": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3"
+  },
+  "status": "failed",
+  "missing_loops_built": false,
+  "limitations": "Rigid protein-only; lipids/waters excluded; Meeko template protonation; no pKa prediction.",
+  "missing_heavy_atoms_repaired": [
+    {
+      "chain": "A",
+      "residue": "119",
+      "name": "HIS",
+      "missing_atoms": [
+        "CG",
+        "ND1",
+        "CE1",
+        "NE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "127",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "139",
+      "name": "MET",
+      "missing_atoms": [
+        "CG",
+        "SD",
+        "CE"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "185",
+      "name": "HIS",
+      "missing_atoms": [
+        "CG",
+        "ND1",
+        "CE1",
+        "NE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "204",
+      "name": "MET",
+      "missing_atoms": [
+        "CG",
+        "SD",
+        "CE"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "283",
+      "name": "ARG",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "291",
+      "name": "THR",
+      "missing_atoms": [
+        "CG2",
+        "OG1"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "292",
+      "name": "ASN",
+      "missing_atoms": [
+        "CG",
+        "OD1",
+        "ND2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "300",
+      "name": "LEU",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "301",
+      "name": "VAL",
+      "missing_atoms": [
+        "CG1",
+        "CG2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "307",
+      "name": "VAL",
+      "missing_atoms": [
+        "CG1",
+        "CG2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "311",
+      "name": "ASP",
+      "missing_atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "415",
+      "name": "MET",
+      "missing_atoms": [
+        "CG",
+        "SD",
+        "CE"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "425",
+      "name": "ILE",
+      "missing_atoms": [
+        "CG2",
+        "CG1",
+        "CD1"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "427",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "428",
+      "name": "THR",
+      "missing_atoms": [
+        "CG2",
+        "OG1"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "429",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "430",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "431",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "432",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "748",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "765",
+      "name": "MET",
+      "missing_atoms": [
+        "CG",
+        "SD",
+        "CE"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "768",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "872",
+      "name": "ARG",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1210",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1247",
+      "name": "MET",
+      "missing_atoms": [
+        "CG",
+        "SD",
+        "CE"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1267",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1291",
+      "name": "ASN",
+      "missing_atoms": [
+        "CG",
+        "OD1",
+        "ND2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1295",
+      "name": "PHE",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CE1",
+        "CZ",
+        "CE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1370",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1375",
+      "name": "LEU",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1377",
+      "name": "TYR",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CE1",
+        "CZ",
+        "OH",
+        "CE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1385",
+      "name": "GLU",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1479",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1481",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1482",
+      "name": "LEU",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1485",
+      "name": "GLN",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "NE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1486",
+      "name": "ASP",
+      "missing_atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1506",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1507",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1509",
+      "name": "GLN",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "NE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1510",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1580",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1584",
+      "name": "LEU",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1587",
+      "name": "TYR",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CE1",
+        "CZ",
+        "OH",
+        "CE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1589",
+      "name": "PHE",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CE1",
+        "CZ",
+        "CE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1691",
+      "name": "ASP",
+      "missing_atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1741",
+      "name": "ARG",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    }
+  ],
+  "observed_heavy_atoms": 8970,
+  "repaired_heavy_atoms": 9163,
+  "max_observed_atom_displacement_A": 0.0,
+  "error": "RuntimeError: Command failed; see D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\receptor\\preparation_log_3.json: _mol_build\n    _ = Chem.SanitizeMol(pdbmol)\nrdkit.Chem.rdchem.AtomValenceException: Explicit valence for atom # 4 O, 3, is greater than permitted\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"D:\\Annaconda2026\\envs\\rdkit\\lib\\runpy.py\", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File \"D:\\Annaconda2026\\envs\\rdkit\\lib\\runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\cli\\mk_prepare_receptor.py\", line 1257, in <module>\n    sys.exit(main())\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\cli\\mk_prepare_receptor.py\", line 720, in main\n    polymer = Polymer.from_pdb_string(\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\polymer.py\", line 1653, in from_pdb_string\n    tmp_raw_input_mols = cls._pdb_to_residue_mols(\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\polymer.py\", line 2541, in _pdb_to_residue_mols\n    raise RuntimeError(msg) \nRuntimeError: unable to build rdkit mol for residue GLY corresponding to key A:798\n"
+}

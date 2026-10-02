@@ -1,0 +1,112 @@
+{
+  "protonated_index": 25,
+  "source_nitrogen_H_count": 0,
+  "state_nitrogen_H_count": 1,
+  "formal_charge": 1,
+  "carbon_stereo": [
+    {
+      "index": 3,
+      "source_CIP": "R",
+      "state_CIP": "R"
+    }
+  ],
+  "nitrogen_stereo": [
+    {
+      "index": 24,
+      "chiral_tag": "CHI_UNSPECIFIED",
+      "CIP": null
+    },
+    {
+      "index": 25,
+      "chiral_tag": "CHI_UNSPECIFIED",
+      "CIP": null
+    },
+    {
+      "index": 26,
+      "chiral_tag": "CHI_UNSPECIFIED",
+      "CIP": null
+    }
+  ],
+  "max_heavy_coordinate_displacement_A": 0.0,
+  "heavy_atom_count": 31,
+  "heavy_bond_count": 33,
+  "state": "ranolazine_N13_plus1",
+  "parent_reference": "rat_8f6p",
+  "protonated_ccd_atom_name": "N13",
+  "site_role": "tertiary piperazine nitrogen carrying the acetamide-side substituent",
+  "nitrogen_sites": [
+    {
+      "index": 24,
+      "ccd_atom_name": "N09",
+      "amide_nitrogen": true,
+      "neighbors": [
+        "C10",
+        "C03"
+      ],
+      "formal_charge": 0
+    },
+    {
+      "index": 25,
+      "ccd_atom_name": "N13",
+      "amide_nitrogen": false,
+      "neighbors": [
+        "C14",
+        "C12",
+        "C18"
+      ],
+      "formal_charge": 1
+    },
+    {
+      "index": 26,
+      "ccd_atom_name": "N16",
+      "amide_nitrogen": false,
+      "neighbors": [
+        "C15",
+        "C19",
+        "C17"
+      ],
+      "formal_charge": 0
+    }
+  ],
+  "atom_names": [
+    "C10",
+    "C15",
+    "C17",
+    "C20",
+    "C21",
+    "C24",
+    "C26",
+    "C28",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C12",
+    "C14",
+    "C18",
+    "C19",
+    "C23",
+    "C25",
+    "C27",
+    "C30",
+    "N09",
+    "N13",
+    "N16",
+    "O11",
+    "O22",
+    "O29",
+    "O31"
+  ],
+  "smiles": "COc1ccccc1OC[C@H](O)CN1CC[NH+](CC(=O)Nc2c(C)cccc2C)CC1",
+  "stereo_policy": "retain deposited carbon R; no arbitrary nitrogen stereotag",
+  "source_reference_sha256": "7603f97b151994f1139c7d9289baf603411115b786292c0b64f8de27aee581ac",
+  "literature_evidence": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\literature_evidence.json",
+  "literature_evidence_sha256": "62937c3cd28e300e742604be2359e5ec23e954006f2b9d861108230ac5687e30",
+  "experimental_status": "Protonation is modeled, not measured in the deposited experimental ligand; sensitivity control only.",
+  "sdf_roundtrip_max_coordinate_displacement_A": 0.0,
+  "reference_sha256": "bbd8566fff12955f07b8eba3354bec6178941b40b8fe8dd9b22340a39555d1fc"
+}

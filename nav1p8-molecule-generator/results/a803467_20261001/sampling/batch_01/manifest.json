@@ -1,0 +1,28 @@
+{
+  "python": "/root/shared-nvme/nav18/env/bin/python",
+  "device": "cuda:0",
+  "missing": [],
+  "prior": "/root/shared-nvme/nav18/models/mol2mol_medium_similarity.prior",
+  "series_id": "a803467",
+  "samples": 200,
+  "seed_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+  "prior_sha256": "a0f40a2fb4baedaf51ae199bb38a61a8c8d26f03062977eaf06e34079e9f22ca",
+  "series_sha256": "8227bb1ff3880c66b55af73f39c4805392ded8395aeff905ebd91dc07e2abe60",
+  "random_seed": 20261011,
+  "versions": {
+    "reinvent": "4.7.15",
+    "torch": "2.9.1",
+    "rdkit": "2026.3.6"
+  },
+  "status": "completed",
+  "runner_sha256": "9712c4d30963da52795870c5abb78e313e97a9995ba7ca6d59ed230cd73ae88b",
+  "command": [
+    "/root/shared-nvme/nav18/env/bin/python",
+    "-c",
+    "from reinvent.Reinvent import main_script; main_script()",
+    "/root/shared-nvme/nav18/runs/a803467_mol2mol_20261001_5x200/batch_01/sampling.toml"
+  ],
+  "returncode": 0,
+  "raw_rows": 200,
+  "output_sha256": "3c269e65e5d7ba1d353a4c109488f06db711fcc6586498295e09c24eee05be68"
+}

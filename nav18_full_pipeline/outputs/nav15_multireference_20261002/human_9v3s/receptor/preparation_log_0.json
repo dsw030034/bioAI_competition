@@ -1,0 +1,23 @@
+{
+  "command": [
+    "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+    "-m",
+    "meeko.cli.mk_prepare_receptor",
+    "--read_pdb",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\repaired.pdb",
+    "-p",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\receptor.pdbqt",
+    "--write_pdb",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\prepared.pdb",
+    "-j",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\receptor.json",
+    "--default_altloc",
+    "A"
+  ],
+  "python": "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+  "returncode": 0,
+  "stdout": "Template padding will be used.\n\u001b[32m gasteiger charges will be read from template file \n \u001b[0m\n\nFiles written:\n D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\receptor.json <-- parameterized receptor\n  D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\prepared.pdb <-- processed receptor PDB\nD:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\receptor.pdbqt <-- static (i.e., rigid) receptor input file\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 26.45300000000134
+}

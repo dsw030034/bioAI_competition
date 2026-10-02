@@ -1,0 +1,475 @@
+{
+  "sequence_file": "F:\\大三秋\\神秘比赛\\data\\demo_protein.fasta",
+  "word_size": 5,
+  "method": "contiguous-word prototype; replace with protein-wordwise/ESM-2 rules when available",
+  "rules": [
+    {
+      "word": "AAGVD",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "AAGVD",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "AGVDA",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "AGVDA",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "ARDKQ",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "ARDKQ",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "ASTGK",
+      "fragment": "polar",
+      "score": 0.8,
+      "rationale": "hydrogen-bond donor/acceptor complementarity"
+    },
+    {
+      "word": "ASTGK",
+      "fragment": "carbonyl",
+      "score": 0.6,
+      "rationale": "carbonyl-compatible polar contact"
+    },
+    {
+      "word": "AYSRA",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "AYSRA",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "DKQLE",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "DKQLE",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "EAAGV",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "EAAGV",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "FISLL",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "FISLL",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "FLFSS",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "FLFSS",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "FSSAY",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "FSSAY",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "GKKIG",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "GKKIG",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "GVDAL",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "GVDAL",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "GYSAR",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "GYSAR",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "IGYSA",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "IGYSA",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "ISLLF",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "ISLLF",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "KIGYS",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "KIGYS",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "KKIGY",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "KKIGY",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "KQLEA",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "KQLEA",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "KWVTF",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "KWVTF",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "LEAAG",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "LEAAG",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "LFLFS",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "LFLFS",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "LFSSA",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "LFSSA",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "LLFLF",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "LLFLF",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "MKWVT",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "MKWVT",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "QLEAA",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "QLEAA",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "RASTG",
+      "fragment": "polar",
+      "score": 0.8,
+      "rationale": "hydrogen-bond donor/acceptor complementarity"
+    },
+    {
+      "word": "RASTG",
+      "fragment": "carbonyl",
+      "score": 0.6,
+      "rationale": "carbonyl-compatible polar contact"
+    },
+    {
+      "word": "RDKQL",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "RDKQL",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "SARDK",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "SARDK",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "SAYSR",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "SAYSR",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "SLLFL",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "SLLFL",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "SRAST",
+      "fragment": "polar",
+      "score": 0.8,
+      "rationale": "hydrogen-bond donor/acceptor complementarity"
+    },
+    {
+      "word": "SRAST",
+      "fragment": "carbonyl",
+      "score": 0.6,
+      "rationale": "carbonyl-compatible polar contact"
+    },
+    {
+      "word": "SSAYS",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "SSAYS",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "STGKK",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "STGKK",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "TFISL",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "TFISL",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "TGKKI",
+      "fragment": "basic",
+      "score": 0.8,
+      "rationale": "opposite-charge or cation-pi complementarity"
+    },
+    {
+      "word": "TGKKI",
+      "fragment": "polar",
+      "score": 0.55,
+      "rationale": "polar hydrogen-bond complementarity"
+    },
+    {
+      "word": "VTFIS",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "VTFIS",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "WVTFI",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "WVTFI",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "YSARD",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "YSARD",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    },
+    {
+      "word": "YSRAS",
+      "fragment": "aromatic",
+      "score": 0.75,
+      "rationale": "hydrophobic/aromatic complementarity"
+    },
+    {
+      "word": "YSRAS",
+      "fragment": "halogen",
+      "score": 0.45,
+      "rationale": "non-polar contact and halogen-compatible environment"
+    }
+  ]
+}

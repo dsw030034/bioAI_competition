@@ -1,0 +1,213 @@
+{
+  "signature": {
+    "source_sha256": "70f9ef9bfdc3bbe4ea20a003c278037c9ffcf11a70b98d382533424d27a5271a",
+    "chain": "A",
+    "center": [
+      137.204,
+      136.509,
+      127.538
+    ],
+    "size": 24.0,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "geometry_sha256": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3"
+  },
+  "status": "ok",
+  "missing_loops_built": false,
+  "limitations": "Rigid protein-only; lipids/waters excluded; Meeko template protonation; no pKa prediction.",
+  "missing_heavy_atoms_repaired": [
+    {
+      "chain": "A",
+      "residue": "118",
+      "name": "LEU",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "119",
+      "name": "ILE",
+      "missing_atoms": [
+        "CG2",
+        "CG1",
+        "CD1"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "120",
+      "name": "ARG",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "121",
+      "name": "ARG",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "122",
+      "name": "THR",
+      "missing_atoms": [
+        "CG2",
+        "OG1"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "124",
+      "name": "ILE",
+      "missing_atoms": [
+        "CG2",
+        "CG1",
+        "CD1"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "125",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "126",
+      "name": "VAL",
+      "missing_atoms": [
+        "CG1",
+        "CG2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "127",
+      "name": "SER",
+      "missing_atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "289",
+      "name": "TYR",
+      "missing_atoms": [
+        "CG",
+        "CD1",
+        "CE1",
+        "CZ",
+        "OH",
+        "CE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "290",
+      "name": "SER",
+      "missing_atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "291",
+      "name": "SER",
+      "missing_atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "292",
+      "name": "HIS",
+      "missing_atoms": [
+        "CG",
+        "ND1",
+        "CE1",
+        "NE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "294",
+      "name": "LYS",
+      "missing_atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1319",
+      "name": "SER",
+      "missing_atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue": "1562",
+      "name": "SER",
+      "missing_atoms": [
+        "OG"
+      ]
+    }
+  ],
+  "observed_heavy_atoms": 9009,
+  "repaired_heavy_atoms": 9063,
+  "max_observed_atom_displacement_A": 0.0,
+  "explicit_distant_template_exclusions": {
+    "A:121": {
+      "min_distance_to_box_A": 38.332635116829614,
+      "reason": "Meeko template/bond mismatch; all residue atoms >8 A outside box"
+    },
+    "A:124": {
+      "min_distance_to_box_A": 37.34181410965461,
+      "reason": "Meeko template/bond mismatch; all residue atoms >8 A outside box"
+    }
+  },
+  "backbone_nitrogen_types": {
+    "N": 1120
+  },
+  "files": {
+    "selected.pdb": "b0ab6f54ec5e3a01d17fe12e4d6bb64c6f09f2a32e1b8603db725925ff98d213",
+    "repaired.pdb": "2d6005e3acbbca7b88a59cf5632fc66b019714ee59941e4ab87368b86a054a0a",
+    "prepared.pdb": "c51e3b8667edc9a12f75313bfe33a82006a11d3cdd086b75b9ddd4349a9d3f04",
+    "receptor.pdbqt": "d0a1014ac4cbb9ad87a6cd14241fb90d6890e310b6198efced265b188e9cfc87",
+    "receptor.json": "98041f8378415842e288c49fd0fe871bd0551d17c8477d671914814879b4547f",
+    "box.json": "4797bec24ef1e7fe083b3df2484d0516b48966cd65fd2f78ed211ebf4f546828"
+  }
+}

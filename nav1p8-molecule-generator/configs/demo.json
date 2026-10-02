@@ -1,0 +1,21 @@
+{
+  "seed_file": "../data/seeds.smi",
+  "output_dir": "../outputs/demo_run",
+  "protein_sequence_file": "../data/demo_protein.fasta",
+  "protein_word_size": 5,
+  "filters": {
+    "similarity_min": 0.35,
+    "qed_min": 0.35,
+    "sa_max": 5.0,
+    "mw_min": 180,
+    "mw_max": 550,
+    "clogp_min": -0.5,
+    "clogp_max": 5.0,
+    "tpsa_min": 15,
+    "tpsa_max": 120,
+    "required_smarts": "C(=O)N",
+    "num_confs": 5,
+    "max_candidates": 20,
+    "protein_word_weight": 0.2
+  }
+}

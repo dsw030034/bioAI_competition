@@ -1,0 +1,141 @@
+{
+  "summary": [
+    {
+      "condition": "flecainide_neutral_protein",
+      "label": "氟卡尼中性／纯蛋白（旧基线）",
+      "reused_historical": true,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 5.126125991289271,
+      "median_best_mode_RMSD_A": 3.4685228381216455,
+      "top1_edge_under_0p5A": 0,
+      "diagnostic_passed": false
+    },
+    {
+      "condition": "flecainide_N19_plus1_protein",
+      "label": "氟卡尼 N19 +1／纯蛋白",
+      "reused_historical": false,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 5.099416979980582,
+      "median_best_mode_RMSD_A": 3.509754132617921,
+      "top1_edge_under_0p5A": 0,
+      "diagnostic_passed": false
+    },
+    {
+      "condition": "ranolazine_neutral_protein",
+      "label": "雷诺嗪中性／纯蛋白（旧基线）",
+      "reused_historical": true,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 10.976729529385805,
+      "median_best_mode_RMSD_A": 4.165495428072191,
+      "top1_edge_under_0p5A": 10,
+      "diagnostic_passed": false
+    },
+    {
+      "condition": "ranolazine_neutral_lipid",
+      "label": "雷诺嗪中性／脂质占位",
+      "reused_historical": false,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 11.005869293391859,
+      "median_best_mode_RMSD_A": 3.7029649410760967,
+      "top1_edge_under_0p5A": 9,
+      "diagnostic_passed": false
+    },
+    {
+      "condition": "ranolazine_N13_plus1_protein",
+      "label": "雷诺嗪 N13 +1／纯蛋白",
+      "reused_historical": false,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 7.989940265835087,
+      "median_best_mode_RMSD_A": 4.478111172963374,
+      "top1_edge_under_0p5A": 7,
+      "diagnostic_passed": false
+    },
+    {
+      "condition": "ranolazine_N13_plus1_lipid",
+      "label": "雷诺嗪 N13 +1／脂质占位",
+      "reused_historical": false,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 7.175596039084771,
+      "median_best_mode_RMSD_A": 4.125675776512648,
+      "top1_edge_under_0p5A": 9,
+      "diagnostic_passed": false
+    },
+    {
+      "condition": "ranolazine_N16_plus1_protein",
+      "label": "雷诺嗪 N16 +1／纯蛋白",
+      "reused_historical": false,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 10.936982133730877,
+      "median_best_mode_RMSD_A": 4.586573874170762,
+      "top1_edge_under_0p5A": 12,
+      "diagnostic_passed": false
+    },
+    {
+      "condition": "ranolazine_N16_plus1_lipid",
+      "label": "雷诺嗪 N16 +1／脂质占位",
+      "reused_historical": false,
+      "expected": 15,
+      "successful": 15,
+      "top1_pass": 0,
+      "any_mode_pass": 0,
+      "median_top1_RMSD_A": 4.772135519801887,
+      "median_best_mode_RMSD_A": 4.199796331467331,
+      "top1_edge_under_0p5A": 7,
+      "diagnostic_passed": false
+    }
+  ],
+  "matched_environment_summary": [
+    {
+      "state": "ranolazine_neutral",
+      "pairs": 15,
+      "median_matched_RMSD_change_A": -0.17076424096410747,
+      "protein_top1_clashes_with_omitted_lipid_count": 3,
+      "rescued_passes": 0,
+      "lost_passes": 0
+    },
+    {
+      "state": "ranolazine_N13_plus1",
+      "pairs": 15,
+      "median_matched_RMSD_change_A": -0.07661224103870445,
+      "protein_top1_clashes_with_omitted_lipid_count": 5,
+      "rescued_passes": 0,
+      "lost_passes": 0
+    },
+    {
+      "state": "ranolazine_N16_plus1",
+      "pairs": 15,
+      "median_matched_RMSD_change_A": -1.8375558656261726,
+      "protein_top1_clashes_with_omitted_lipid_count": 1,
+      "rescued_passes": 0,
+      "lost_passes": 0
+    }
+  ],
+  "new_jobs_successful": 90,
+  "historical_jobs_reused": 30,
+  "diagnostic_passed_conditions": [],
+  "production_code_unchanged": true,
+  "production_gate_released": false,
+  "selectivity_validated": false,
+  "recommendation": "Suspend current Nav1.5 docking quantitative ranking and delta reward; retain Nav1.5 functional risk counter-screen."
+}

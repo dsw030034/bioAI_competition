@@ -1,0 +1,177 @@
+"""Package completed multi-reference diagnostics without altering primary results."""
+from pathlib import Path
+import csv
+import json
+import shutil
+import sys
+
+BASE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BASE))
+from rdkit import Chem
+from scgd.runtime import code_hashes, read_json, sha256, write_json
+
+ROOT = BASE/'outputs/nav15_multireference_20261002'
+DEST = BASE/'results/nav15_multireference_20261002'
+NAMES = {'rat_6uz0': '氟卡尼 / 6UZ0（大鼠）', 'rat_8f6p': '雷诺嗪 / 8F6P（大鼠）'}
+
+
+def main():
+    DEST.mkdir(parents=True, exist_ok=True)
+    rows = []
+    checks = {}
+    for name, label in NAMES.items():
+        prep = ROOT/name
+        run = prep/'redocking'
+        report = read_json(run/'report.json')
+        if not report['complete'] or report['successful_jobs'] != report['expected_jobs']:
+            raise ValueError(f'Incomplete redocking: {name}')
+        manifest = read_json(run/'manifest.json')
+        if manifest['production_code_hashes'] != code_hashes():
+            raise ValueError('Production code changed')
+        audit = read_json(prep/'prepare_manifest.json')
+        target = DEST/name
+        target.mkdir(exist_ok=True)
+        for source in [prep/'prepare_manifest.json', prep/'ligand_audit.json', prep/'hetero_audit.json',
+                       prep/'construct_audit.json', run/'report.json', run/'results.json',
+                       run/'manifest.json', run/'input_integrity.json']:
+            shutil.copy2(source, target/source.name)
+        for optional in ('pocket_repair_audit.json', 'source_manifest.json', 'construct_addendum.json',
+                         'disulfide_preservation_audit.json'):
+            if (prep/optional).exists():
+                shutil.copy2(prep/optional, target/optional)
+        for optional in ('resume_verification.json',):
+            if (run/optional).exists():
+                shutil.copy2(run/optional, target/optional)
+        receptor_dir = Path(audit['receptor_pdbqt']).parent
+        for optional in ('audit.json', 'reviewed_false_bonds.json', 'oxt_repairs.json', 'exclusions.json'):
+            if (receptor_dir/optional).exists():
+                shutil.copy2(receptor_dir/optional, target/('receptor_'+optional))
+        if (prep/'provenance').exists():
+            shutil.copytree(prep/'provenance', target/'provenance', dirs_exist_ok=True)
+        shutil.copy2(run/'sampling/report.json', target/'sampling_report.json')
+        shutil.copy2(audit['prepared_pdb'], target/'receptor.pdb')
+        shutil.copy2(prep/'reference.sdf', target/'reference.sdf')
+        native = prep/'native_diagnostic/report.json'
+        if native.exists():
+            shutil.copy2(native, target/'native_diagnostic_report.json')
+        results = read_json(run/'results.json')
+        top = min(results, key=lambda r: (r['affinity_kcal_mol'], r['conformer_id'], r['vina_seed']))
+        closest = min([(mode['rmsd_A'], row, mode['rank']) for row in results for mode in row['modes']],
+                      key=lambda item: (item[0], item[1]['conformer_id'], item[1]['vina_seed'], item[2]))
+        examples = [('lowest_vina_top1', top, 1), ('closest_output_diagnostic_only', closest[1], closest[2])]
+        descriptions = []
+        for title, row, rank in examples:
+            source = Path(row['pose']).with_suffix('.sdf')
+            mol = list(Chem.SDMolSupplier(str(source), removeHs=True))[rank-1]
+            Chem.MolToPDBFile(mol, str(target/f'{title}.pdb'))
+            with Chem.SDWriter(str(target/f'{title}.sdf')) as writer:
+                writer.write(mol)
+            descriptions.append({'name': title, 'input': row['conformer_id'], 'seed': row['vina_seed'],
+                                 'rank': rank, **row['modes'][rank-1],
+                                 'role': 'Original-score winner' if rank == 1 and title == 'lowest_vina_top1'
+                                         else 'Reference-RMSD-selected illustration; not a ranking recommendation'})
+        Chem.MolToPDBFile(Chem.SDMolSupplier(str(prep/'reference.sdf'))[0], str(target/'reference.pdb'))
+        write_json(target/'representatives.json', descriptions)
+        (target/'compare.pml').write_text('''# Run from this directory: pymol compare.pml
+reinitialize
+load receptor.pdb, receptor
+load reference.pdb, native
+load lowest_vina_top1.pdb, top1
+load closest_output_diagnostic_only.pdb, closest
+hide everything
+show cartoon, receptor
+color gray80, receptor
+show sticks, native or top1 or closest
+color green, native
+color orange, top1
+color cyan, closest
+show sticks, byres (receptor within 4 of native)
+set cartoon_transparency, 0.7
+zoom native or top1 or closest, 7
+bg_color white
+''', encoding='utf-8')
+        rows.append({'reference': name, 'label': label, **report})
+        checks[name] = {'reference_sha256_matches': sha256(prep/'reference.sdf') == manifest['reference_sha256'],
+                        'receptor_sha256_matches': sha256(audit['receptor_pdbqt']) == manifest['receptor_sha256'],
+                        'production_code_unchanged': True}
+    deferred = DEST/'human_9v3s'
+    deferred.mkdir(exist_ok=True)
+    for source in (ROOT/'human_9v3s').glob('*.json'):
+        shutil.copy2(source, deferred/source.name)
+    table = '\n'.join(f'| {r["label"]} | {r["successful_jobs"]}/{r["expected_jobs"]} | '
+                      f'{r["top1_pass_count"]}/{r["expected_jobs"]} | {r["any_mode_pass_count"]}/{r["expected_jobs"]} | '
+                      f'{r["median_top1_rmsd_A"]:.3f} | {r["median_best_of_modes_rmsd_A"]:.3f} |'
+                      for r in rows)
+    text = f'''# Nav1.5 已知位点叠合与多参考配体验证
+
+原始 `score.py`、`scgd/`、综合权重和生产筛选门槛保持不变。本次只做结构定位与参考自对接诊断；没有启动 2,944 个候选的全量筛选。
+
+## 最重要的结构发现
+
+此前三个条件中按原 Vina 分数选出的奎尼丁代表第一名（中性宽框、+1 宽框、+1 小框），邻近实验氟卡尼所占据的 DII–III 侧窗亚口袋。孔道叠合后质心距约 1.89–2.20 Å；用同一 6LQA 受体计算的 4 Å 接触集合 Jaccard 为 0.769（交集/并集 = 10/13），用大鼠实验接触映射到人源编号时为 0.643。全链与孔道叠合给出一致的区域关系。中性小框的另一个代表第一名并不重叠，不能推广到所有偏离姿势。
+
+这说明“未复现奎尼丁实验姿势”与“进入无药理依据的位置”不同。它不证明奎尼丁或 A-803467 真正在这个区域结合，也不推翻奎尼丁自对接验证失败的事实。
+
+将 A-803467/Nav1.8 实验坐标映射到 Nav1.5 后，可以定义中央腔/I–IV 侧窗附近的候选探索区域；这是同源结构假说，不是 A-803467/Nav1.5 实验姿势。直接投影在 6LQA/9V3S 中分别产生 19/15 个 <2 Å 的蛋白–配体重原子对，最短距离 0.378/0.667 Å，主要涉及 F402 等侧链。因此，CA 对齐并不保证侧链能容纳该姿势；后续需重新搜索并评估受体局部构象。这也不是分子不结合的证据。详见 [projection/README.md](projection/README.md)。雷诺嗪和 cis-azo-Q2a 还展示了中央腔内不同的占位与受体构象。
+
+完整叠合、残基双向编号、空间距离、接触与框覆盖见 [alignment/README.md](alignment/README.md)。PyMOL 中从对应目录运行 `@compare_sites.pml` 可查看叠合。
+
+## 新参考的独立自对接
+
+每个配体从沉积的化学图出发，删除全部实验构象；2 个 ETKDG 种子各尝试 64 个构象，MMFF94s 收敛及几何检查后按 0.75 Å 去重，在同一化学态 10 kcal/mol 能窗内选最多 5 个。参考 RMSD 和受体接触不参与输入选择。每个输入运行 3 个 Vina 种子，`exhaustiveness=16`、最多 9 个输出、每任务 2 CPU。搜索框为各自实验配体质心的 24 Å 立方体。
+
+通过定义沿用：受体坐标系内对称校正重原子 RMSD ≤2 Å、4 Å 原生残基接触召回 ≥0.5、无蛋白–配体重原子距离 <2 Å。至少 5 个独特输入×3 个种子且 ≥80% 第一名通过，才算该参考条件的诊断通过。“任一输出通过”不替代第一名通过。
+
+| 配体 / 自身受体 | 完成 | 第一名通过 | 任一输出通过 | 第一名 RMSD 中位数 Å | 最佳输出 RMSD 中位数 Å |
+|---|---:|---:|---:|---:|---:|
+{table}
+
+参考结果分别见 [氟卡尼](rat_6uz0/report.json) 与 [雷诺嗪](rat_8f6p/report.json)。各目录 `compare.pml` 显示实验姿势（绿）、原评分全局最低的第一名（橙）、参考 RMSD 最近的输出示意（青）。青色姿势仅用于诊断，不作为原算法最终选择。
+
+把新自对接姿势也叠回位点地图后，氟卡尼第一名多数仍位于自身实验区域附近（质心距离中位数 1.95 Å），但原子取向/内部构象并未复现，说明“找对区域”不等于“找对姿势”。雷诺嗪第一名更加分散，距自身映射实验位点的质心距离中位数 9.36 Å；10/15 份距实际网格边界不足 0.5 Å（其中 3/15 不足 0.05 Å），不能据此宣布发现稳定的新结合方式。逐姿势空间比较见 [redocking_sites/README.md](redocking_sites/README.md)。
+
+补充的实验姿势局部优化都能保留在原位置附近：氟卡尼 RMSD 1.291 Å、接触召回 69.2%；雷诺嗪 0.508 Å、84.6%，均无重原子硬碰撞。这 4 次 score-only/local-only 是已知姿势起点的诊断，不计入上表。局部优化保留近原生姿势而全局对接失败，支持继续区分构象采样、原评分排序与环境问题，不能据此断言只有某一个原因。
+
+两者都来自**大鼠工程化构建**，按沉积 CCD 的**中性输入态**运行；这不是对生理主要质子态的判定，也不能当成人源 Nav1.5 或选择性的验证。CCD/实验模型均明确 R 构型，不代表投药样品必然为纯 R。不同配体的分数不能用于推算彼此的选择性。
+
+## 输入及环境限制
+
+- 9V3S 为人源截短 Nav1.5。CCD 把 N22–N23 记为 N–N 单键，而论文描述 cis-azo；实验距离为 1.241 Å。原图和 N=N 假说都保留，均未批准进入正式参考重对接。它只贡献实验原子坐标和受体构象比较，不能计为一个通过的参考。被排除的 Na 离配体约 4.30 Å。
+- 6UZ0 保留全部 8,970 个实验重原子，坐标未移动；修复 6 个新增末端 OXT 的几何，并按明确原子对删除 10 条距离感知造成的假共价键，不删除真实肽键/二硫键。193 个新增重原子均距参考配体 >15.81 Å。模型原有远端重叠仍保留，不能宣称全蛋白已优化。
+- 8F6P 修复 8 个新增末端 OXT，显式排除 15 个所有原子均在搜索框外 >8 Å 的失败残基；保留 8,270/8,367 个实验重原子，保留部分坐标未移动，4 条原始二硫键均保留。371 个新增重原子均距配体 >12.11 Å。构建记录存在序列冲突，不能声称为无突变野生型。详细清单随准备审计保存，这是带已知建模局限的诊断受体。
+- 8F6P 的解析脂质 6OU 距雷诺嗪约 3.50 Å；本轮受体为纯蛋白，因此缺少直接近邻脂质的空间限制。若它出现姿势偏移，优先做保留该脂质的匹配对照。
+- 原奎尼丁中心的 20 Å 小框会截断映射 A-803467/氟卡尼实验姿势；24 Å 原框虽容纳重原子，最近边缘余量仅约 1.65/0.72 Å。不能因为只在一个小框里未发现结合就判定 Nav1.5 阴性。框覆盖细节见 [alignment/box_coverage.md](alignment/box_coverage.md)。
+
+## 下一步的边界
+
+优先做参考条件的匹配对照：保留 8F6P 的直接近邻脂质；为氟卡尼/雷诺嗪核定合理质子化微观状态并分别报告；检查有限的、有结构依据的口袋侧链/受体构象。框边缘问题单独统计，不将扩大搜索框当成自动有效的修复。每次只改变明确因素，继续使用原 Vina 评分和相同参考姿势标准。
+
+在这些限制明确之后，再用 A-803467 原种子＋4 个按结构多样性选择的代表，探索人源 6LQA/9V3S 两个受体构象，以及预先定义的 A-803467 映射区域和 DII–III 侧窗区域；保存原 Vina 分数、姿势、接触、碰撞和不同种子的一致性。9V3S 的原配体身份未决不等同于蛋白不可用，但该受体仍需作为未完成自对接验证的探索性构象明确标记。
+
+这是下一轮建议，**尚未运行**。不同受体/框的最低分不能直接拼入旧综合评分。仍需恢复合适参考的姿势、评估脂质及受体状态，并用匹配条件的人源功能实验判断 Nav1.5 风险；结构诊断本身不提供实验选择性。当前生产门槛继续关闭。
+
+## 复现与文件
+
+从 `nav18_full_pipeline` 目录运行：
+
+```powershell
+& ../.venv/Scripts/python.exe -u -B scripts/validate_nav15_multireference.py --reference-dir outputs/nav15_multireference_20261002/rat_6uz0 --output outputs/nav15_multireference_20261002/rat_6uz0/redocking --resume
+& ../.venv/Scripts/python.exe -u -B scripts/validate_nav15_multireference.py --reference-dir outputs/nav15_multireference_20261002/rat_8f6p --output outputs/nav15_multireference_20261002/rat_8f6p/redocking --resume
+```
+
+新运行必须使用新的输出目录，省略 `--resume`。每次运行冻结源码、依赖、参考/受体、采样产物、随机种子与 Vina 可执行文件哈希。完整日志与全部输出姿势在 `outputs/nav15_multireference_20261002/`；此目录为可分享摘要与代表结构。
+
+结构/论文来源：[6LQA](https://www.rcsb.org/structure/6LQA)、[6UZ0](https://www.rcsb.org/structure/6UZ0)、[8F6P](https://www.rcsb.org/structure/8F6P)、[9V3S](https://www.rcsb.org/structure/9V3S)、[7WE4](https://www.rcsb.org/structure/7WE4)。逐次下载来源、构建与实验配体审计随准备清单保存。
+'''
+    (DEST/'README.md').write_text(text, encoding='utf-8')
+    shutil.copy2(ROOT/'verification_tests.json', DEST/'verification_tests.json')
+    write_json(DEST/'verification.json', {'references': checks, 'production_gate_released': False,
+                                         'production_code_hashes': code_hashes()})
+    artifacts = {str(p.relative_to(DEST)): sha256(p) for p in sorted(DEST.rglob('*'))
+                 if p.is_file() and p != DEST/'package_manifest.json'}
+    write_json(DEST/'package_manifest.json', {'diagnostic_only': True, 'artifacts_sha256': artifacts})
+    print(f'Packaged {len(artifacts)} files: {DEST}')
+
+
+if __name__ == '__main__':
+    main()

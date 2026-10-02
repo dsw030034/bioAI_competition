@@ -1,0 +1,365 @@
+{
+  "diagnostic_only": true,
+  "pose_role": "Unrelaxed homologous A-803467 coordinate projection; not experimental Nav1.5 binding",
+  "ligand": "7WE4 A:2004:95T / A-803467, all 25 observed heavy atoms",
+  "frame": "6LQA author chain B frame",
+  "ligand_coordinates_identical_for_both_receptors": true,
+  "recomputed_ligand_vs_alignment_max_coordinate_difference_A": 0.0,
+  "9V3S_preparation_coordinate_audit": {
+    "observed_heavy_atoms": 9237,
+    "prepared_heavy_atoms": 9240,
+    "matched_observed_heavy_atoms": 9237,
+    "missing_original_atoms": [],
+    "terminal_atom_name_permutations": [
+      {
+        "observed_atom": "A:429:GLU:O",
+        "prepared_atom": "A:429:GLU:OXT",
+        "reason": "Terminal O/OXT name permutation; exact coordinate retained"
+      },
+      {
+        "observed_atom": "A:944:ALA:O",
+        "prepared_atom": "A:944:ALA:OXT",
+        "reason": "Terminal O/OXT name permutation; exact coordinate retained"
+      },
+      {
+        "observed_atom": "A:1781:GLU:O",
+        "prepared_atom": "A:1781:GLU:OXT",
+        "reason": "Terminal O/OXT name permutation; exact coordinate retained"
+      }
+    ],
+    "prepared_atoms_without_original_coordinate_mapping": [
+      "A:429:GLU:O",
+      "A:944:ALA:O",
+      "A:1781:GLU:O"
+    ],
+    "maximum_original_coordinate_displacement_A": 0.0
+  },
+  "9V3S_rigid_protein_transform": {
+    "convention": "xyz_target=xyz_source @ rotation + translation",
+    "rotation_row_vector": [
+      [
+        -0.259541256804687,
+        -0.1630320494591168,
+        -0.9518712554045335
+      ],
+      [
+        0.7822019135035101,
+        -0.6135591943647852,
+        -0.10819094935290403
+      ],
+      [
+        -0.566390768399071,
+        -0.7726355323563604,
+        0.2867679054788275
+      ]
+    ],
+    "translation_A": [
+      137.4088769389562,
+      340.58319673188805,
+      242.3324539950984
+    ],
+    "pore_CA_pairs": 285,
+    "pore_CA_rmsd_A": 0.7559177379490908
+  },
+  "geometry_comparison": {
+    "6LQA_QDN_state": {
+      "ligand_heavy_atoms": 25,
+      "protein_heavy_atoms": 9240,
+      "minimum_heavy_distance_A": 0.3775905773723296,
+      "heavy_atom_pairs_below_2A": 19,
+      "clashing_ligand_atoms": 9,
+      "clashing_protein_atoms": 9,
+      "residue_pair_counts_below_2A": {
+        "B:1763:VAL": 1,
+        "B:398:PHE": 5,
+        "B:402:PHE": 13
+      },
+      "closest_pair": {
+        "ligand_heavy_index_zero_based": 24,
+        "ligand_atom_name": "C25",
+        "protein_atom": "B:398:PHE:CE1",
+        "distance_A": 0.3775905773723296
+      },
+      "pairs_below_2A": [
+        {
+          "ligand_heavy_index_zero_based": 24,
+          "ligand_atom_name": "C25",
+          "protein_atom": "B:398:PHE:CE1",
+          "protein_residue": "B:398:PHE",
+          "distance_A": 0.3775905773723296
+        },
+        {
+          "ligand_heavy_index_zero_based": 13,
+          "ligand_atom_name": "N06",
+          "protein_atom": "B:402:PHE:CZ",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 0.5965759000173733
+        },
+        {
+          "ligand_heavy_index_zero_based": 19,
+          "ligand_atom_name": "C14",
+          "protein_atom": "B:402:PHE:CE2",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 0.6516955449576165
+        },
+        {
+          "ligand_heavy_index_zero_based": 13,
+          "ligand_atom_name": "N06",
+          "protein_atom": "B:402:PHE:CE1",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 0.8207799572751321
+        },
+        {
+          "ligand_heavy_index_zero_based": 10,
+          "ligand_atom_name": "O03",
+          "protein_atom": "B:1763:VAL:CG2",
+          "protein_residue": "B:1763:VAL",
+          "distance_A": 0.9821742135942501
+        },
+        {
+          "ligand_heavy_index_zero_based": 15,
+          "ligand_atom_name": "C08",
+          "protein_atom": "B:402:PHE:CE2",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.016418222784425
+        },
+        {
+          "ligand_heavy_index_zero_based": 1,
+          "ligand_atom_name": "C13",
+          "protein_atom": "B:402:PHE:CE1",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.10034063844064
+        },
+        {
+          "ligand_heavy_index_zero_based": 11,
+          "ligand_atom_name": "O04",
+          "protein_atom": "B:398:PHE:CE1",
+          "protein_residue": "B:398:PHE",
+          "distance_A": 1.1216902769325354
+        },
+        {
+          "ligand_heavy_index_zero_based": 15,
+          "ligand_atom_name": "C08",
+          "protein_atom": "B:402:PHE:CZ",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.1704959203000482
+        },
+        {
+          "ligand_heavy_index_zero_based": 19,
+          "ligand_atom_name": "C14",
+          "protein_atom": "B:402:PHE:CD2",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.206515976473119
+        },
+        {
+          "ligand_heavy_index_zero_based": 24,
+          "ligand_atom_name": "C25",
+          "protein_atom": "B:398:PHE:CD1",
+          "protein_residue": "B:398:PHE",
+          "distance_A": 1.302955183375147
+        },
+        {
+          "ligand_heavy_index_zero_based": 12,
+          "ligand_atom_name": "O05",
+          "protein_atom": "B:402:PHE:CE1",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.4319590604026398
+        },
+        {
+          "ligand_heavy_index_zero_based": 24,
+          "ligand_atom_name": "C25",
+          "protein_atom": "B:398:PHE:CZ",
+          "protein_residue": "B:398:PHE",
+          "distance_A": 1.4588751659667407
+        },
+        {
+          "ligand_heavy_index_zero_based": 11,
+          "ligand_atom_name": "O04",
+          "protein_atom": "B:398:PHE:CD1",
+          "protein_residue": "B:398:PHE",
+          "distance_A": 1.482229829384411
+        },
+        {
+          "ligand_heavy_index_zero_based": 13,
+          "ligand_atom_name": "N06",
+          "protein_atom": "B:402:PHE:CE2",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.7014773994849053
+        },
+        {
+          "ligand_heavy_index_zero_based": 1,
+          "ligand_atom_name": "C13",
+          "protein_atom": "B:402:PHE:CZ",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.7602206168604089
+        },
+        {
+          "ligand_heavy_index_zero_based": 13,
+          "ligand_atom_name": "N06",
+          "protein_atom": "B:402:PHE:CD1",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.881393624292874
+        },
+        {
+          "ligand_heavy_index_zero_based": 3,
+          "ligand_atom_name": "C17",
+          "protein_atom": "B:402:PHE:CE2",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.951540984991732
+        },
+        {
+          "ligand_heavy_index_zero_based": 15,
+          "ligand_atom_name": "C08",
+          "protein_atom": "B:402:PHE:CD2",
+          "protein_residue": "B:402:PHE",
+          "distance_A": 1.9627500417572379
+        }
+      ]
+    },
+    "9V3S_azo_state_pore_mapped": {
+      "ligand_heavy_atoms": 25,
+      "protein_heavy_atoms": 9240,
+      "minimum_heavy_distance_A": 0.6673859803210972,
+      "heavy_atom_pairs_below_2A": 15,
+      "clashing_ligand_atoms": 9,
+      "clashing_protein_atoms": 7,
+      "residue_pair_counts_below_2A": {
+        "A:1763:VAL": 6,
+        "A:371:GLN": 1,
+        "A:402:PHE": 8
+      },
+      "closest_pair": {
+        "ligand_heavy_index_zero_based": 13,
+        "ligand_atom_name": "N06",
+        "protein_atom": "A:402:PHE:CZ",
+        "distance_A": 0.6673859803210972
+      },
+      "pairs_below_2A": [
+        {
+          "ligand_heavy_index_zero_based": 13,
+          "ligand_atom_name": "N06",
+          "protein_atom": "A:402:PHE:CZ",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 0.6673859803210972
+        },
+        {
+          "ligand_heavy_index_zero_based": 10,
+          "ligand_atom_name": "O03",
+          "protein_atom": "A:1763:VAL:CB",
+          "protein_residue": "A:1763:VAL",
+          "distance_A": 1.0099382880635406
+        },
+        {
+          "ligand_heavy_index_zero_based": 10,
+          "ligand_atom_name": "O03",
+          "protein_atom": "A:1763:VAL:CG1",
+          "protein_residue": "A:1763:VAL",
+          "distance_A": 1.1862308982955747
+        },
+        {
+          "ligand_heavy_index_zero_based": 13,
+          "ligand_atom_name": "N06",
+          "protein_atom": "A:402:PHE:CE2",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 1.276530614183182
+        },
+        {
+          "ligand_heavy_index_zero_based": 15,
+          "ligand_atom_name": "C08",
+          "protein_atom": "A:402:PHE:CE2",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 1.302655100981649
+        },
+        {
+          "ligand_heavy_index_zero_based": 15,
+          "ligand_atom_name": "C08",
+          "protein_atom": "A:402:PHE:CZ",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 1.3903134419983023
+        },
+        {
+          "ligand_heavy_index_zero_based": 19,
+          "ligand_atom_name": "C14",
+          "protein_atom": "A:402:PHE:CE2",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 1.449536654012086
+        },
+        {
+          "ligand_heavy_index_zero_based": 1,
+          "ligand_atom_name": "C13",
+          "protein_atom": "A:402:PHE:CZ",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 1.5092849729206679
+        },
+        {
+          "ligand_heavy_index_zero_based": 20,
+          "ligand_atom_name": "C16",
+          "protein_atom": "A:1763:VAL:CG2",
+          "protein_residue": "A:1763:VAL",
+          "distance_A": 1.5806885734289176
+        },
+        {
+          "ligand_heavy_index_zero_based": 10,
+          "ligand_atom_name": "O03",
+          "protein_atom": "A:1763:VAL:CG2",
+          "protein_residue": "A:1763:VAL",
+          "distance_A": 1.5810433307727594
+        },
+        {
+          "ligand_heavy_index_zero_based": 7,
+          "ligand_atom_name": "C24",
+          "protein_atom": "A:1763:VAL:CB",
+          "protein_residue": "A:1763:VAL",
+          "distance_A": 1.5869308470158043
+        },
+        {
+          "ligand_heavy_index_zero_based": 21,
+          "ligand_atom_name": "C18",
+          "protein_atom": "A:1763:VAL:CG2",
+          "protein_residue": "A:1763:VAL",
+          "distance_A": 1.76680055997505
+        },
+        {
+          "ligand_heavy_index_zero_based": 1,
+          "ligand_atom_name": "C13",
+          "protein_atom": "A:402:PHE:CE1",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 1.887925473533913
+        },
+        {
+          "ligand_heavy_index_zero_based": 13,
+          "ligand_atom_name": "N06",
+          "protein_atom": "A:402:PHE:CE1",
+          "protein_residue": "A:402:PHE",
+          "distance_A": 1.9310960714769332
+        },
+        {
+          "ligand_heavy_index_zero_based": 12,
+          "ligand_atom_name": "O05",
+          "protein_atom": "A:371:GLN:NE2",
+          "protein_residue": "A:371:GLN",
+          "distance_A": 1.9639913029228717
+        }
+      ]
+    }
+  },
+  "optimization_performed": false,
+  "docking_performed": false,
+  "scoring_performed": false,
+  "source_sha256": {
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_site_alignment_v2_20261002\\report.json": "6d4a5243629ef87da1de1ebd7b2f17152de7979d0887e87b234b5c2d0447a53f",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\receptors_20261002\\nav15\\prepared.pdb": "4bba48703e0b62150c1db205f0eb523a06cff55837422329ef6641346785032b",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\prepared.pdb": "cd75020b5ad19121013e8265fc27854e4f1af20a2f56dbb27ae9c4d8f1371f99",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\protein_observed.pdb": "0675fb8f19b01ead105f128d77969b2ae318a6e34d9444f76865136c1e4cc9d5",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\receptors\\7WE4.pdb": "70f9ef9bfdc3bbe4ea20a003c278037c9ffcf11a70b98d382533424d27a5271a"
+  },
+  "production_code_unchanged": true,
+  "limitations": [
+    "A803 is an experimentally observed Nav1.8 ligand, not a confirmed Nav1.5 ligand.",
+    "CA alignment does not guarantee side-chain or ligand compatibility; these are unrelaxed geometric projections.",
+    "A <2A pair is a diagnostic geometric overlap, not an inactivity or selectivity prediction.",
+    "9V3S is a different human Nav1.5 construct and ligand-bound state, not a controlled single-residue perturbation.",
+    "9V3S A1EQU chemical graph remains unresolved; this audit uses its protein coordinates only.",
+    "No side-chain optimization, flexibility, local docking or protein motion was applied."
+  ]
+}

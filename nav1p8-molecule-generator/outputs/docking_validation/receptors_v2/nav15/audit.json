@@ -1,0 +1,43 @@
+{
+  "source": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\Nav1.5_structure\\6LQA.pdb",
+  "source_sha256": "4fe6661a91a0a953f2eef93a93fd09c970518cde0e1458fe6961d61bfbd88f66",
+  "chain": "B",
+  "reference_ligand": "QDN:B:2110",
+  "missing_heavy_atoms_repaired": [],
+  "observed_heavy_atoms": 9237,
+  "prepared_heavy_atoms": 9240,
+  "max_observed_atom_displacement_A": 0.0,
+  "missing_loops_built": false,
+  "numbering_preserved": true,
+  "excluded_hetero_min_distance_A": {
+    "B:2101:NAG": 41.06023793160483,
+    "B:2102:NAG": 56.91674432888795,
+    "B:2103:NAG": 58.01682581803316,
+    "B:2104:NAG": 28.11437925688562,
+    "B:2105:NAG": 34.05562223774512,
+    "B:2106:NAG": 38.29548738428588,
+    "B:2107:NAG": 31.707980730409172,
+    "B:2108:NAG": 40.46752756223191,
+    "B:2109:NAG": 36.236896197108265,
+    "B:2110:QDN": 0.0
+  },
+  "reference_sha256": "63401d14cd10f6cfbbc28d680610b9e23bad4664c85c492892cdec5d46ea8227",
+  "reference_contacts": {
+    "contact_residues_4A": [
+      "B:1417:THR",
+      "B:1708:THR",
+      "B:1710:SER",
+      "B:1759:SER",
+      "B:1760:PHE",
+      "B:1763:VAL",
+      "B:371:GLN",
+      "B:402:PHE",
+      "B:405:VAL"
+    ],
+    "min_protein_heavy_distance_A": 2.8527181774581085,
+    "heavy_pairs_below_2A": 0
+  },
+  "limitations": "Rigid protein-only baseline; native lipids/waters excluded; template protonation, no pKa enumeration.",
+  "reference_chemistry_limitations": "CCD neutral QDN; carbon stereocentres verified; neutral tertiary N stereotag omitted by RDKit. Physiological protonation not validated.",
+  "receptor_pdbqt_sha256": "0575e3b1e27296153085ec7012f4cd09e18afb23d9cca31803cd7785e6baebdc"
+}

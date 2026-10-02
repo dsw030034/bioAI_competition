@@ -1,0 +1,176 @@
+{
+  "signature": {
+    "smiles": "COc1ccc(-c2ccc(C(=O)Nc3cc(OC)cc(OC)c3)o2)cc1",
+    "candidate_id": "b4f67132fd688669",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "b4f67132fd688669",
+    "smiles": "COc1ccc(-c2ccc(C(=O)Nc3cc(OC)cc(OC)c3)o2)cc1",
+    "input_smiles": "COc1ccc(-c2ccc(C(=O)Nc3cc(OC)cc(OC)c3)o2)cc1",
+    "state_smiles": "COc1ccc(-c2ccc(C(=O)Nc3cc(OC)cc(OC)c3)o2)cc1",
+    "state_id": "b4f67132fd688669:input:b4f67132fd68",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1876035774,
+    "requested_conformers": 20,
+    "embedded_conformers": 9,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 53.0395835721927,
+      "relative_energy_same_state": 9.822695924295772
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 44.981372363592726,
+      "relative_energy_same_state": 1.7644847156958008,
+      "duplicate_of": "b4f67132fd688669:input:b4f67132fd68:c002"
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 43.216887647896925,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 43.21688771999775,
+      "relative_energy_same_state": 7.210082486608371e-08,
+      "duplicate_of": "b4f67132fd688669:input:b4f67132fd68:c002"
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 53.75149934142293,
+      "relative_energy_same_state": 10.534611693526003
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c005",
+      "rdkit_conf_id": 5,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 44.4740855021557,
+      "relative_energy_same_state": 1.2571978542587772,
+      "duplicate_of": "b4f67132fd688669:input:b4f67132fd68:c002"
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c006",
+      "rdkit_conf_id": 6,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 50.88100864639968,
+      "relative_energy_same_state": 7.664120998502753
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c007",
+      "rdkit_conf_id": 7,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 44.98137230717297,
+      "relative_energy_same_state": 1.764484659276043,
+      "duplicate_of": "b4f67132fd688669:input:b4f67132fd68:c002"
+    },
+    {
+      "candidate_id": "b4f67132fd688669",
+      "state_id": "b4f67132fd688669:input:b4f67132fd68",
+      "conformer_id": "b4f67132fd688669:input:b4f67132fd68:c008",
+      "rdkit_conf_id": 8,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 50.41658857752102,
+      "relative_energy_same_state": 7.199700929624093
+    }
+  ],
+  "selected_conformer_id": "b4f67132fd688669:input:b4f67132fd68:c002",
+  "files": {
+    "ligand.pdbqt": "16bda3db44fbd2f5d1d39326eba727bb3fb75e66c5a5c9097345e8d74c0afd94",
+    "ligand.sdf": "665ffb5263ecf40e1c79a29b770019306f874b47f7d68c784b82c2dc45b26724"
+  }
+}

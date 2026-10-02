@@ -1,7 +1,5 @@
-*.pdb whitespace=-trailing-space
-*.SDF whitespace=-trailing-space
-*.sdf whitespace=-trailing-space
-*.mol whitespace=-trailing-space
-# Published input snapshots have SHA256 manifests; preserve their exact bytes.
-results/** -text whitespace=cr-at-eol,-trailing-space,-blank-at-eof
-data/round2_building_blocks.csv whitespace=-blank-at-eof
+# Preserve experimental artifacts byte-for-byte on every platform.
+* -text
+nav1p8-molecule-generator/outputs/reinvent_site_c_reference/stage1.chkpt filter=lfs diff=lfs merge=lfs -text
+nav1p8-molecule-generator/outputs/remote_setup/mol2mol_medium_similarity.prior filter=lfs diff=lfs merge=lfs -text
+nav1p8-molecule-generator/outputs/remote_setup/reinvent-v4.7.tar.gz filter=lfs diff=lfs merge=lfs -text

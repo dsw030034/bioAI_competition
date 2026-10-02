@@ -1,0 +1,41 @@
+{
+  "signature": {
+    "source_sha256": "a165bd0fe7a2ebffcde9a5572fc7195fcf6f8694a291ccb4df7f1ba2eb3dcec3",
+    "chain": "B",
+    "center": [
+      128.691875,
+      125.578875,
+      137.582083
+    ],
+    "size": 24.0,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "geometry_sha256": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3"
+  },
+  "status": "ok",
+  "missing_loops_built": false,
+  "limitations": "Rigid protein-only; lipids/waters excluded; Meeko template protonation; no pKa prediction.",
+  "missing_heavy_atoms_repaired": [],
+  "observed_heavy_atoms": 9237,
+  "repaired_heavy_atoms": 9240,
+  "max_observed_atom_displacement_A": 0.0,
+  "explicit_distant_template_exclusions": {},
+  "backbone_nitrogen_types": {
+    "N": 1151
+  },
+  "files": {
+    "selected.pdb": "5623eae769ccc065e2a397e969e8e080f2c6ea977f34a48e2b23c41977abcf22",
+    "repaired.pdb": "edc78651b99fbff7dd4e732e4b8f11e3f52b7563f7b71862c4fb800d104dd200",
+    "prepared.pdb": "4bba48703e0b62150c1db205f0eb523a06cff55837422329ef6641346785032b",
+    "receptor.pdbqt": "0575e3b1e27296153085ec7012f4cd09e18afb23d9cca31803cd7785e6baebdc",
+    "receptor.json": "c333c530130f267d8ef1f38da9257bedee56a07e46060d63ef820df24f75d316",
+    "box.json": "18939ce7bc0f60e1fb7179c7df9cfab47b6e463b886919b08d7a974d0a55c818"
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "reference": "nav15",
+  "conformer_id": "nav15_b2_e034",
+  "box": "pore20",
+  "vina_seed": 20261012,
+  "ligand_sha256": "a1a83fe0b3565ab58808cadf742e13d9d9bbf01e71c7b1fc21a6393bee5f92d2",
+  "status": "ok",
+  "affinity_kcal_mol": -7.991,
+  "all_pose_affinity_kcal_mol": [
+    -7.991,
+    -7.92,
+    -7.534,
+    -7.522,
+    -7.332,
+    -7.283,
+    -7.182,
+    -7.116,
+    -7.024
+  ],
+  "top1_rmsd_A": 9.255447776399944,
+  "best_of_modes_rmsd_A": 2.314914856245618,
+  "all_pose_rmsd_A": [
+    9.255447776399944,
+    9.787069579722694,
+    3.8091462133921836,
+    2.314914856245618,
+    7.781155995416105,
+    2.7824443540407686,
+    8.335936260152984,
+    6.000784223055074,
+    5.050990897008887
+  ],
+  "contact_recall": 0.4444444444444444,
+  "top1_passed": false,
+  "contact_residues_4A": [
+    "B:1345:TRP",
+    "B:1413:LEU",
+    "B:1416:ALA",
+    "B:1417:THR",
+    "B:1461:THR",
+    "B:1462:LEU",
+    "B:1465:PHE",
+    "B:1710:SER",
+    "B:1756:ILE",
+    "B:1757:ILE",
+    "B:1759:SER",
+    "B:1760:PHE"
+  ],
+  "min_protein_heavy_distance_A": 3.061837030281008,
+  "heavy_pairs_below_2A": 0,
+  "all_modes": [
+    {
+      "rank": 1,
+      "affinity_kcal_mol": -7.991,
+      "rmsd_A": 9.255447776399944,
+      "contact_recall": 0.4444444444444444,
+      "contact_residues_4A": [
+        "B:1345:TRP",
+        "B:1413:LEU",
+        "B:1416:ALA",
+        "B:1417:THR",
+        "B:1461:THR",
+        "B:1462:LEU",
+        "B:1465:PHE",
+        "B:1710:SER",
+        "B:1756:ILE",
+        "B:1757:ILE",
+        "B:1759:SER",
+        "B:1760:PHE"
+      ],
+      "min_protein_heavy_distance_A": 3.061837030281008,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 1.4208750000000236,
+        "nominal_axis_face_margins_A": [
+          1.4208750000000236,
+          1.639125000000007,
+          6.7929169999999885
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          134.352,
+          121.12004166666664,
+          137.69491666666667
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 2,
+      "affinity_kcal_mol": -7.92,
+      "rmsd_A": 9.787069579722694,
+      "contact_recall": 0.0,
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:895:LEU",
+        "B:896:CYS",
+        "B:927:ASN",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 3.2985768143246323,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": -0.12412499999999227,
+        "nominal_axis_face_margins_A": [
+          -0.12412499999999227,
+          0.998874999999984,
+          3.665916999999979
+        ],
+        "near_nominal_boundary_within_0p05A": true,
+        "heavy_centroid_xyz": [
+          134.79108333333332,
+          131.79625000000001,
+          134.21570833333334
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 3,
+      "affinity_kcal_mol": -7.534,
+      "rmsd_A": 3.8091462133921836,
+      "contact_recall": 0.7777777777777778,
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1462:LEU",
+        "B:1708:THR",
+        "B:1709:THR",
+        "B:1710:SER",
+        "B:1756:ILE",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:1764:VAL",
+        "B:402:PHE",
+        "B:406:ASN"
+      ],
+      "min_protein_heavy_distance_A": 3.111010928942556,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 4.891916999999978,
+        "nominal_axis_face_margins_A": [
+          5.8698750000000075,
+          5.59512500000001,
+          4.891916999999978
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          128.81112499999998,
+          123.9387916666667,
+          136.43254166666665
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 4,
+      "affinity_kcal_mol": -7.522,
+      "rmsd_A": 2.314914856245618,
+      "contact_recall": 0.8888888888888888,
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1708:THR",
+        "B:1709:THR",
+        "B:1710:SER",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.9202866297676984,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 6.142125000000007,
+        "nominal_axis_face_margins_A": [
+          6.209875000000011,
+          6.142125000000007,
+          6.239916999999991
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          128.26908333333333,
+          124.95645833333333,
+          138.04866666666666
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 5,
+      "affinity_kcal_mol": -7.332,
+      "rmsd_A": 7.781155995416105,
+      "contact_recall": 0.0,
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:1462:LEU",
+        "B:895:LEU",
+        "B:896:CYS",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.908644701574936,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 2.1818750000000193,
+        "nominal_axis_face_margins_A": [
+          2.1818750000000193,
+          2.5178749999999894,
+          3.4249169999999935
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          133.384125,
+          129.96437500000002,
+          134.30304166666664
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 6,
+      "affinity_kcal_mol": -7.283,
+      "rmsd_A": 2.7824443540407686,
+      "contact_recall": 0.4444444444444444,
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1466:ILE",
+        "B:1756:ILE",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:1764:VAL",
+        "B:1767:TYR",
+        "B:406:ASN",
+        "B:409:LEU"
+      ],
+      "min_protein_heavy_distance_A": 3.309617198408287,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 4.049875000000014,
+        "nominal_axis_face_margins_A": [
+          4.049875000000014,
+          6.0261250000000075,
+          4.594916999999981
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          129.07770833333333,
+          124.13941666666669,
+          135.97987500000002
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 7,
+      "affinity_kcal_mol": -7.182,
+      "rmsd_A": 8.335936260152984,
+      "contact_recall": 0.6666666666666666,
+      "contact_residues_4A": [
+        "B:1345:TRP",
+        "B:1413:LEU",
+        "B:1416:ALA",
+        "B:1417:THR",
+        "B:1418:PHE",
+        "B:1462:LEU",
+        "B:1708:THR",
+        "B:1710:SER",
+        "B:1757:ILE",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL"
+      ],
+      "min_protein_heavy_distance_A": 2.860897411652496,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 0.9068750000000136,
+        "nominal_axis_face_margins_A": [
+          0.9068750000000136,
+          2.882125000000002,
+          8.206083000000007
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          133.24154166666668,
+          122.64345833333333,
+          138.2775
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 8,
+      "affinity_kcal_mol": -7.116,
+      "rmsd_A": 6.000784223055074,
+      "contact_recall": 0.8888888888888888,
+      "contact_residues_4A": [
+        "B:1416:ALA",
+        "B:1417:THR",
+        "B:1418:PHE",
+        "B:1419:LYS",
+        "B:1462:LEU",
+        "B:1708:THR",
+        "B:1709:THR",
+        "B:1710:SER",
+        "B:1756:ILE",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.944089842379136,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 2.887875000000008,
+        "nominal_axis_face_margins_A": [
+          2.887875000000008,
+          5.449125000000009,
+          6.660083000000014
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          130.62820833333333,
+          124.65779166666665,
+          138.72854166666667
+        ]
+      },
+      "pose_passed": false
+    },
+    {
+      "rank": 9,
+      "affinity_kcal_mol": -7.024,
+      "rmsd_A": 5.050990897008887,
+      "contact_recall": 0.5555555555555556,
+      "contact_residues_4A": [
+        "B:1416:ALA",
+        "B:1417:THR",
+        "B:1418:PHE",
+        "B:1458:SER",
+        "B:1462:LEU",
+        "B:1709:THR",
+        "B:1710:SER",
+        "B:1756:ILE",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL"
+      ],
+      "min_protein_heavy_distance_A": 2.7546277425452654,
+      "heavy_pairs_below_2A": 0,
+      "boundary": {
+        "nominal_minimum_face_margin_A": 2.655875000000009,
+        "nominal_axis_face_margins_A": [
+          2.655875000000009,
+          5.767125000000007,
+          7.44108300000002
+        ],
+        "near_nominal_boundary_within_0p05A": false,
+        "heavy_centroid_xyz": [
+          131.49229166666666,
+          123.90445833333331,
+          138.01779166666668
+        ]
+      },
+      "pose_passed": false
+    }
+  ],
+  "any_output_pose_passed": false,
+  "first_passing_pose_rank": null,
+  "passing_pose_score_gap_kcal_mol": null,
+  "top1_boundary": {
+    "nominal_minimum_face_margin_A": 1.4208750000000236,
+    "nominal_axis_face_margins_A": [
+      1.4208750000000236,
+      1.639125000000007,
+      6.7929169999999885
+    ],
+    "near_nominal_boundary_within_0p05A": false,
+    "heavy_centroid_xyz": [
+      134.352,
+      121.12004166666664,
+      137.69491666666667
+    ]
+  },
+  "pose_sha256": "bc47aa943d564a81d1bdc1936f9395e7f593a111f5b462653c9f5adc46eaf302"
+}

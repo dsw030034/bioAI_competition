@@ -1,0 +1,86 @@
+{
+  "method": "amide_recombination",
+  "task": "local",
+  "raw_rows_evaluated": 35,
+  "valid": 35,
+  "unique": 34,
+  "accepted_2d": 17,
+  "scaffolds": 3,
+  "budget": 300,
+  "input_sha256": "9557f0833edbbfea3b41dff5fa654eb79cfdc7fea65ca4893e467440a6de7b21",
+  "config": {
+    "generation_task": "local",
+    "seed_file": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\data\\seeds_a803467.smi",
+    "output_dir": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\round2\\local",
+    "filters": {
+      "similarity_min": 0.35,
+      "qed_min": 0.35,
+      "sa_max": 5.0,
+      "mw_min": 180.0,
+      "mw_max": 550.0,
+      "clogp_min": -0.5,
+      "clogp_max": 5.0,
+      "tpsa_min": 15.0,
+      "tpsa_max": 120.0,
+      "required_smarts": [
+        "O=C(Nc1ccccc1)c1ccco1"
+      ],
+      "num_confs": 5,
+      "max_candidates": 200,
+      "protein_word_weight": 0,
+      "site_c_weight": 0,
+      "selectivity_proxy_weight": 0,
+      "reinvent_metric_weight": 0
+    }
+  },
+  "reference_sha256": null,
+  "validity_scope": "input-file rows only; upstream filtering must be reported separately",
+  "physical_validation": "not performed; no activity/selectivity conclusions",
+  "validity_in_input": 1.0,
+  "uniqueness_in_valid_input": 0.9714285714285714,
+  "accepted_distributions": {
+    "mw": {
+      "min": 322.75100000000003,
+      "p25": 327.76700000000005,
+      "median": 341.75,
+      "p75": 353.3740000000001,
+      "max": 405.85900000000015
+    },
+    "logp": {
+      "min": 3.6111000000000013,
+      "p25": 4.224700000000003,
+      "median": 4.524520000000003,
+      "p75": 4.732580000000002,
+      "max": 4.893800000000004
+    },
+    "tpsa": {
+      "min": 51.47,
+      "p25": 60.7,
+      "median": 60.7,
+      "p75": 73.59,
+      "max": 85.60999999999999
+    },
+    "qed": {
+      "min": 0.6401051437043135,
+      "p25": 0.7276961165974998,
+      "median": 0.7431814910892889,
+      "p75": 0.7505979325790777,
+      "max": 0.7758467171240621
+    },
+    "sa": {
+      "min": 1.6871656470997092,
+      "p25": 1.899618300098636,
+      "median": 1.9631467941398064,
+      "p75": 2.0638939385281105,
+      "max": 2.167236022656496
+    },
+    "similarity_to_seed": {
+      "min": 0.5882352941176471,
+      "p25": 0.723404255319149,
+      "median": 0.7906976744186046,
+      "p75": 0.7916666666666666,
+      "max": 0.8636363636363636
+    },
+    "shape_tanimoto": null
+  }
+}

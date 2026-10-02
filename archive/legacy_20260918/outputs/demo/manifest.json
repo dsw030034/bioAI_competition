@@ -1,0 +1,101 @@
+{
+  "status": "complete",
+  "created_utc": "2026-09-18T00:32:25.725210+00:00",
+  "version": "0.1.0",
+  "python": "3.10.21",
+  "rdkit": "2026.03.6",
+  "config": {
+    "seed": 20260918,
+    "target": "Nav1.8",
+    "counter_target": "Nav1.5",
+    "site": "C",
+    "species": "Homo sapiens",
+    "state": "unspecified",
+    "protocol": "unspecified",
+    "seeds_file": "D:\\2026-2027_autumn\\bioAI_competition\\data\\seeds.smi",
+    "building_blocks_file": "D:\\2026-2027_autumn\\bioAI_competition\\data\\building_blocks.csv",
+    "output_dir": "D:\\2026-2027_autumn\\bioAI_competition\\outputs\\demo",
+    "backend": "reaction",
+    "input_smiles": null,
+    "reference_file": null,
+    "max_attempts": 2000,
+    "max_candidates": 100,
+    "filters": {
+      "similarity_min": 0.35,
+      "qed_min": 0.35,
+      "sa_max": 5.0,
+      "mw": [
+        180.0,
+        550.0
+      ],
+      "logp": [
+        -0.5,
+        5.0
+      ],
+      "tpsa": [
+        15.0,
+        120.0
+      ],
+      "heavy_atoms_max": 40,
+      "rotatable_bonds_max": 10,
+      "pains": true,
+      "exclude_seeds": true,
+      "required_smarts": null
+    },
+    "membrane": {
+      "logp": [
+        1.0,
+        3.5
+      ],
+      "tpsa": [
+        30.0,
+        90.0
+      ],
+      "mw": [
+        250.0,
+        450.0
+      ]
+    },
+    "weights": {
+      "similarity": 0.3,
+      "qed": 0.2,
+      "sa": 0.15,
+      "membrane": 0.25,
+      "size": 0.1,
+      "selectivity": 0.0
+    },
+    "selectivity": {
+      "model": null,
+      "ood_similarity_min": 0.35,
+      "uncertainty_penalty": 1.0,
+      "reward_scale": 2.0
+    },
+    "conformers": {
+      "enabled": true,
+      "num_confs": 5,
+      "max_molecules": 10,
+      "max_iterations": 500
+    }
+  },
+  "inputs": {
+    "seeds_file": {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\data\\seeds.smi",
+      "sha256": "41f94f5bf11651e42c2ac219b551ffb25876f91657d9ca99a620870066fc2710"
+    },
+    "building_blocks_file": {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\data\\building_blocks.csv",
+      "sha256": "85c75438a1a27a5ffda7cd993886bb3921016df34ffa50f24a1d8e9e18fe44b2"
+    }
+  },
+  "seed_smiles": [
+    "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1"
+  ],
+  "limitations": [
+    "2D membrane proxy is not permeability/logD or membrane free energy",
+    "Template route is not experimental synthesis validation",
+    "No target affinity or selectivity is inferred without a trained model"
+  ],
+  "completed_utc": "2026-09-18T00:32:29.403310+00:00",
+  "attempts": 35,
+  "accepted": 21
+}

@@ -1,0 +1,57 @@
+{
+  "diagnostic_only": true,
+  "script_sha256": "02ef41f12932e58d6b8586282da4b0447e0786cf3d9a1e6ee99ca8986aa24018",
+  "native_helper_sha256": "c377e78f614350ee7e58f266799ebd1a7d06aa59b3074f75c4e38176184fc072",
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "receptor_sha256": "0575e3b1e27296153085ec7012f4cd09e18afb23d9cca31803cd7785e6baebdc",
+  "prepared_pdb_sha256": "4bba48703e0b62150c1db205f0eb523a06cff55837422329ef6641346785032b",
+  "vina_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+  "center": [
+    128.691875,
+    125.578875,
+    137.582083
+  ],
+  "original_box_size_A": 24,
+  "diagnostic_box_size_A": 28,
+  "cpu_per_job": 2,
+  "workers": 2,
+  "seed": 20261002,
+  "mode": "local_only",
+  "scoring": "vina, original default weights unchanged",
+  "source_results_sha256": "c7e19a93e214c31c95bc438c341a07d10b9893742930aab206f4f1afbdf59ba9",
+  "source_inputs_sha256": "d26313f3a6c5bb7e5e0078d50e2397c2421b162b40b9f76c1ff5914572693c6d",
+  "input_hashes": {
+    "nav15_native_geometry_rdkit_addhs_native_site": "fbce4c20c835bad07a393cd6294e0e773784cb434fbd9b553fedca8b72d70db8",
+    "nav15_native_geometry_rdkit_addhs_wrong_site": "bcfc16f4137bb86aa1fce67a6dc04a25f3f1ec809d214f34043ee7b2c0480019",
+    "nav15_wrong_geometry_rdkit_addhs_native_site": "cf3cae812ee8393d1792bde82a35c3d9b8ff77d7198d7fee05e40096a949bc3d",
+    "nav15_wrong_geometry_rdkit_addhs_wrong_site": "a8462116fb35f67c0a200628272b9f8caee46201df7a0776985670722bc224d1",
+    "nav15_qdn_protonated_native_geometry_rdkit_addhs_native_site": "23ba86990f477777817e03aa912eafc72331896f0374e0cdcb05526d8aa8b1ef",
+    "nav15_qdn_protonated_native_geometry_rdkit_addhs_wrong_site": "62a1fb85546b9db916cdd64a24067574cfd65546f12327f993c8eb20bb817c77",
+    "nav15_qdn_protonated_wrong_geometry_rdkit_addhs_native_site": "b3b4e401efcb32a917de2a63300e0d7f4034579baf708827dd23dd40f5be2c3b",
+    "nav15_qdn_protonated_wrong_geometry_rdkit_addhs_wrong_site": "d5c46658820cc66cae1d5a30cf383578167a03e6777c32f41ae289266ce4c43c"
+  },
+  "limitations": "Only the search box size changes. Supplied native and wrong site placements are reused; this is not independent redocking validation.",
+  "final_script_sha256": "6ec81f20dabd140ec7b9d3397949756d48bf47ef72513e6f77d4a7c33f7c6a93",
+  "post_run_metadata_correction": "Rename ambiguous output_outside_original_24_A to output_minimum_face_margin_to_original_24_A; positive means inside. No Vina inputs, logs, poses, scores or geometries changed.",
+  "margin_convention": "Signed margin to requested nominal box; positive inside. Vina rounds grid extent up by voxel spacing, so these are conservative margins."
+}

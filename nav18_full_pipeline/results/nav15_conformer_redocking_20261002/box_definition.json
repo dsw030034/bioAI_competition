@@ -1,0 +1,117 @@
+{
+  "center_xyz_A": [
+    128.691875,
+    125.578875,
+    137.582083
+  ],
+  "boxes": {
+    "pore20": 20.0,
+    "wide28": 28.0
+  },
+  "pore_definition": "6LQA QDN central cavity; documented native 4A-contact residues plus Y1767. Fixed before this run. Same center as original pipeline.",
+  "residue_audit": [
+    {
+      "residue": "B:371:GLN",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "NE2",
+      "nearest_atom_native_distance_A": 3.7480349518114084,
+      "nearest_atom_pore20_face_margin_A": 6.396124999999984
+    },
+    {
+      "residue": "B:402:PHE",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "CE1",
+      "nearest_atom_native_distance_A": 3.539320556264998,
+      "nearest_atom_pore20_face_margin_A": 4.279124999999993
+    },
+    {
+      "residue": "B:405:VAL",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "CG1",
+      "nearest_atom_native_distance_A": 2.8527181774581085,
+      "nearest_atom_pore20_face_margin_A": 3.9678750000000065
+    },
+    {
+      "residue": "B:1417:THR",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "OG1",
+      "nearest_atom_native_distance_A": 3.277384628022777,
+      "nearest_atom_pore20_face_margin_A": 4.696875000000006
+    },
+    {
+      "residue": "B:1708:THR",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "O",
+      "nearest_atom_native_distance_A": 3.640693615233217,
+      "nearest_atom_pore20_face_margin_A": 5.7051250000000095
+    },
+    {
+      "residue": "B:1710:SER",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "CB",
+      "nearest_atom_native_distance_A": 3.4001227919003045,
+      "nearest_atom_pore20_face_margin_A": 4.757083000000023
+    },
+    {
+      "residue": "B:1759:SER",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "OG",
+      "nearest_atom_native_distance_A": 3.7024108361984953,
+      "nearest_atom_pore20_face_margin_A": 3.4621250000000003
+    },
+    {
+      "residue": "B:1760:PHE",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "CA",
+      "nearest_atom_native_distance_A": 3.922773763550484,
+      "nearest_atom_pore20_face_margin_A": 3.2481250000000017
+    },
+    {
+      "residue": "B:1763:VAL",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "CG1",
+      "nearest_atom_native_distance_A": 3.579165405510067,
+      "nearest_atom_pore20_face_margin_A": 5.598124999999996
+    },
+    {
+      "residue": "B:1767:TYR",
+      "CA_inside_pore20": true,
+      "nearest_atom_to_native": "CD1",
+      "nearest_atom_native_distance_A": 6.509468872342797,
+      "nearest_atom_pore20_face_margin_A": 1.0499169999999935
+    }
+  ],
+  "experimental_pose_boundaries": {
+    "pore20": {
+      "nominal_minimum_face_margin_A": 6.059874999999991,
+      "nominal_axis_face_margins_A": [
+        6.08087500000002,
+        6.059874999999991,
+        6.523916999999983
+      ],
+      "near_nominal_boundary_within_0p05A": false,
+      "heavy_centroid_xyz": [
+        128.691875,
+        125.578875,
+        137.58208333333332
+      ]
+    },
+    "wide28": {
+      "nominal_minimum_face_margin_A": 10.059874999999991,
+      "nominal_axis_face_margins_A": [
+        10.08087500000002,
+        10.059874999999991,
+        10.523916999999983
+      ],
+      "near_nominal_boundary_within_0p05A": false,
+      "heavy_centroid_xyz": [
+        128.691875,
+        125.578875,
+        137.58208333333332
+      ]
+    }
+  },
+  "ligand_search_volume_ratio_wide_to_pore": 2.7439999999999993,
+  "receptor_cropped": false,
+  "limitations": "20A is a site-conditioned ligand search; it does not geometrically eliminate every alternate orientation. Same exhaustiveness has less search density in the larger box. Reported margins use nominal requested sizes, not rounded actual grid extent."
+}

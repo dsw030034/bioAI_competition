@@ -1,0 +1,67 @@
+{
+  "diagnostic_only": true,
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "script_sha256": "664befd5ba56df79783a3fb9ac85217dbbe94cf3a65cae13e22a087e9c43e92f",
+  "sampling_script_sha256": "9328e1f3982b38d9a4de198d705fbf0f9ee404617996ea93bfdb5604e91b1e73",
+  "receptor_sha256": "0575e3b1e27296153085ec7012f4cd09e18afb23d9cca31803cd7785e6baebdc",
+  "prepared_pdb_sha256": "4bba48703e0b62150c1db205f0eb523a06cff55837422329ef6641346785032b",
+  "reference_sha256": {
+    "nav15": "63401d14cd10f6cfbbc28d680610b9e23bad4664c85c492892cdec5d46ea8227",
+    "nav15_qdn_protonated": "115d1fb605ac0a34029886b47dc1c5e337a94b16669f58f6fb3d40bb3eba1cee"
+  },
+  "vina_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "center_xyz_A": [
+    128.691875,
+    125.578875,
+    137.582083
+  ],
+  "boxes": {
+    "pore20": 20.0,
+    "wide28": 28.0
+  },
+  "embedding_seeds": [
+    202610021,
+    202610022,
+    202610023,
+    202610024
+  ],
+  "conformers_per_seed": 128,
+  "rmsd_dedup_threshold_A": 0.75,
+  "same_state_energy_window_kcal_mol": 10.0,
+  "max_selected_per_state": 8,
+  "vina_seeds": [
+    20261011,
+    20261012,
+    20261013
+  ],
+  "exhaustiveness": 16,
+  "num_modes": 9,
+  "cpu_per_job": 2,
+  "workers": 6,
+  "timeout_seconds": 900,
+  "selection_policy": "Independent graph-only ETKDG, converged valid MMFF94s pool, energy-ordered 0.75A greedy dedup within 10 kcal same-state window; no native geometry selection.",
+  "scoring": "Original Vina defaults; original combined scorer not used or changed.",
+  "resume_script_sha256": "9681a441df60ee006264274f026b9b2f65f7b62902256b50f31a3227cee73426",
+  "recovery_note": "After interruption at 42/90, standalone diagnostic resume checks extended to reference/receptor/versions/selected-input integrity. Original script/checkpoint preserved. Docking inputs, box definitions, Vina settings, assessment and scoring algorithms unchanged.",
+  "recovery_original_script": "recovery_20261002/original_run_script.py"
+}

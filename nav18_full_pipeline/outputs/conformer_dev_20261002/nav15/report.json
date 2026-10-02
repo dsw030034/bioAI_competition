@@ -1,0 +1,1296 @@
+{
+  "reference": "nav15",
+  "diagnostic_only": true,
+  "status": "sampled",
+  "graph_isomeric_smiles": "C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12",
+  "formal_charge": 0,
+  "input_graph_sha256": "63401d14cd10f6cfbbc28d680610b9e23bad4664c85c492892cdec5d46ea8227",
+  "script_sha256": "9328e1f3982b38d9a4de198d705fbf0f9ee404617996ea93bfdb5604e91b1e73",
+  "export_helper_sha256": "c99385d04b08ced52107fde41b3c08a21f5932ae82f8af1a25d2913ab2ff8430",
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "reference_coordinates_used": false,
+  "selection_uses_reference_rmsd": false,
+  "selection_uses_receptor": false,
+  "sampling": {
+    "algorithm": "ETKDGv3",
+    "num_threads": 1,
+    "enforce_chirality": true,
+    "preoptimization_pruning": false,
+    "seeds": [
+      202610021,
+      202610022
+    ],
+    "conformers_per_seed": 4,
+    "force_field": "MMFF94s",
+    "full_geometry_minimization": true,
+    "max_iterations": [
+      1000,
+      3000
+    ]
+  },
+  "selection": {
+    "aligned_symmetry_heavy_rmsd_threshold_A": 0.75,
+    "energy_window_same_state_kcal_mol": 10.0,
+    "max_selected": 8,
+    "method": "energy-order greedy geometry representatives; window and cap applied after deduplication",
+    "energy_enters_docking_score": false
+  },
+  "counts": {
+    "attempted": 8,
+    "embedded": 8,
+    "optimized": 8,
+    "invalid": 0,
+    "embedding_failed": 0,
+    "valid": 8,
+    "duplicates": 4,
+    "unique": 4,
+    "window_excluded": 0,
+    "selection_capped": 0,
+    "selected": 4
+  },
+  "batches": [
+    {
+      "seed": 202610021,
+      "attempted": 4,
+      "embedded": 4
+    },
+    {
+      "seed": 202610022,
+      "attempted": 4,
+      "embedded": 4
+    }
+  ],
+  "selected_entries": [
+    {
+      "reference": "nav15",
+      "repeat": 0,
+      "conformer_id": "nav15_b1_e000",
+      "seed": 202610022,
+      "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c00.pdbqt",
+      "sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c00.sdf",
+      "energy_kcal_mol": 112.32493446006879,
+      "relative_energy_same_state_kcal_mol": 0.0,
+      "typing_audit": {
+        "pdbqt_sha256": "40ed66fe43193cfc37d6a80be17b33fb9ea60bdcdd2ff60bdcd66239081be40c",
+        "formal_charge": 0,
+        "pdbqt_roundtrip_rmsd_A": 0.0004854781115889392,
+        "atom_types": [
+          "A",
+          "A",
+          "A",
+          "NA",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "C",
+          "OA",
+          "HD",
+          "C",
+          "NA",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "OA",
+          "C"
+        ],
+        "torsdof": "TORSDOF 5"
+      },
+      "ring_torsions": [
+        {
+          "atoms": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "torsion_deg": 52.923553217105486
+        },
+        {
+          "atoms": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": -63.88515918905453
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            5
+          ],
+          "torsion_deg": 48.75620200455595
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            7
+          ],
+          "torsion_deg": -66.88635954507453
+        },
+        {
+          "atoms": [
+            3,
+            2,
+            11,
+            10
+          ],
+          "torsion_deg": 15.544507766269046
+        },
+        {
+          "atoms": [
+            3,
+            4,
+            5,
+            10
+          ],
+          "torsion_deg": 12.07352440481337
+        },
+        {
+          "atoms": [
+            3,
+            6,
+            7,
+            10
+          ],
+          "torsion_deg": 11.620987146818461
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": -69.15143613339193
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": 52.544845789743505
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            7
+          ],
+          "torsion_deg": 52.39788557415016
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            11
+          ],
+          "torsion_deg": -64.64454148719818
+        },
+        {
+          "atoms": [
+            5,
+            4,
+            3,
+            6
+          ],
+          "torsion_deg": -66.29018329294884
+        },
+        {
+          "atoms": [
+            5,
+            10,
+            7,
+            6
+          ],
+          "torsion_deg": -65.0858375804425
+        },
+        {
+          "atoms": [
+            6,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": 47.33588319429679
+        },
+        {
+          "atoms": [
+            6,
+            7,
+            10,
+            11
+          ],
+          "torsion_deg": 50.93325555642266
+        },
+        {
+          "atoms": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "torsion_deg": -0.3224760840911716
+        },
+        {
+          "atoms": [
+            12,
+            17,
+            16,
+            15
+          ],
+          "torsion_deg": 0.09779102249590084
+        },
+        {
+          "atoms": [
+            13,
+            12,
+            17,
+            16
+          ],
+          "torsion_deg": -0.10132494194118383
+        },
+        {
+          "atoms": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "torsion_deg": 0.3106921695763263
+        },
+        {
+          "atoms": [
+            14,
+            13,
+            12,
+            17
+          ],
+          "torsion_deg": 0.20688869986259648
+        },
+        {
+          "atoms": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "torsion_deg": -0.19489504272735764
+        },
+        {
+          "atoms": [
+            16,
+            17,
+            18,
+            21
+          ],
+          "torsion_deg": 0.030133977546938334
+        },
+        {
+          "atoms": [
+            16,
+            19,
+            20,
+            21
+          ],
+          "torsion_deg": 0.013784362546780714
+        },
+        {
+          "atoms": [
+            17,
+            16,
+            19,
+            20
+          ],
+          "torsion_deg": -0.027818476519062708
+        },
+        {
+          "atoms": [
+            17,
+            18,
+            21,
+            20
+          ],
+          "torsion_deg": -0.04435904603360492
+        },
+        {
+          "atoms": [
+            18,
+            17,
+            16,
+            19
+          ],
+          "torsion_deg": 0.0059349360253315026
+        },
+        {
+          "atoms": [
+            18,
+            21,
+            20,
+            19
+          ],
+          "torsion_deg": 0.022080359380812535
+        }
+      ]
+    },
+    {
+      "reference": "nav15",
+      "repeat": 1,
+      "conformer_id": "nav15_b1_e001",
+      "seed": 202610022,
+      "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c01.pdbqt",
+      "sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c01.sdf",
+      "energy_kcal_mol": 116.23195905717569,
+      "relative_energy_same_state_kcal_mol": 3.907024597106897,
+      "typing_audit": {
+        "pdbqt_sha256": "d3cec6945e51ccff721210bf9bb3d9b10ace5a867d6a961a86047f9505f0ba77",
+        "formal_charge": 0,
+        "pdbqt_roundtrip_rmsd_A": 0.0004912696440782946,
+        "atom_types": [
+          "A",
+          "A",
+          "A",
+          "NA",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "C",
+          "OA",
+          "HD",
+          "C",
+          "NA",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "OA",
+          "C"
+        ],
+        "torsdof": "TORSDOF 5"
+      },
+      "ring_torsions": [
+        {
+          "atoms": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "torsion_deg": 52.30238858126843
+        },
+        {
+          "atoms": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": -67.2374605043836
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            5
+          ],
+          "torsion_deg": 48.29223507709307
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            7
+          ],
+          "torsion_deg": -67.11490226079944
+        },
+        {
+          "atoms": [
+            3,
+            2,
+            11,
+            10
+          ],
+          "torsion_deg": 15.927263050609065
+        },
+        {
+          "atoms": [
+            3,
+            4,
+            5,
+            10
+          ],
+          "torsion_deg": 13.318650424428041
+        },
+        {
+          "atoms": [
+            3,
+            6,
+            7,
+            10
+          ],
+          "torsion_deg": 14.914527464933153
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": -69.29229368263223
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": 49.976368063744054
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            7
+          ],
+          "torsion_deg": 51.71695152761478
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            11
+          ],
+          "torsion_deg": -65.04850912196069
+        },
+        {
+          "atoms": [
+            5,
+            4,
+            3,
+            6
+          ],
+          "torsion_deg": -66.43017342392666
+        },
+        {
+          "atoms": [
+            5,
+            10,
+            7,
+            6
+          ],
+          "torsion_deg": -66.77175532233143
+        },
+        {
+          "atoms": [
+            6,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": 48.200390932733086
+        },
+        {
+          "atoms": [
+            6,
+            7,
+            10,
+            11
+          ],
+          "torsion_deg": 48.94689752823941
+        },
+        {
+          "atoms": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "torsion_deg": 0.04405527319575164
+        },
+        {
+          "atoms": [
+            12,
+            17,
+            16,
+            15
+          ],
+          "torsion_deg": 0.19533219563707932
+        },
+        {
+          "atoms": [
+            13,
+            12,
+            17,
+            16
+          ],
+          "torsion_deg": -0.980066970256379
+        },
+        {
+          "atoms": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "torsion_deg": -0.8435906760873089
+        },
+        {
+          "atoms": [
+            14,
+            13,
+            12,
+            17
+          ],
+          "torsion_deg": 0.8812560314089476
+        },
+        {
+          "atoms": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "torsion_deg": 0.7105297492433612
+        },
+        {
+          "atoms": [
+            16,
+            17,
+            18,
+            21
+          ],
+          "torsion_deg": -0.048430148724963096
+        },
+        {
+          "atoms": [
+            16,
+            19,
+            20,
+            21
+          ],
+          "torsion_deg": -0.15114363768648634
+        },
+        {
+          "atoms": [
+            17,
+            16,
+            19,
+            20
+          ],
+          "torsion_deg": -0.28736620189951084
+        },
+        {
+          "atoms": [
+            17,
+            18,
+            21,
+            20
+          ],
+          "torsion_deg": -0.38120878111226136
+        },
+        {
+          "atoms": [
+            18,
+            17,
+            16,
+            19
+          ],
+          "torsion_deg": 0.37839323788083384
+        },
+        {
+          "atoms": [
+            18,
+            21,
+            20,
+            19
+          ],
+          "torsion_deg": 0.4797681195321758
+        }
+      ]
+    },
+    {
+      "reference": "nav15",
+      "repeat": 2,
+      "conformer_id": "nav15_b0_e002",
+      "seed": 202610021,
+      "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c02.pdbqt",
+      "sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c02.sdf",
+      "energy_kcal_mol": 116.46926712453063,
+      "relative_energy_same_state_kcal_mol": 4.144332664461842,
+      "typing_audit": {
+        "pdbqt_sha256": "af72656b4f2f436427f31191e72686f41351cfcf2ea418ac864ee475c3cb3945",
+        "formal_charge": 0,
+        "pdbqt_roundtrip_rmsd_A": 0.0004890117120356435,
+        "atom_types": [
+          "A",
+          "A",
+          "A",
+          "NA",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "C",
+          "OA",
+          "HD",
+          "C",
+          "NA",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "OA",
+          "C"
+        ],
+        "torsdof": "TORSDOF 5"
+      },
+      "ring_torsions": [
+        {
+          "atoms": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "torsion_deg": 53.8082991320429
+        },
+        {
+          "atoms": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": -65.66135063563503
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            5
+          ],
+          "torsion_deg": 52.26374707185693
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            7
+          ],
+          "torsion_deg": -63.685771720807736
+        },
+        {
+          "atoms": [
+            3,
+            2,
+            11,
+            10
+          ],
+          "torsion_deg": 10.210163057677612
+        },
+        {
+          "atoms": [
+            3,
+            4,
+            5,
+            10
+          ],
+          "torsion_deg": 10.10390347414549
+        },
+        {
+          "atoms": [
+            3,
+            6,
+            7,
+            10
+          ],
+          "torsion_deg": 11.11818679078714
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": -65.42496172041058
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": 52.3507240370476
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            7
+          ],
+          "torsion_deg": 53.28347331523962
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            11
+          ],
+          "torsion_deg": -64.01977919228656
+        },
+        {
+          "atoms": [
+            5,
+            4,
+            3,
+            6
+          ],
+          "torsion_deg": -65.01910622152658
+        },
+        {
+          "atoms": [
+            5,
+            10,
+            7,
+            6
+          ],
+          "torsion_deg": -64.79149714061889
+        },
+        {
+          "atoms": [
+            6,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": 52.550344620322754
+        },
+        {
+          "atoms": [
+            6,
+            7,
+            10,
+            11
+          ],
+          "torsion_deg": 51.19141901956675
+        },
+        {
+          "atoms": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "torsion_deg": 0.2806834680346774
+        },
+        {
+          "atoms": [
+            12,
+            17,
+            16,
+            15
+          ],
+          "torsion_deg": 0.07807107253513061
+        },
+        {
+          "atoms": [
+            13,
+            12,
+            17,
+            16
+          ],
+          "torsion_deg": 0.3229502083091649
+        },
+        {
+          "atoms": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "torsion_deg": 0.12284167968838824
+        },
+        {
+          "atoms": [
+            14,
+            13,
+            12,
+            17
+          ],
+          "torsion_deg": -0.49473270783356804
+        },
+        {
+          "atoms": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "torsion_deg": -0.30443726159741324
+        },
+        {
+          "atoms": [
+            16,
+            17,
+            18,
+            21
+          ],
+          "torsion_deg": -0.2817892859903762
+        },
+        {
+          "atoms": [
+            16,
+            19,
+            20,
+            21
+          ],
+          "torsion_deg": -0.13111574001683668
+        },
+        {
+          "atoms": [
+            17,
+            16,
+            19,
+            20
+          ],
+          "torsion_deg": -0.015944023366924128
+        },
+        {
+          "atoms": [
+            17,
+            18,
+            21,
+            20
+          ],
+          "torsion_deg": 0.14146586889437604
+        },
+        {
+          "atoms": [
+            18,
+            17,
+            16,
+            19
+          ],
+          "torsion_deg": 0.214303516016087
+        },
+        {
+          "atoms": [
+            18,
+            21,
+            20,
+            19
+          ],
+          "torsion_deg": 0.0679130635486028
+        }
+      ]
+    },
+    {
+      "reference": "nav15",
+      "repeat": 3,
+      "conformer_id": "nav15_b1_e002",
+      "seed": 202610022,
+      "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c03.pdbqt",
+      "sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\selected\\c03.sdf",
+      "energy_kcal_mol": 120.19740862487285,
+      "relative_energy_same_state_kcal_mol": 7.872474164804061,
+      "typing_audit": {
+        "pdbqt_sha256": "d8f69e9b7c92fa180dbbda0ce607430e0021c0941b70faa0cf6a81b0160405c6",
+        "formal_charge": 0,
+        "pdbqt_roundtrip_rmsd_A": 0.0005014049343529925,
+        "atom_types": [
+          "A",
+          "A",
+          "A",
+          "NA",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "C",
+          "OA",
+          "HD",
+          "C",
+          "NA",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "C",
+          "OA",
+          "C"
+        ],
+        "torsdof": "TORSDOF 5"
+      },
+      "ring_torsions": [
+        {
+          "atoms": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "torsion_deg": 51.45361677453529
+        },
+        {
+          "atoms": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": -65.98086998965157
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            5
+          ],
+          "torsion_deg": 45.51249659886279
+        },
+        {
+          "atoms": [
+            2,
+            11,
+            10,
+            7
+          ],
+          "torsion_deg": -69.81408251645772
+        },
+        {
+          "atoms": [
+            3,
+            2,
+            11,
+            10
+          ],
+          "torsion_deg": 19.632683139982003
+        },
+        {
+          "atoms": [
+            3,
+            4,
+            5,
+            10
+          ],
+          "torsion_deg": 14.60712707007611
+        },
+        {
+          "atoms": [
+            3,
+            6,
+            7,
+            10
+          ],
+          "torsion_deg": 15.000391211920872
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": -71.56791410077903
+        },
+        {
+          "atoms": [
+            4,
+            3,
+            6,
+            7
+          ],
+          "torsion_deg": 50.235892388666834
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            7
+          ],
+          "torsion_deg": 51.324339567052746
+        },
+        {
+          "atoms": [
+            4,
+            5,
+            10,
+            11
+          ],
+          "torsion_deg": -65.0703322572726
+        },
+        {
+          "atoms": [
+            5,
+            4,
+            3,
+            6
+          ],
+          "torsion_deg": -67.20525677773612
+        },
+        {
+          "atoms": [
+            5,
+            10,
+            7,
+            6
+          ],
+          "torsion_deg": -66.86180162273682
+        },
+        {
+          "atoms": [
+            6,
+            3,
+            2,
+            11
+          ],
+          "torsion_deg": 44.70511624081835
+        },
+        {
+          "atoms": [
+            6,
+            7,
+            10,
+            11
+          ],
+          "torsion_deg": 49.138913388554386
+        },
+        {
+          "atoms": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "torsion_deg": 0.18259112573182804
+        },
+        {
+          "atoms": [
+            12,
+            17,
+            16,
+            15
+          ],
+          "torsion_deg": -0.38519653003164034
+        },
+        {
+          "atoms": [
+            13,
+            12,
+            17,
+            16
+          ],
+          "torsion_deg": 0.34939604918814976
+        },
+        {
+          "atoms": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "torsion_deg": -0.19645236691840334
+        },
+        {
+          "atoms": [
+            14,
+            13,
+            12,
+            17
+          ],
+          "torsion_deg": -0.25933041803018053
+        },
+        {
+          "atoms": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "torsion_deg": 0.30343029053921966
+        },
+        {
+          "atoms": [
+            16,
+            17,
+            18,
+            21
+          ],
+          "torsion_deg": 0.5532844490364183
+        },
+        {
+          "atoms": [
+            16,
+            19,
+            20,
+            21
+          ],
+          "torsion_deg": 0.17297887998425002
+        },
+        {
+          "atoms": [
+            17,
+            16,
+            19,
+            20
+          ],
+          "torsion_deg": 0.05370396404092797
+        },
+        {
+          "atoms": [
+            17,
+            18,
+            21,
+            20
+          ],
+          "torsion_deg": -0.3364605427510266
+        },
+        {
+          "atoms": [
+            18,
+            17,
+            16,
+            19
+          ],
+          "torsion_deg": -0.40240543323298317
+        },
+        {
+          "atoms": [
+            18,
+            21,
+            20,
+            19
+          ],
+          "torsion_deg": -0.03264929630610993
+        }
+      ]
+    }
+  ],
+  "selected_pairwise_aligned_heavy_rmsd": {
+    "conformer_ids": [
+      "nav15_b1_e000",
+      "nav15_b1_e001",
+      "nav15_b0_e002",
+      "nav15_b1_e002"
+    ],
+    "matrix_A": [
+      [
+        0.0,
+        1.8424615628778576,
+        2.3313594467960446,
+        2.266265165776439
+      ],
+      [
+        1.8424615628778576,
+        0.0,
+        1.9168971853042254,
+        1.774681898425809
+      ],
+      [
+        2.3313594467960446,
+        1.9168971853042254,
+        0.0,
+        1.7697337045166777
+      ],
+      [
+        2.266265165776439,
+        1.774681898425809,
+        1.7697337045166777,
+        0.0
+      ]
+    ]
+  },
+  "unique_pairwise_aligned_heavy_rmsd": {
+    "conformer_ids": [
+      "nav15_b1_e000",
+      "nav15_b1_e001",
+      "nav15_b0_e002",
+      "nav15_b1_e002"
+    ],
+    "matrix_A": [
+      [
+        0.0,
+        1.8424615628778576,
+        2.3313594467960446,
+        2.266265165776439
+      ],
+      [
+        1.8424615628778576,
+        0.0,
+        1.9168971853042254,
+        1.774681898425809
+      ],
+      [
+        2.3313594467960446,
+        1.9168971853042254,
+        0.0,
+        1.7697337045166777
+      ],
+      [
+        2.266265165776439,
+        1.774681898425809,
+        1.7697337045166777,
+        0.0
+      ]
+    ]
+  },
+  "all_valid_optimized_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\conformer_dev_20261002\\nav15\\all_valid_optimized.sdf",
+  "all_valid_optimized_sdf_sha256": "2a7f47d46a2e454a92526fd23460f02f62a525aec42d15cbc0a24f099aa4d082",
+  "limitations": "Isolated-ligand MMFF94s energies only rank the input pool within one chemical state. ETKDG and greedy RMSD representatives do not guarantee exhaustive ring sampling. The graph is taken from experimental QDN, but all reference conformers are removed; no reference-coordinate conformer is injected and selection is receptor independent.",
+  "selected_min_pairwise_rmsd_A": 1.7697337045166777
+}

@@ -1,0 +1,48 @@
+{
+  "tests_passed": 35,
+  "test_runtime_seconds": 16.61,
+  "test_command": "../.venv/Scripts/python.exe -m pytest -q",
+  "unique_candidates_verified": 2944,
+  "old_candidates_retained": 134,
+  "new_unique_candidates": 2810,
+  "source_event_ids_unique": 5635,
+  "validated_2d_sdf_records": 2944,
+  "virtual_blocks_with_lineage": 90,
+  "source_and_code_hashes": "verified",
+  "remote_batch_hashes_verified": 5,
+  "remote_raw_samples": 1000,
+  "invalid_model_row_retained": 1,
+  "complete_png_pages_verified": 247,
+  "complete_png_indexed_structures": 2944,
+  "comparison_pages": 7,
+  "comparison_structures": 21,
+  "visual_checks_by_assistant": [
+    "review_first/new_representatives_01.png",
+    "structure_png/main_01.png",
+    "structure_png/outside_28.png"
+  ],
+  "pilot_input_states": 19,
+  "pilot_prepared_states": 18,
+  "reloaded_3d_sdf_conformers_checked": 79,
+  "geometry_stereo_charge_roundtrip": "passed",
+  "pending_stereo_review": [
+    {
+      "candidate_id": "a218bda8a32d943d",
+      "smiles": "N=C(N)c1cccc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+      "unspecified_stereo": [
+        "Bond_Double:0"
+      ]
+    }
+  ],
+  "remote_gpu_after_sampling": {
+    "memory_used_mib": 1,
+    "utilization_percent": 0,
+    "compute_processes": 0,
+    "instance_left_running": true
+  },
+  "limits": [
+    "No activity/docking ranking",
+    "Virtual blocks not verified as purchasable or experimentally synthesizable",
+    "Pilot preserves input state; no pH prediction or tautomer enumeration"
+  ]
+}

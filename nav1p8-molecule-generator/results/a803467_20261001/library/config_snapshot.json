@@ -1,0 +1,94 @@
+{
+  "series_id": "a803467",
+  "seed_id": "A-803467",
+  "seed_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+  "attachment_scaffold": "[*:1]c1ccc(-c2ccc(C(=O)[NH]c3cc([*:2])cc([*:3])c3)o2)cc1",
+  "round2_core_smarts": "O=C(Nc1ccccc1)c1ccco1",
+  "sites": [
+    {
+      "label": 1,
+      "name": "distal_phenyl_para",
+      "original": "Cl",
+      "fragments": [
+        "Cl",
+        "F",
+        "Br",
+        "C(F)(F)F",
+        "C#N",
+        "C",
+        "",
+        "O",
+        "OC",
+        "OCC",
+        "[N+](=O)[O-]"
+      ]
+    },
+    {
+      "label": 2,
+      "name": "anilide_meta_a",
+      "original": "OC",
+      "fragments": [
+        "OC",
+        "O",
+        "OCC",
+        "OC(C)C",
+        "F",
+        "",
+        "Cl",
+        "C",
+        "C(F)(F)F",
+        "C#N",
+        "S(=O)(=O)C",
+        "N1CCOCC1",
+        "N1CCCCC1",
+        "OCCN1CCCC1",
+        "C1=NCCO1",
+        "CC#N"
+      ]
+    },
+    {
+      "label": 3,
+      "name": "anilide_meta_b",
+      "original": "OC",
+      "fragments": [
+        "OC",
+        "O",
+        "OCC",
+        "OC(C)C",
+        "F",
+        "",
+        "Cl",
+        "C",
+        "C(F)(F)F",
+        "C#N",
+        "S(=O)(=O)C",
+        "N1CCOCC1",
+        "N1CCCCC1",
+        "OCCN1CCCC1",
+        "C1=NCCO1",
+        "CC#N"
+      ]
+    }
+  ],
+  "random_seed": 20261001,
+  "budgets": {
+    "site_single": 100,
+    "site_pair": 1000,
+    "site_triple": 3000,
+    "amide_cross_product": 2500,
+    "mol2mol": 1000
+  },
+  "blocks": "../data/round2_building_blocks.csv",
+  "derive_blocks_from_scopes": [
+    "strict",
+    "expanded_round2",
+    "seed_copy"
+  ],
+  "retain_scopes": [
+    "strict",
+    "expanded_round2",
+    "outside_series"
+  ],
+  "scope_note": "Same scaffold/site boundaries as first round. New site fragments must be witnessed in reviewed strict candidates. Retention is not activity or synthesis validation.",
+  "review_context": "User broadly reviewed prior comparison figures and asked to retain existing structures; no individual activity or synthesis approval implied."
+}

@@ -1,0 +1,24 @@
+{
+  "site": "Nav1.8 Site C",
+  "state": "inactivated_or_pore-blocking_proxy",
+  "evidence_status": "literature-informed heuristic; requires docking and electrophysiology validation",
+  "structure_reference": "PDB 7WE4 Nav1.8-A-803467 complex",
+  "nav18_residues": [
+    {"residue": "Gln355", "role": "carbonyl hydrogen-bond anchor", "region": "central_cavity"},
+    {"residue": "Phe386", "role": "pore hydrophobic wall", "region": "central_cavity"},
+    {"residue": "Thr397", "role": "remote subtype-selectivity allosteric determinant", "region": "VSDI_PD_interface"},
+    {"residue": "Gly1406", "role": "remote subtype-selectivity allosteric determinant", "region": "S6_III"},
+    {"residue": "Phe1710", "role": "S6_IV drug-block determinant", "region": "central_cavity"},
+    {"residue": "Met1713", "role": "Nav1.8-enriched S6_IV environment", "region": "fenestration"},
+    {"residue": "Tyr1717", "role": "S6_IV pore-block determinant", "region": "central_cavity"}
+  ],
+  "nav15_counter_screen": {
+    "purpose": "penalize generic pore-blocker-like chemistry; not a Nav1.5 docking score",
+    "evidence": ["human Nav1.5-quinidine pore complex", "human Nav1.5 open-state gating structures"]
+  },
+  "feature_mapping": {
+    "carbonyl_anchor": "A-803467-like carbonyl interaction hypothesis near Gln355",
+    "aromatic_hydrophobe": "pore wall/fenestration hydrophobic occupancy proxy",
+    "state_dependence": "S6 pore-blocking chemistry must be validated in matched channel state"
+  }
+}

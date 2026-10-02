@@ -1,0 +1,20 @@
+{
+  "command": [
+    "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+    "-m",
+    "meeko.cli.mk_prepare_receptor",
+    "--read_pdb",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\meeko_input.pdb",
+    "-p",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\receptor.pdbqt",
+    "--write_pdb",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\prepared.pdb",
+    "-j",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\receptor.json",
+    "--default_altloc",
+    "A"
+  ],
+  "returncode": 0,
+  "stdout": "Template padding will be used.\n\u001b[32m gasteiger charges will be read from template file \n \u001b[0m\n\nFiles written:\n D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\receptor.json <-- parameterized receptor\n  D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\prepared.pdb <-- processed receptor PDB\nD:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\receptor.pdbqt <-- static (i.e., rigid) receptor input file\n",
+  "stderr": ""
+}

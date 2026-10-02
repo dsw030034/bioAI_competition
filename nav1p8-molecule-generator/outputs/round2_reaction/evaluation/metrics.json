@@ -1,0 +1,39 @@
+{
+  "method": "amide_recombination",
+  "task": "local",
+  "raw_rows_evaluated": 35,
+  "valid": 35,
+  "unique": 34,
+  "accepted_2d": 17,
+  "scaffolds": 3,
+  "budget": 300,
+  "input_sha256": "9557f0833edbbfea3b41dff5fa654eb79cfdc7fea65ca4893e467440a6de7b21",
+  "config": {
+    "generation_task": "local",
+    "seed_file": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\data\\seeds_a803467.smi",
+    "output_dir": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\round2\\local",
+    "filters": {
+      "similarity_min": 0.35,
+      "qed_min": 0.35,
+      "sa_max": 5.0,
+      "mw_min": 180.0,
+      "mw_max": 550.0,
+      "clogp_min": -0.5,
+      "clogp_max": 5.0,
+      "tpsa_min": 15.0,
+      "tpsa_max": 120.0,
+      "required_smarts": [
+        "O=C(Nc1ccccc1)c1ccco1"
+      ],
+      "num_confs": 5,
+      "max_candidates": 200,
+      "protein_word_weight": 0,
+      "site_c_weight": 0,
+      "selectivity_proxy_weight": 0,
+      "reinvent_metric_weight": 0
+    }
+  },
+  "reference_sha256": null,
+  "validity_scope": "input-file rows only; upstream filtering must be reported separately",
+  "physical_validation": "not performed; no activity/selectivity conclusions"
+}

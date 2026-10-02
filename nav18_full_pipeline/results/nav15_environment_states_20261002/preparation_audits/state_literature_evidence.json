@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\sources\\flecainide_label.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/ee9595d5-08a1-4529-9215-ddc3c7f929c4.xml",
+      "sha256": "258f41507c436b8cea7f21c38fb5f8063ce7b755875a07a37d0e13f64827117c",
+      "pKa_excerpts": []
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\sources\\ranolazine_label.xml",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/d74f3dea-7357-4e9a-be9a-2f498a44108a.xml",
+      "sha256": "ba7aacb5b9e2a5cfac8f7cc6cbe4e1a8428601893b2a63763a7e45e6e0064536",
+      "pKa_excerpts": []
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\sources\\PMC9318806.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9318806/fullTextXML",
+      "sha256": "e0a3fa24bfa35cde15552a175501d7fadd1ebe9273978b900109bf4fe11e1054",
+      "pKa_excerpts": [
+        "We performed an ensemble docking pipeline to obtain the flecainide-K v 1.5 complex ( Scheme 1 ). We started by building the structural ensembles using 300 frames from the last 30 ns of one apo K v 1.5 molecular dynamics (MD) simulations (for one of the three replicas, the details of MD simulations are described below). The grid box (25 × 25 × 25 Å 3 ) was set including residues Thr-479, Ile-502, Val-505 and Ile-508 which are likely involved in flecainide binding, as reported in mutagenesis studies [ 21 ]. Flecainide is protonated in the piperidine ring at a physiological pH (pKa 9.3, 99% charged at pH 7.4). Protonated R-flecainide was prepared with LigPrep; the ligand parameters and charges were added according to the OPLS2005 force field [ 30 , 31 , 32 ]. Flecainide was docked to each frame using Glide software [ 33 ]. The docked poses were scored using the XP (extra precision) scoring function [ 34 ]. For each frame, the 10 best scored poses were saved. The average linkage method implemented in the Maestro suite [ 35 ] was used to cluster the flecainide docked poses. The complex with the lowest XP docking score (−5.866 kcal/mol) from the most populated cluster was selected as the reference model for the flecainide-K v 1.5 complex."
+      ]
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\sources\\PMC7845660.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7845660/fullTextXML",
+      "sha256": "8d6401f1d4e511f6e433fe14aa61c56f00e9d71893c70add8ed9152792f62a8f",
+      "pKa_excerpts": [
+        "We split the optimization of flecainide in three sequential phases with increasing number of tests. First, since the drug has a high pKa of 9.3 ( Moreno et al., 2011 ), meaning it is 99% charged at physiological pH conditions, we optimized the neutral form parameters using two tests consisting of dose-dependent use-dependent block and use-dependent block, while preventing the remaining parameters from being modified during this step. Later, we fixed the neutral form parameters before starting a second phase optimization where charged flecainide variables were allowed to evolve. This phase studied the steady state availability, recovery from use-dependent block and the use-dependence of the drug’s IC 50  for the sodium current at three frequencies of 0.2, 1 and 3 Hz, as in the work performed by  Penniman et al. (2010) , who used the PatchXpress system. In phase three, we ought to reproduce flecainide’s IC 50  for I NaL  obtained by  Matsukawa et al. (2019)  with the latest recommended protocol by the Comprehensive  In-vitro  Proarrhythmia Assay (CiPA) initiative. Furthermore, we also studied the APD 90  prolongation produced by 1.5 µM flecainide on the isolated endocardial cellular model, which we set to be as low as possible (target was 0%). We allowed charged flecainide affinities for the normal and bursting modes of the sodium current to be modified during the optimization. Parameters and equations of the final flecainide model are shown in  Table 4 . We performed a sensitivity analysis of flecainide’s parameters on the APD 90  reduction of the isolated  in-silico  V411M mutated endocardial cells. The results of this analysis are included in the  Supplementary Material  ( Supplementary Figure S5B ) together with the definition of the parameters ( Supplementary Table S3 ). Our study showed that the drug-induced attenuation of the APD 90  prolongation caused by V411M was highly dependent on β4n and α4n (neutral flecainide trapping dynamics, modulated by p13 and p14). The affinity of charged flecainide for the bursting states also played a relevant role (modulated by p16). Finally, there was also a smaller yet noticeable dependence on an increase of β3+ and a decrease of α3+ (inactivation and recovery from inactivation of the channels bound to charged flecainide, modulated by p5 and p6)."
+      ]
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\sources\\PMC8410097.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8410097/fullTextXML",
+      "sha256": "5a2268582678d3b12dbba603dfc4b3dee77598ba91b9b3a631bbf84f817be551",
+      "pKa_excerpts": [
+        "Previous work postulated that both lidocaine and ranolazine bind to common residues in the Na V 1.5 channel pore ( 20 ,  31 ). However, we observed that lidocaine modulated both the DIII- and DIV-VSDs of Na V 1.5, whereas ranolazine only affected the DIII-VSD when Na V 1.5 was expressed without Na V β subunits, suggesting that these compounds may present in different orientations in the channel pore. Recent molecular dynamics simulations shed light on the detailed binding conformations of lidocaine and ranolazine within the Na V 1.5 channel ( 47 ). Interestingly, these studies revealed that 2 lidocaine molecules can bind to the pore concurrently, one to the F1760 site and the other to the central pore ( 47 ). In contrast, ranolazine binds to the F1760 residue and possesses a more flexible linear structure, allowing it to interact with a larger area ranging from the fenestration to the selectivity filter ( 47 ). Moreover, ranolazine has a pK a  of 7.2 ( 48 ) and lidocaine has a pK a  of 7.9 ( 49 ). At physiological pH, therefore, a higher percentage of ranolazine molecules are expected to be uncharged compared with lidocaine. This difference will determine the relative percentages of the drug molecules entering in the hydrophobic pathway through the fenestration versus the hydrophilic pathway via the intracellular gate. The presence of Na V β1 or Na V β3 modulates DIII-VSD and DIV-VSD dynamics, which can allosterically affect the conformation of the pore and fenestrations. We demonstrated that Na V β1/β3’s modulation of ranolazine block was not entirely dependent on the main local anesthetic binding site, F1760, suggesting the changes in the DIII-VSD conformation due to Na V β modulation are essential for determining drug accessibility to the pore, independent of binding. In contrast, eliminating the F1760 binding site abolished the effects of Na V β1/β3 coexpression on lidocaine block, further suggesting that lidocaine acts through mechanisms distinct from those of ranolazine. Because lidocaine and ranolazine have different stoichiometries, orientations within the pore, and entrance pathways, it is plausible that changing channel VSD and pore conformations in the presence of Na V β subunits can result in opposite effects on DIII-VSD interactions with these drugs."
+      ]
+    }
+  ],
+  "flecainide": "PMC9318806 explicitly describes piperidine protonation and pKa 9.3; PMC7845660 also reports pKa 9.3. +1 piperidine is a justified sensitivity state.",
+  "ranolazine": "PMC8410097 reports pKa 7.2, citing Peters et al. 2013 DOI 10.1111/bph.12150. Both neutral and singly protonated forms are relevant for sensitivity; this macroscopic pKa does not assign N13 vs N16 microstate fractions.",
+  "limitations": "Downloaded DailyMed labels did not provide pKa in searched text. Original Peters paper XML request returned HTTP500; the quoted value is verified in the secondary mechanistic paper, not independently remeasured or microstate-resolved. No numerical site populations assigned, no +2 states enumerated."
+}

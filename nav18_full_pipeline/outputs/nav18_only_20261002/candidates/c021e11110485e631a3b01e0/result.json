@@ -1,0 +1,361 @@
+{
+  "candidate_id": "090f9ce66baf9eb9",
+  "smiles": "O=C(Nc1cccc(N2CCOCC2)c1)c1ccc(-c2ccc(Br)cc2)o1",
+  "scope": "strict",
+  "series_id": "a803467",
+  "methods": "[\"site_enumeration\", \"amide_recombination\"]",
+  "submethods": "[\"site_triple\", \"amide_cross_product\"]",
+  "event_ids": "[\"expansion:5c7b0676c895:site_triple:1236\", \"expansion:5c7b0676c895:site_triple:2042\", \"expansion:5c7b0676c895:amide_cross_product:59\"]",
+  "sampling_batches": "[]",
+  "is_new_vs_baseline": "True",
+  "review_status": "new_unreviewed",
+  "mw": "427.298",
+  "logp": "4.7980000000000045",
+  "tpsa": "54.71000000000001",
+  "unassigned_stereocentres": "0",
+  "geometry_status": "not_generated_in_this_run",
+  "activity_status": "not_evaluated",
+  "constraint_reasons": "[]",
+  "core_match": "[22, 21, 20, 19, 18, 17, 16, 15, 1, 0, 2, 3, 4, 5, 6, 7, 14, 26, 25, 24]",
+  "offsite_core_atoms": "[]",
+  "R1": "Br[*:1]",
+  "R2_R3_unordered": "[\"C1CN([*:1])CCO1\", \"H\"]",
+  "changed_site_count": "3",
+  "outside_enumerator_vocabulary": "[]",
+  "change_description": "R1=Br[*:1]; R2/R3=C1CN([*:1])CCO1,H; 改变 3 个位点",
+  "mode": "nav18_only_exploration",
+  "nav15_risk": "unknown",
+  "nav15_score": null,
+  "delta": null,
+  "combined_score": null,
+  "production_gate_released": false,
+  "nav18_score": -9.289,
+  "docking_status": "ok",
+  "quality_status": "review",
+  "quality_flags": [
+    "outside_requested_box"
+  ],
+  "state_status": "pending",
+  "state_review_hints": [
+    "non_amide_amine_review"
+  ],
+  "state_policy": "input_state_preserved; protonation/tautomers not enumerated",
+  "pose_path": "candidates\\c021e11110485e631a3b01e0\\poses.pdbqt",
+  "started_at": "2026-10-02T13:21:18.966068+00:00",
+  "pose_quality": {
+    "mode": 1,
+    "affinity_kcal_mol": -9.289,
+    "contact_residues_4A": [
+      "A:1364:ALA",
+      "A:1365:THR",
+      "A:1366:PHE",
+      "A:1367:LYS",
+      "A:1413:PHE",
+      "A:1660:SER",
+      "A:1706:ILE",
+      "A:1707:ILE",
+      "A:1710:PHE",
+      "A:355:GLN",
+      "A:847:CYS"
+    ],
+    "min_protein_heavy_distance_A": 2.959361755514207,
+    "heavy_pairs_below_2A": 0,
+    "min_lipid_heavy_distance_A": 15.486284447859026,
+    "lipid_heavy_pairs_below_2A": 0,
+    "min_requested_box_edge_margin_A": -1.4210854715202004e-14,
+    "outside_requested_box": true,
+    "within_1A_of_requested_box_edge": true,
+    "geometry_issues": [],
+    "quality_flags": [
+      "outside_requested_box"
+    ],
+    "quality_status": "review",
+    "severe_quality_flags": [
+      "outside_requested_box"
+    ],
+    "all_pose_affinity_kcal_mol": [
+      -9.289,
+      -9.227,
+      -9.18,
+      -9.16,
+      -8.686,
+      -8.627,
+      -8.59,
+      -8.468
+    ],
+    "num_modes": 8,
+    "all_pose_rmsd_to_top1_A": [
+      0.0,
+      9.647254792791422,
+      2.9834117990922713,
+      2.4886173016504776,
+      8.473279377396183,
+      4.2212743687536225,
+      2.336542309260194,
+      10.369241320152383
+    ],
+    "modes": [
+      {
+        "mode": 1,
+        "affinity_kcal_mol": -9.289,
+        "contact_residues_4A": [
+          "A:1364:ALA",
+          "A:1365:THR",
+          "A:1366:PHE",
+          "A:1367:LYS",
+          "A:1413:PHE",
+          "A:1660:SER",
+          "A:1706:ILE",
+          "A:1707:ILE",
+          "A:1710:PHE",
+          "A:355:GLN",
+          "A:847:CYS"
+        ],
+        "min_protein_heavy_distance_A": 2.959361755514207,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 15.486284447859026,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": -1.4210854715202004e-14,
+        "outside_requested_box": true,
+        "within_1A_of_requested_box_edge": true,
+        "geometry_issues": [],
+        "quality_flags": [
+          "outside_requested_box"
+        ],
+        "quality_status": "review",
+        "severe_quality_flags": [
+          "outside_requested_box"
+        ]
+      },
+      {
+        "mode": 2,
+        "affinity_kcal_mol": -9.227,
+        "contact_residues_4A": [
+          "A:1364:ALA",
+          "A:1365:THR",
+          "A:1659:THR",
+          "A:1660:SER",
+          "A:1706:ILE",
+          "A:1710:PHE",
+          "A:1713:MET",
+          "A:1717:TYR",
+          "A:355:GLN",
+          "A:381:ILE",
+          "A:386:PHE"
+        ],
+        "min_protein_heavy_distance_A": 2.8240306301455114,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 5.79198765537358,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": 0.5369999999999919,
+        "outside_requested_box": false,
+        "within_1A_of_requested_box_edge": true,
+        "geometry_issues": [],
+        "quality_flags": [
+          "box_boundary_within_1A"
+        ],
+        "quality_status": "review",
+        "severe_quality_flags": []
+      },
+      {
+        "mode": 3,
+        "affinity_kcal_mol": -9.18,
+        "contact_residues_4A": [
+          "A:1361:LEU",
+          "A:1366:PHE",
+          "A:1367:LYS",
+          "A:1659:THR",
+          "A:1660:SER",
+          "A:1706:ILE",
+          "A:1707:ILE",
+          "A:1710:PHE",
+          "A:1713:MET",
+          "A:354:THR",
+          "A:355:GLN",
+          "A:847:CYS",
+          "A:848:GLY",
+          "A:849:GLU"
+        ],
+        "min_protein_heavy_distance_A": 3.0965727829327747,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 13.985885492166734,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": 1.0279999999999916,
+        "outside_requested_box": false,
+        "within_1A_of_requested_box_edge": false,
+        "geometry_issues": [],
+        "quality_flags": [],
+        "quality_status": "pass",
+        "severe_quality_flags": []
+      },
+      {
+        "mode": 4,
+        "affinity_kcal_mol": -9.16,
+        "contact_residues_4A": [
+          "A:1365:THR",
+          "A:1367:LYS",
+          "A:1413:PHE",
+          "A:1659:THR",
+          "A:1660:SER",
+          "A:1706:ILE",
+          "A:1707:ILE",
+          "A:1710:PHE",
+          "A:1713:MET",
+          "A:354:THR",
+          "A:355:GLN",
+          "A:847:CYS"
+        ],
+        "min_protein_heavy_distance_A": 3.295073140311155,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 12.992861501609251,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": -1.4210854715202004e-14,
+        "outside_requested_box": true,
+        "within_1A_of_requested_box_edge": true,
+        "geometry_issues": [],
+        "quality_flags": [
+          "outside_requested_box"
+        ],
+        "quality_status": "review",
+        "severe_quality_flags": [
+          "outside_requested_box"
+        ]
+      },
+      {
+        "mode": 5,
+        "affinity_kcal_mol": -8.686,
+        "contact_residues_4A": [
+          "A:1365:THR",
+          "A:1614:LEU",
+          "A:1658:THR",
+          "A:1659:THR",
+          "A:1660:SER",
+          "A:1706:ILE",
+          "A:1707:ILE",
+          "A:1710:PHE",
+          "A:1713:MET",
+          "A:1717:TYR",
+          "A:355:GLN",
+          "A:381:ILE",
+          "A:385:SER",
+          "A:386:PHE"
+        ],
+        "min_protein_heavy_distance_A": 3.0740517237027687,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 4.549117167099568,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": 4.275999999999982,
+        "outside_requested_box": false,
+        "within_1A_of_requested_box_edge": false,
+        "geometry_issues": [],
+        "quality_flags": [],
+        "quality_status": "pass",
+        "severe_quality_flags": []
+      },
+      {
+        "mode": 6,
+        "affinity_kcal_mol": -8.627,
+        "contact_residues_4A": [
+          "A:1364:ALA",
+          "A:1365:THR",
+          "A:1366:PHE",
+          "A:1660:SER",
+          "A:1707:ILE",
+          "A:1710:PHE",
+          "A:846:LEU",
+          "A:847:CYS"
+        ],
+        "min_protein_heavy_distance_A": 3.2196732753495323,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 16.227267083523348,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": -1.4210854715202004e-14,
+        "outside_requested_box": true,
+        "within_1A_of_requested_box_edge": true,
+        "geometry_issues": [],
+        "quality_flags": [
+          "outside_requested_box"
+        ],
+        "quality_status": "review",
+        "severe_quality_flags": [
+          "outside_requested_box"
+        ]
+      },
+      {
+        "mode": 7,
+        "affinity_kcal_mol": -8.59,
+        "contact_residues_4A": [
+          "A:1364:ALA",
+          "A:1365:THR",
+          "A:1366:PHE",
+          "A:1367:LYS",
+          "A:1413:PHE",
+          "A:1707:ILE",
+          "A:1710:PHE",
+          "A:355:GLN",
+          "A:847:CYS"
+        ],
+        "min_protein_heavy_distance_A": 3.0050440928545545,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 16.63413962307639,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": 0.8849999999999909,
+        "outside_requested_box": false,
+        "within_1A_of_requested_box_edge": true,
+        "geometry_issues": [],
+        "quality_flags": [
+          "box_boundary_within_1A"
+        ],
+        "quality_status": "review",
+        "severe_quality_flags": []
+      },
+      {
+        "mode": 8,
+        "affinity_kcal_mol": -8.468,
+        "contact_residues_4A": [
+          "A:1367:LYS",
+          "A:1658:THR",
+          "A:1659:THR",
+          "A:1713:MET",
+          "A:1717:TYR",
+          "A:355:GLN",
+          "A:378:VAL",
+          "A:382:PHE",
+          "A:385:SER",
+          "A:386:PHE"
+        ],
+        "min_protein_heavy_distance_A": 2.9569673653931527,
+        "heavy_pairs_below_2A": 0,
+        "min_lipid_heavy_distance_A": 3.776415496208019,
+        "lipid_heavy_pairs_below_2A": 0,
+        "min_requested_box_edge_margin_A": 2.9939999999999998,
+        "outside_requested_box": false,
+        "within_1A_of_requested_box_edge": false,
+        "geometry_issues": [],
+        "quality_flags": [],
+        "quality_status": "pass",
+        "severe_quality_flags": []
+      }
+    ],
+    "input_state_smiles": "O=C(Nc1cccc(N2CCOCC2)c1)c1ccc(-c2ccc(Br)cc2)o1",
+    "input_unspecified_stereo": [],
+    "chemical_identity_verified": true,
+    "stereochemistry_3d_verified": true,
+    "stereochemistry_policy": "Specified stable input stereo required; 3D reassignment must preserve it.",
+    "pose_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav18_only_20261002\\candidates\\c021e11110485e631a3b01e0\\poses.sdf",
+    "quality_scope": "Top Vina mode; no parent-pose RMSD or contact-recall requirement.",
+    "box_boundary_definition": "Heavy atom margin to requested box faces; negative is outside.",
+    "rmsd_method": "Symmetry-corrected heavy atom RMSD in receptor frame, no alignment; within molecule only."
+  },
+  "artifacts": {
+    "ligand.pdbqt": "c7ce81a6a7b6b5cd76382a4627dcfe52db4c8285d4c6777768cf8ce6d394c719",
+    "ligand.preparation.json": "e6a60ff214b467d14189db004824b4c07320ea3fcedb76e0c2da8a3513a1a86f",
+    "ligand.sdf": "3263f4c558c719da8966a417efc47212243bc102f23d412c384d9edd49ac3c17",
+    "poses.job.json": "76373a4471be285dff604647dec0b3eb07fac9dced5be107b59c9d7280a7882b",
+    "poses.log.json": "55508ea8decc9865dfc219977717b4679f6e46a9ab2d602cf1b6c8c6b5df6a33",
+    "poses.pdbqt": "935525fd03c8f14557c34c09bf4e211d3b606ab1ce7386f76c8c7abdc1553abf",
+    "poses.sdf": "d89e3356b98ccd62c99d4bf41c08f1501ea6103ceaf3e50e6f732947efc6a095"
+  },
+  "elapsed_seconds": 40.04699999999866,
+  "finished_at": "2026-10-02T13:21:59.013867+00:00"
+}

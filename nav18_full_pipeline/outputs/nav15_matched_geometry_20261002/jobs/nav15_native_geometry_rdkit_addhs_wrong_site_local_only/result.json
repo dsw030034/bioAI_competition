@@ -1,0 +1,48 @@
+{
+  "key": "nav15_native_geometry_rdkit_addhs_wrong_site",
+  "reference": "nav15",
+  "source_geometry": "native_geometry",
+  "hydrogen": "rdkit_addhs",
+  "site": "wrong_site",
+  "input_geometry": {
+    "contact_residues_4A": [
+      "B:1418:PHE",
+      "B:1454:ILE",
+      "B:1458:SER",
+      "B:1459:PHE",
+      "B:895:LEU",
+      "B:896:CYS",
+      "B:930:VAL",
+      "B:931:LEU",
+      "B:934:PHE"
+    ],
+    "min_protein_heavy_distance_A": 1.6199037351637988,
+    "heavy_pairs_below_2A": 2,
+    "fixed_frame_rmsd_A": 10.128379893748685,
+    "contact_recall": 0.0,
+    "centroid_displacement_A": 9.655760993461179,
+    "geometry_passed": false
+  },
+  "mode": "local_only",
+  "status": "ok",
+  "affinity_kcal_mol": -6.255,
+  "output_geometry": {
+    "contact_residues_4A": [
+      "B:1418:PHE",
+      "B:1454:ILE",
+      "B:1458:SER",
+      "B:1459:PHE",
+      "B:895:LEU",
+      "B:927:ASN",
+      "B:930:VAL",
+      "B:931:LEU",
+      "B:934:PHE"
+    ],
+    "min_protein_heavy_distance_A": 2.7219024596777883,
+    "heavy_pairs_below_2A": 0,
+    "fixed_frame_rmsd_A": 10.218215532404209,
+    "contact_recall": 0.0,
+    "centroid_displacement_A": 9.822011816578064,
+    "geometry_passed": false
+  }
+}

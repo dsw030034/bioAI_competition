@@ -1,0 +1,131 @@
+{
+  "signature": {
+    "smiles": "N#Cc1cc(NC(=O)c2ccc(-c3ccc(F)cc3)o2)cc(C(F)(F)F)c1",
+    "candidate_id": "ff4629e65bb036df",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "ff4629e65bb036df",
+    "smiles": "N#Cc1cc(NC(=O)c2ccc(-c3ccc(F)cc3)o2)cc(C(F)(F)F)c1",
+    "input_smiles": "N#Cc1cc(NC(=O)c2ccc(-c3ccc(F)cc3)o2)cc(C(F)(F)F)c1",
+    "state_smiles": "N#Cc1cc(NC(=O)c2ccc(-c3ccc(F)cc3)o2)cc(C(F)(F)F)c1",
+    "state_id": "ff4629e65bb036df:input:ff4629e65bb0",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 889380235,
+    "requested_conformers": 20,
+    "embedded_conformers": 6,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "ff4629e65bb036df",
+      "state_id": "ff4629e65bb036df:input:ff4629e65bb0",
+      "conformer_id": "ff4629e65bb036df:input:ff4629e65bb0:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 60.16376124396501,
+      "relative_energy_same_state": 1.7232331117611466e-08,
+      "duplicate_of": "ff4629e65bb036df:input:ff4629e65bb0:c003"
+    },
+    {
+      "candidate_id": "ff4629e65bb036df",
+      "state_id": "ff4629e65bb036df:input:ff4629e65bb0",
+      "conformer_id": "ff4629e65bb036df:input:ff4629e65bb0:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 68.00045238929154,
+      "relative_energy_same_state": 7.836691162558857
+    },
+    {
+      "candidate_id": "ff4629e65bb036df",
+      "state_id": "ff4629e65bb036df:input:ff4629e65bb0",
+      "conformer_id": "ff4629e65bb036df:input:ff4629e65bb0:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 67.9662047662904,
+      "relative_energy_same_state": 7.802443539557721
+    },
+    {
+      "candidate_id": "ff4629e65bb036df",
+      "state_id": "ff4629e65bb036df:input:ff4629e65bb0",
+      "conformer_id": "ff4629e65bb036df:input:ff4629e65bb0:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 60.16376122673268,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "ff4629e65bb036df",
+      "state_id": "ff4629e65bb036df:input:ff4629e65bb0",
+      "conformer_id": "ff4629e65bb036df:input:ff4629e65bb0:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 67.96620266863191,
+      "relative_energy_same_state": 7.8024414418992265
+    },
+    {
+      "candidate_id": "ff4629e65bb036df",
+      "state_id": "ff4629e65bb036df:input:ff4629e65bb0",
+      "conformer_id": "ff4629e65bb036df:input:ff4629e65bb0:c005",
+      "rdkit_conf_id": 5,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 68.000452247315,
+      "relative_energy_same_state": 7.836691020582315
+    }
+  ],
+  "selected_conformer_id": "ff4629e65bb036df:input:ff4629e65bb0:c003",
+  "files": {
+    "ligand.pdbqt": "0981d7fc43b3ce03a0d8e8e5325afe57cbc9048f6877fc126adbaa0e642f6f4f",
+    "ligand.sdf": "6cf13a405407dbd17e9491db847c89f256fe85aacf8a9e74c9bd9e8b4c1a15f2"
+  }
+}

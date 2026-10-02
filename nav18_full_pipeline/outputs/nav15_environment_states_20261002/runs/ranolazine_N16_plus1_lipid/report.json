@@ -1,0 +1,44 @@
+{
+  "expected_jobs": 15,
+  "completed_jobs": 15,
+  "successful_jobs": 15,
+  "distinct_input_conformers": 5,
+  "top1_protein_pass_count": 0,
+  "top1_pass_count": 0,
+  "any_mode_pass_count": 0,
+  "top1_pass_fraction": 0.0,
+  "median_top1_rmsd_A": 4.772135519801887,
+  "median_best_of_modes_rmsd_A": 4.199796331467331,
+  "top1_near_actual_grid_edge_0p05A": 4,
+  "top1_near_actual_grid_edge_0p5A": 7,
+  "includes_lipid": true,
+  "reference_diagnostic_passed": false,
+  "original_score_ensemble_winners": [
+    {
+      "conformer_id": "b1_e022",
+      "vina_seed": 20261021,
+      "affinity_kcal_mol": -8.775,
+      "top1_rmsd_A": 4.4137218695717015,
+      "top1_environment_passed": false
+    },
+    {
+      "conformer_id": "b1_e048",
+      "vina_seed": 20261022,
+      "affinity_kcal_mol": -8.883,
+      "top1_rmsd_A": 11.095366497312174,
+      "top1_environment_passed": false
+    },
+    {
+      "conformer_id": "b1_e048",
+      "vina_seed": 20261023,
+      "affinity_kcal_mol": -9.032,
+      "top1_rmsd_A": 11.20309708618919,
+      "top1_environment_passed": false
+    }
+  ],
+  "production_gate_released": false,
+  "selectivity_validated": false,
+  "condition": "ranolazine_N16_plus1_lipid",
+  "complete": true,
+  "production_code_unchanged": true
+}

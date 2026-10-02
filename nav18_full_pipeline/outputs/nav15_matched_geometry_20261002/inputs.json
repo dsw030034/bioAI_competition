@@ -1,0 +1,1164 @@
+[
+  {
+    "key": "nav15_native_geometry_rdkit_addhs_native_site",
+    "reference": "nav15",
+    "source_geometry": "native_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_native_geometry_rdkit_addhs_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 0.0,
+      "max_all_atom_internal_distance_change_A": 4.218847493575595e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "fbce4c20c835bad07a393cd6294e0e773784cb434fbd9b553fedca8b72d70db8",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 1.1157519645260855e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1708:THR",
+        "B:1710:SER",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE",
+        "B:405:VAL"
+      ],
+      "min_protein_heavy_distance_A": 2.8527181774581343,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 1.1157519645260855e-12,
+      "contact_recall": 1.0,
+      "centroid_displacement_A": 6.355287432313019e-14,
+      "geometry_passed": true
+    }
+  },
+  {
+    "key": "nav15_native_geometry_rdkit_addhs_wrong_site",
+    "reference": "nav15",
+    "source_geometry": "native_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_native_geometry_rdkit_addhs_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.5981311609052429,
+      "max_all_atom_internal_distance_change_A": 4.973799150320701e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "bcfc16f4137bb86aa1fce67a6dc04a25f3f1ec809d214f34043ee7b2c0480019",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 0.00047705070225273727,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:895:LEU",
+        "B:896:CYS",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 1.6199037351637988,
+      "heavy_pairs_below_2A": 2,
+      "fixed_frame_rmsd_A": 10.128379893748685,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 9.655760993461179,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_native_geometry_fixed_heavy_mmff_native_site",
+    "reference": "nav15",
+    "source_geometry": "native_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_native_geometry_fixed_heavy_mmff_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 144.14379459750646,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 0.0,
+      "max_all_atom_internal_distance_change_A": 4.529709940470639e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "8075a5acdd4de0382db9d8afa58ff218bff7b52c19b706b8e1b936c3a422ac37",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 1.1157519645260855e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1708:THR",
+        "B:1710:SER",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE",
+        "B:405:VAL"
+      ],
+      "min_protein_heavy_distance_A": 2.8527181774581343,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 1.1157519645260855e-12,
+      "contact_recall": 1.0,
+      "centroid_displacement_A": 6.355287432313019e-14,
+      "geometry_passed": true
+    }
+  },
+  {
+    "key": "nav15_native_geometry_fixed_heavy_mmff_wrong_site",
+    "reference": "nav15",
+    "source_geometry": "native_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_native_geometry_fixed_heavy_mmff_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 144.14379459750646,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.5981311609052429,
+      "max_all_atom_internal_distance_change_A": 4.618527782440651e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "87869d75479a877b1935ab6c91a98497ba2495cdd5460a77c2754f2a7ced096f",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 0.00047705070225273727,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:895:LEU",
+        "B:896:CYS",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 1.6199037351637988,
+      "heavy_pairs_below_2A": 2,
+      "fixed_frame_rmsd_A": 10.128379893748685,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 9.655760993461179,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_wrong_geometry_rdkit_addhs_native_site",
+    "reference": "nav15",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_wrong_geometry_rdkit_addhs_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.5981311609052429,
+      "max_all_atom_internal_distance_change_A": 6.661338147750939e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "cf3cae812ee8393d1792bde82a35c3d9b8ff77d7198d7fee05e40096a949bc3d",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 0.0004580918447910458,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1710:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE",
+        "B:406:ASN"
+      ],
+      "min_protein_heavy_distance_A": 2.784798802116357,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 1.5981311608999862,
+      "contact_recall": 0.6666666666666666,
+      "centroid_displacement_A": 5.684341886080802e-14,
+      "geometry_passed": true
+    }
+  },
+  {
+    "key": "nav15_wrong_geometry_rdkit_addhs_wrong_site",
+    "reference": "nav15",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_wrong_geometry_rdkit_addhs_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 4.404832986371046e-06,
+      "max_all_atom_internal_distance_change_A": 4.796163466380676e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "a8462116fb35f67c0a200628272b9f8caee46201df7a0776985670722bc224d1",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 1.1608334514165298e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:1462:LEU",
+        "B:892:PHE",
+        "B:895:LEU",
+        "B:896:CYS",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.9224142416844656,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 10.18722869372901,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 9.655760993461216,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_wrong_geometry_fixed_heavy_mmff_native_site",
+    "reference": "nav15",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_wrong_geometry_fixed_heavy_mmff_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 126.36565868934258,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.5981311609052429,
+      "max_all_atom_internal_distance_change_A": 6.661338147750939e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "c294dcba338595ff1e8dae0aa66aad6a09742e5ebf536fbd6381aafbf2b4e0bd",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 0.0004580918447910458,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1710:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE",
+        "B:406:ASN"
+      ],
+      "min_protein_heavy_distance_A": 2.784798802116357,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 1.5981311608999862,
+      "contact_recall": 0.6666666666666666,
+      "centroid_displacement_A": 5.684341886080802e-14,
+      "geometry_passed": true
+    }
+  },
+  {
+    "key": "nav15_wrong_geometry_fixed_heavy_mmff_wrong_site",
+    "reference": "nav15",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_wrong_geometry_fixed_heavy_mmff_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 126.36565868934258,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 4.404832986371046e-06,
+      "max_all_atom_internal_distance_change_A": 5.551115123125783e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "37d35c2022e765a2ffd5f6e1f7eea6d1d8a28170e831cd7decfa558e2d6d885d",
+      "formal_charge": 0,
+      "pdbqt_roundtrip_rmsd_A": 1.1608334514165298e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "NA",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:1462:LEU",
+        "B:892:PHE",
+        "B:895:LEU",
+        "B:896:CYS",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.9224142416844656,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 10.18722869372901,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 9.655760993461216,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_native_geometry_rdkit_addhs_native_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "native_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_native_geometry_rdkit_addhs_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 0.0,
+      "max_all_atom_internal_distance_change_A": 4.218847493575595e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "23ba86990f477777817e03aa912eafc72331896f0374e0cdcb05526d8aa8b1ef",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 1.1157519645260855e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1708:THR",
+        "B:1710:SER",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE",
+        "B:405:VAL"
+      ],
+      "min_protein_heavy_distance_A": 2.8527181774581343,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 1.1157519645260855e-12,
+      "contact_recall": 1.0,
+      "centroid_displacement_A": 6.355287432313019e-14,
+      "geometry_passed": true
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_native_geometry_rdkit_addhs_wrong_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "native_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_native_geometry_rdkit_addhs_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.6939374099991888,
+      "max_all_atom_internal_distance_change_A": 6.572520305780927e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "62a1fb85546b9db916cdd64a24067574cfd65546f12327f993c8eb20bb817c77",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 0.0004966246639040514,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:895:LEU",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.0708955370005375,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 11.16077495512462,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 10.739507715947822,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_native_geometry_fixed_heavy_mmff_native_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "native_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_native_geometry_fixed_heavy_mmff_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 169.20143283160593,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 0.0,
+      "max_all_atom_internal_distance_change_A": 4.529709940470639e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "39840ed9d3469fe83a51b41e171e9e06acff76c043098ca46ab2f7d1430699f5",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 1.1157519645260855e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1708:THR",
+        "B:1710:SER",
+        "B:1759:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:402:PHE",
+        "B:405:VAL"
+      ],
+      "min_protein_heavy_distance_A": 2.8527181774581343,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 1.1157519645260855e-12,
+      "contact_recall": 1.0,
+      "centroid_displacement_A": 6.355287432313019e-14,
+      "geometry_passed": true
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_native_geometry_fixed_heavy_mmff_wrong_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "native_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_native_geometry_fixed_heavy_mmff_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 169.20143283160593,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.6939374099991888,
+      "max_all_atom_internal_distance_change_A": 6.17284001691587e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "13ab2f12c5eca18af86bbd7f12a33394ab833d0c065127c773d42f8b88c4947d",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 0.0004966246639040514,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:895:LEU",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.0708955370005375,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 11.16077495512462,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 10.739507715947822,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_wrong_geometry_rdkit_addhs_native_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_wrong_geometry_rdkit_addhs_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.6939374099991888,
+      "max_all_atom_internal_distance_change_A": 5.3290705182007514e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "b3b4e401efcb32a917de2a63300e0d7f4034579baf708827dd23dd40f5be2c3b",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 0.0005280626391753059,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1418:PHE",
+        "B:1419:LYS",
+        "B:1710:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:405:VAL",
+        "B:406:ASN"
+      ],
+      "min_protein_heavy_distance_A": 1.584248381955841,
+      "heavy_pairs_below_2A": 1,
+      "fixed_frame_rmsd_A": 1.6939374100025024,
+      "contact_recall": 0.6666666666666666,
+      "centroid_displacement_A": 2.842170943040401e-14,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_wrong_geometry_rdkit_addhs_wrong_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "rdkit_addhs",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_wrong_geometry_rdkit_addhs_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "rdkit_addhs",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [],
+      "energy_kcal_mol": null,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 0.0,
+      "max_all_atom_internal_distance_change_A": 4.440892098500626e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "d5c46658820cc66cae1d5a30cf383578167a03e6777c32f41ae289266ce4c43c",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 1.2421566040552385e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:846:LEU",
+        "B:892:PHE",
+        "B:895:LEU",
+        "B:927:ASN",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.941695429510603,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 11.29115217954596,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 10.739507715947845,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_wrong_geometry_fixed_heavy_mmff_native_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "native_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_wrong_geometry_fixed_heavy_mmff_native_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 146.88462705118042,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 1.6939374099991888,
+      "max_all_atom_internal_distance_change_A": 4.4853010194856324e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "459214cf870259bc01b4f01f59e1b9eecb028a2f615915d588b16a274a672bd8",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 0.0005280626391753059,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1417:THR",
+        "B:1418:PHE",
+        "B:1419:LYS",
+        "B:1710:SER",
+        "B:1760:PHE",
+        "B:1763:VAL",
+        "B:371:GLN",
+        "B:405:VAL",
+        "B:406:ASN"
+      ],
+      "min_protein_heavy_distance_A": 1.584248381955841,
+      "heavy_pairs_below_2A": 1,
+      "fixed_frame_rmsd_A": 1.6939374100025024,
+      "contact_recall": 0.6666666666666666,
+      "centroid_displacement_A": 2.842170943040401e-14,
+      "geometry_passed": false
+    }
+  },
+  {
+    "key": "nav15_qdn_protonated_wrong_geometry_fixed_heavy_mmff_wrong_site",
+    "reference": "nav15_qdn_protonated",
+    "source_geometry": "wrong_geometry",
+    "hydrogen": "fixed_heavy_mmff",
+    "site": "wrong_site",
+    "ligand": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_matched_geometry_20261002\\inputs\\nav15_qdn_protonated_wrong_geometry_fixed_heavy_mmff_wrong_site.pdbqt",
+    "hydrogen_audit": {
+      "treatment": "fixed_heavy_mmff",
+      "environment": "isolated ligand; no receptor-driven hydrogen selection",
+      "minimization_codes": [
+        0
+      ],
+      "energy_kcal_mol": 146.88462705118042,
+      "max_heavy_displacement_A": 0.0
+    },
+    "placement_audit": {
+      "rigid_fit_to_site_pose_rmsd_A": 0.0,
+      "max_all_atom_internal_distance_change_A": 4.440892098500626e-14
+    },
+    "typing_audit": {
+      "pdbqt_sha256": "0b6542ab712e854b1cc0b746c9f86b5025e5b15d4c815a7fa764989c1092096a",
+      "formal_charge": 1,
+      "pdbqt_roundtrip_rmsd_A": 1.2421566040552385e-12,
+      "atom_types": [
+        "A",
+        "A",
+        "A",
+        "NA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "OA",
+        "HD",
+        "C",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "HD",
+        "C",
+        "C",
+        "OA",
+        "C"
+      ],
+      "torsdof": "TORSDOF 5"
+    },
+    "input_geometry": {
+      "contact_residues_4A": [
+        "B:1418:PHE",
+        "B:1454:ILE",
+        "B:1458:SER",
+        "B:1459:PHE",
+        "B:846:LEU",
+        "B:892:PHE",
+        "B:895:LEU",
+        "B:927:ASN",
+        "B:930:VAL",
+        "B:931:LEU",
+        "B:934:PHE"
+      ],
+      "min_protein_heavy_distance_A": 2.941695429510603,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 11.29115217954596,
+      "contact_recall": 0.0,
+      "centroid_displacement_A": 10.739507715947845,
+      "geometry_passed": false
+    }
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "diagnostic_only": true,
+  "chemical_geometry_consistent": false,
+  "usable_for_fixed_environment_diagnostic": true,
+  "pdb_id": "8F6P",
+  "lipid_residue": "6OU A2214",
+  "species": "Rattus norvegicus",
+  "states": [
+    "zwitterion",
+    "ccd_neutral"
+  ],
+  "variants": {
+    "zwitterion": {
+      "receptor_pdbqt": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\zwitterion\\receptor_with_lipid.pdbqt",
+      "protein_prepared_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\prepared.pdb",
+      "lipid_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\zwitterion\\observed_6ou.sdf",
+      "lipid_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\zwitterion\\observed_6ou.pdb",
+      "audit_json": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\zwitterion\\preparation_audit.json",
+      "receptor_sha256": "b45f408331680b3b2ad006f686e28f29bb389bf2216b4d4facdae210287945ed",
+      "formal_charge": 0,
+      "protein_lipid_geometry": {
+        "minimum_heavy_distance_A": 2.883344932539287,
+        "heavy_pairs_below_2A": 0
+      },
+      "reference_lipid_geometry": {
+        "minimum_heavy_distance_A": 3.5044597301153453,
+        "heavy_pairs_below_2A": 0
+      }
+    },
+    "ccd_neutral": {
+      "receptor_pdbqt": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\ccd_neutral\\receptor_with_lipid.pdbqt",
+      "protein_prepared_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\prepared.pdb",
+      "lipid_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\ccd_neutral\\observed_6ou.sdf",
+      "lipid_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\ccd_neutral\\observed_6ou.pdb",
+      "audit_json": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\ranolazine_lipid\\ccd_neutral\\preparation_audit.json",
+      "receptor_sha256": "02b5be7bed831523f9c55bd5c9ab33c570ff0389391246b4fedbec32daafa133",
+      "formal_charge": 0,
+      "protein_lipid_geometry": {
+        "minimum_heavy_distance_A": 2.883344932539287,
+        "heavy_pairs_below_2A": 0
+      },
+      "reference_lipid_geometry": {
+        "minimum_heavy_distance_A": 3.5044597301153453,
+        "heavy_pairs_below_2A": 0
+      }
+    }
+  },
+  "center": [
+    134.1976129032258,
+    134.01164516129032,
+    137.7760322580645
+  ],
+  "size": 24.0,
+  "reference_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\reference.sdf",
+  "protein_receptor_pdbqt": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\receptor.pdbqt",
+  "protein_prepared_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\prepared.pdb",
+  "protein_only_pairing": {
+    "receptor_pdbqt": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\receptor.pdbqt",
+    "prepared_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\prepared.pdb",
+    "sha256": "cf591e51f93ccaf126ab9e3b58b51cff0d4e60258aa8d4508206ad65213b174a"
+  },
+  "contact_validation_policy": "Use original protein prepared PDB for unchanged reference contacts. Compute lipid overlaps separately using lipid_sdf.",
+  "matched_ligand_inputs_reusable": true,
+  "ligand_input_policy": "Reuse exact frozen neutral/protonated ligand PDBQT inputs for each environment; the receptor changes only.",
+  "source_hashes": {
+    "protein_receptor": "cf591e51f93ccaf126ab9e3b58b51cff0d4e60258aa8d4508206ad65213b174a",
+    "prepared_pdb": "44a98c60a3d506498606f44c16c1b9947d5faeb96710b74794de792a5dd62942",
+    "reference_sdf": "7603f97b151994f1139c7d9289baf603411115b786292c0b64f8de27aee581ac",
+    "raw_8f6p": "96789700500975bd8c2973f8e56cc3c7c07c61301bb30e09d7eaa7182e24f17e",
+    "6ou_ccd": "590303f49185ceb5cdf7ac61badc45607c8b21441ab2c71565bcff9b087aff47",
+    "baseline_prepare_manifest": "df11dc54b4d0d24113890f6d07db3f1e7acfe93a025168a782b35b9a14353d9c"
+  },
+  "source_urls": {
+    "raw_8f6p": "https://files.rcsb.org/download/8F6P.pdb",
+    "6ou_ccd": "https://files.rcsb.org/ligands/download/6OU.cif"
+  },
+  "script_sha256": "0cc059a43d2f1cf19059f10d7b4b2a1a485931b05d58dd056ea6574039b8bf8e",
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "limitations": [
+    "Deposited C40=C41 geometry is E, conflicting with the CCD Z identity. This is an explicit fixed-coordinate occupancy diagnostic, not a validated native POPE or physical membrane restoration.",
+    "Fixed complete deposited lipid is a structural control, not a fluid membrane model.",
+    "Net-zero CCD neutral and zwitterion heads are model assumptions, not measured bound protonation.",
+    "All original rat engineered receptor preparation limitations remain; no human selectivity validation.",
+    "Same ligand inputs/seeds give matched diagnostic controls, not independent held-out validation."
+  ]
+}

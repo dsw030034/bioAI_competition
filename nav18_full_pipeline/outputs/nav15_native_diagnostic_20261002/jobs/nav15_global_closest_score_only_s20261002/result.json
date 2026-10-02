@@ -1,0 +1,61 @@
+{
+  "reference": "nav15",
+  "kind": "global_closest",
+  "input_path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_native_diagnostic_20261002\\inputs\\nav15_global_closest.pdbqt",
+  "baseline_rank": 5,
+  "baseline_score": -7.828,
+  "source_sha256": "d0a07515dd96cdbc9b2cae21996845f00fd525a9052530aa12c5edbd1a53a91b",
+  "preparation": {
+    "formal_charge": 0,
+    "smiles": "C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12",
+    "heavy_atoms": 24,
+    "hydrogen_addition_max_heavy_displacement_A": 0.0,
+    "pdbqt_roundtrip_fixed_frame_rmsd_A": 0.0,
+    "preparation": "AddHs coordinates + Meeko; no embedding or heavy-atom minimization",
+    "pdbqt_sha256": "ac45cfebc36531c19601c710e050c483f10406e993997859f3b3849fd4700b9f"
+  },
+  "input_geometry": {
+    "contact_residues_4A": [
+      "B:1416:ALA",
+      "B:1417:THR",
+      "B:1462:LEU",
+      "B:1466:ILE",
+      "B:1760:PHE",
+      "B:1763:VAL",
+      "B:1764:VAL",
+      "B:1767:TYR",
+      "B:406:ASN",
+      "B:409:LEU"
+    ],
+    "min_protein_heavy_distance_A": 3.447146936235827,
+    "heavy_pairs_below_2A": 0,
+    "fixed_frame_rmsd_A": 2.8014408718253074,
+    "contact_recall": 0.3333333333333333,
+    "centroid_displacement_A": 2.2055204329609377,
+    "geometry_passed": false
+  },
+  "mode": "score_only",
+  "seed": 20261002,
+  "status": "ok",
+  "affinity_kcal_mol": -7.609,
+  "output_geometry": {
+    "contact_residues_4A": [
+      "B:1416:ALA",
+      "B:1417:THR",
+      "B:1462:LEU",
+      "B:1466:ILE",
+      "B:1760:PHE",
+      "B:1763:VAL",
+      "B:1764:VAL",
+      "B:1767:TYR",
+      "B:406:ASN",
+      "B:409:LEU"
+    ],
+    "min_protein_heavy_distance_A": 3.447146936235827,
+    "heavy_pairs_below_2A": 0,
+    "fixed_frame_rmsd_A": 2.8014408718253074,
+    "contact_recall": 0.3333333333333333,
+    "centroid_displacement_A": 2.2055204329609377,
+    "geometry_passed": false
+  }
+}

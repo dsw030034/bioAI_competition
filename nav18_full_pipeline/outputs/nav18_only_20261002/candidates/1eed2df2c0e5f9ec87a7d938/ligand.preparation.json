@@ -1,0 +1,120 @@
+{
+  "signature": {
+    "smiles": "O=C(Nc1cc(C(F)(F)F)cc(C(F)(F)F)c1)c1ccc(-c2ccc(O)cc2)o1",
+    "candidate_id": "830f3864dc940e5d",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "830f3864dc940e5d",
+    "smiles": "O=C(Nc1cc(C(F)(F)F)cc(C(F)(F)F)c1)c1ccc(-c2ccc(O)cc2)o1",
+    "input_smiles": "O=C(Nc1cc(C(F)(F)F)cc(C(F)(F)F)c1)c1ccc(-c2ccc(O)cc2)o1",
+    "state_smiles": "O=C(Nc1cc(C(F)(F)F)cc(C(F)(F)F)c1)c1ccc(-c2ccc(O)cc2)o1",
+    "state_id": "830f3864dc940e5d:input:830f3864dc94",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "phenol_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 978625585,
+    "requested_conformers": 20,
+    "embedded_conformers": 5,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "830f3864dc940e5d",
+      "state_id": "830f3864dc940e5d:input:830f3864dc94",
+      "conformer_id": "830f3864dc940e5d:input:830f3864dc94:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 68.15940527835247,
+      "relative_energy_same_state": 5.366240571902381e-07,
+      "duplicate_of": "830f3864dc940e5d:input:830f3864dc94:c001"
+    },
+    {
+      "candidate_id": "830f3864dc940e5d",
+      "state_id": "830f3864dc940e5d:input:830f3864dc94",
+      "conformer_id": "830f3864dc940e5d:input:830f3864dc94:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 68.15940474172841,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "830f3864dc940e5d",
+      "state_id": "830f3864dc940e5d:input:830f3864dc94",
+      "conformer_id": "830f3864dc940e5d:input:830f3864dc94:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 75.83720071050433,
+      "relative_energy_same_state": 7.677795968775925
+    },
+    {
+      "candidate_id": "830f3864dc940e5d",
+      "state_id": "830f3864dc940e5d:input:830f3864dc94",
+      "conformer_id": "830f3864dc940e5d:input:830f3864dc94:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 68.16503278634401,
+      "relative_energy_same_state": 0.005628044615605177,
+      "duplicate_of": "830f3864dc940e5d:input:830f3864dc94:c001"
+    },
+    {
+      "candidate_id": "830f3864dc940e5d",
+      "state_id": "830f3864dc940e5d:input:830f3864dc94",
+      "conformer_id": "830f3864dc940e5d:input:830f3864dc94:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 76.50879194185733,
+      "relative_energy_same_state": 8.349387200128916
+    }
+  ],
+  "selected_conformer_id": "830f3864dc940e5d:input:830f3864dc94:c001",
+  "files": {
+    "ligand.pdbqt": "048386bf87b0cdc781fe96ef34d65ecc208d6ae5bf1660bbbef34bdf44bf5674",
+    "ligand.sdf": "48a758a9e86fc511c46d5ad54369dafe5d65954ae10ca1eca3f57aa5c563ceef"
+  }
+}

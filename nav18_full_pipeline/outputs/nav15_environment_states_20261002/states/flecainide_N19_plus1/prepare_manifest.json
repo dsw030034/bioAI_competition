@@ -1,0 +1,70 @@
+{
+  "state_id": "flecainide_N19_plus1",
+  "reference_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\flecainide_N19_plus1\\reference.sdf",
+  "receptor_pdbqt": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\receptor_oxt_repaired\\receptor.pdbqt",
+  "prepared_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\receptor_oxt_repaired\\prepared.pdb",
+  "center": [
+    138.95567857142854,
+    136.95260714285715,
+    135.48789285714287
+  ],
+  "smiles": "O=C(NC[C@H]1CCCC[NH2+]1)c1cc(OCC(F)(F)F)ccc1OCC(F)(F)F",
+  "formal_charge": 1,
+  "chemistry_usable": true,
+  "eligible_for_reference_redocking": true,
+  "role": "protonation_sensitivity_control",
+  "independent_experimental_reference": false,
+  "parent_reference": "rat_6uz0",
+  "parent_reference_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\reference.sdf",
+  "parent_prepare_manifest": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\prepare_manifest.json",
+  "parent_prepare_manifest_sha256": "7f9a06a143683e72415a0e6540030a5430826c4b08717339c1c394278983f84e",
+  "chemical_audit": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\flecainide_N19_plus1\\chemical_audit.json",
+  "chemical_audit_sha256": "9d47d094aa7d8cdb5a72fa549867987496671a329a5c58d1b4036d61190b7fce",
+  "protonated_ccd_atom_name": "N19",
+  "species": "Rattus norvegicus",
+  "graph_provenance": "CCD-validated parent; exactly one added proton on specified non-amide amine; deposited heavy xyz and carbon stereo preserved",
+  "sampling": {
+    "algorithm": "ETKDGv3/MMFF94s, graph_only removes native coordinates",
+    "seeds": [
+      202610031,
+      202610032
+    ],
+    "attempted": 128,
+    "dedup_RMSD_A": 0.75,
+    "same_state_energy_window_kcal_mol": 10.0,
+    "max_selected": 5
+  },
+  "source_files": {
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\reference.sdf": "a3e6a781796e3b57f871e38a3dda9ff8fbcdac05840c61d4834840c2a9eb70a1",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\prepare_manifest.json": "7f9a06a143683e72415a0e6540030a5430826c4b08717339c1c394278983f84e",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\ligand_audit.json": "fc356791176279cad0f1c2f3497064ce3d2608f48efc18ca6ecd186c0e55172d",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\receptor_oxt_repaired\\receptor.pdbqt": "3230ca385d40b6c314b3371aab642588dfa8811e33324b86669a7f1d1558ff1a",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_6uz0\\receptor_oxt_repaired\\prepared.pdb": "0a54b7288e4dc5310f8f0bdcac628e9288d99c5fcd9ea998d644ed1a1dafec57"
+  },
+  "literature_evidence": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\literature_evidence.json",
+  "script_sha256": "34ae231932b2238d7341a2cfb7626e0498274f1cb6ee2f38c581e00dbdf04df4",
+  "sample_helper_sha256": "252d7b84ed45f47629aa853431c6293e8a28df0af76ccf9be5367cbd145085bb",
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "production_gate_released": false,
+  "limitations": "Sensitivity input state only; unknown bound protonation and no microscopic populations. Rat truncated channel, protein-only parent receptor. Passing here does not create a new independent experimental validation."
+}

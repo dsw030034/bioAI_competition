@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-02",
+  "production_code_unchanged": true,
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "successful_diagnostic_tasks": {
+    "matched_geometry": 32,
+    "fixed_pose_term_checks": 16,
+    "boundary_local": 8
+  },
+  "max_term_sum_difference_from_vina_kcal_mol": 0.0003421814693407299,
+  "independent_redocking_validation_passed": false,
+  "production_gate_report": "outputs\\reference_validation_20261002_iofix\\report.json",
+  "production_gate_report_sha256": "c3f96d2cdd542991ea04f8c8006017a02ff593481d6a34e481cc3ad0171974ed",
+  "full_candidate_screening_started": false,
+  "tests": {
+    "command": "../.venv/Scripts/python.exe -B -m pytest -q -p no:cacheprovider tests scripts/test_diagnose_nav15_native.py scripts/test_diagnose_nav18_lipid.py scripts/test_diagnose_nav15_matched_geometry.py scripts/test_diagnose_nav15_terms.py",
+    "exit_code": 0,
+    "stdout_summary": "52 passed, 16 subtests passed in 16.82s"
+  },
+  "copied_artifacts": {
+    "results\\nav15_geometry_terms_20261002\\matched_report.json": {
+      "source": "outputs\\nav15_matched_geometry_20261002\\report.json",
+      "sha256": "52f413cb08d83cf969985b65a27bbe5343c33484efe608856aea101836b8d539"
+    },
+    "results\\nav15_geometry_terms_20261002\\matched_summary.csv": {
+      "source": "outputs\\nav15_matched_geometry_20261002\\summary.csv",
+      "sha256": "fa41c3461e09ba45e98a0ddf0f636a3acc88090bea4e3b46dd857f7d3080ea8f"
+    },
+    "results\\nav15_geometry_terms_20261002\\matched_manifest.json": {
+      "source": "outputs\\nav15_matched_geometry_20261002\\manifest.json",
+      "sha256": "e87a3e1f4d28993484b0cb86bcec9c5e467615e96b95d402462ae98513a0a112"
+    },
+    "results\\nav15_geometry_terms_20261002\\matched_inputs.json": {
+      "source": "outputs\\nav15_matched_geometry_20261002\\inputs.json",
+      "sha256": "d26313f3a6c5bb7e5e0078d50e2397c2421b162b40b9f76c1ff5914572693c6d"
+    },
+    "results\\nav15_geometry_terms_20261002\\terms_report.json": {
+      "source": "outputs\\nav15_terms_20261002\\report.json",
+      "sha256": "4e1fe1164f1db3154a9492bc1a03ee942e276548da90bda797c0fccd04236523"
+    },
+    "results\\nav15_geometry_terms_20261002\\terms_summary.csv": {
+      "source": "outputs\\nav15_terms_20261002\\summary.csv",
+      "sha256": "a4c8cfbcfe8f8d61bc5b95158b105448d56903e6c04d8c4e15aa230b28a0744c"
+    },
+    "results\\nav15_geometry_terms_20261002\\terms_manifest.json": {
+      "source": "outputs\\nav15_terms_20261002\\manifest.json",
+      "sha256": "79d5193281b41f4f8ed55c8916c8d99479bb93ac36f07d0ea1756566abdc6f93"
+    },
+    "results\\nav15_geometry_terms_20261002\\terms_residue_terms.csv": {
+      "source": "outputs\\nav15_terms_20261002\\residue_terms.csv",
+      "sha256": "3083ff1a86cec9bd5a0e1695842dab09dc4265d51169bb36be30e5d9745194a5"
+    },
+    "results\\nav15_geometry_terms_20261002\\terms_boundary_source_note.json": {
+      "source": "outputs\\nav15_terms_20261002\\boundary_source_note.json",
+      "sha256": "c4bd3f300bf08f1673991bdbaf4b05068008b89424da6f8ba9cc3ec873aa71da"
+    },
+    "results\\nav15_geometry_terms_20261002\\terms_README.md": {
+      "source": "outputs\\nav15_terms_20261002\\README.md",
+      "sha256": "c10c50c0f4160f21b23ba1ce3b0a1f358962d30094ea75aa4da61eaf81cfc63a"
+    },
+    "results\\nav15_geometry_terms_20261002\\boundary_report.json": {
+      "source": "outputs\\nav15_box_boundary_20261002\\report.json",
+      "sha256": "aa48cc3ea178c6cbc3545c7e411d1259d94689e8909ae44e4ddc5c9ac6d05ca1"
+    },
+    "results\\nav15_geometry_terms_20261002\\boundary_summary.csv": {
+      "source": "outputs\\nav15_box_boundary_20261002\\summary.csv",
+      "sha256": "98ad1e3dd941752551fa39f027538bf72b0e8eaee0f9dd8773cc0f0b42c29461"
+    },
+    "results\\nav15_geometry_terms_20261002\\boundary_manifest.json": {
+      "source": "outputs\\nav15_box_boundary_20261002\\manifest.json",
+      "sha256": "cc3e96af985bd129163e3da4944f5da7fd95649347ab071d23c5b49ee1447f2d"
+    },
+    "results\\nav15_geometry_terms_20261002\\boundary_README.md": {
+      "source": "outputs\\nav15_box_boundary_20261002\\README.md",
+      "sha256": "e71f334645e1b82c4c49d323244cd1431b70ec889a36c6c405d63a13678d728f"
+    }
+  },
+  "diagnostic_script_hashes": {
+    "diagnose_nav15_box_boundary.py": "6ec81f20dabd140ec7b9d3397949756d48bf47ef72513e6f77d4a7c33f7c6a93",
+    "diagnose_nav15_matched_geometry.py": "c99385d04b08ced52107fde41b3c08a21f5932ae82f8af1a25d2913ab2ff8430",
+    "diagnose_nav15_native.py": "c377e78f614350ee7e58f266799ebd1a7d06aa59b3074f75c4e38176184fc072",
+    "diagnose_nav15_terms.py": "96a6ec8fe104f5eb625159075727e0b11182327308f7a33bd3478ff718da139c",
+    "test_diagnose_nav15_matched_geometry.py": "6f2929bda8e63ef3aa38b1695d8d61125c7d94ba0996312f7c8c9deb9deb5c94",
+    "test_diagnose_nav15_native.py": "41d93d25754a4beedde0cfa3874517d466962de1a9aa5d93b94c4f8e6dc136b0",
+    "test_diagnose_nav15_terms.py": "7a434a3e0eb29072fad12c5b1abab0d49bb870906ec40d597d822ff321ddb092"
+  },
+  "note": "Boundary diagnostic corrected one metadata field after execution; original and final script hashes both retained. No production scoring changes."
+}

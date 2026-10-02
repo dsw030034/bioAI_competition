@@ -1,0 +1,44 @@
+{
+  "expected_jobs": 15,
+  "completed_jobs": 15,
+  "successful_jobs": 15,
+  "distinct_input_conformers": 5,
+  "top1_protein_pass_count": 0,
+  "top1_pass_count": 0,
+  "any_mode_pass_count": 0,
+  "top1_pass_fraction": 0.0,
+  "median_top1_rmsd_A": 5.099416979980582,
+  "median_best_of_modes_rmsd_A": 3.509754132617921,
+  "top1_near_actual_grid_edge_0p05A": 0,
+  "top1_near_actual_grid_edge_0p5A": 0,
+  "includes_lipid": false,
+  "reference_diagnostic_passed": false,
+  "original_score_ensemble_winners": [
+    {
+      "conformer_id": "b1_e060",
+      "vina_seed": 20261021,
+      "affinity_kcal_mol": -8.329,
+      "top1_rmsd_A": 5.186866085191932,
+      "top1_environment_passed": false
+    },
+    {
+      "conformer_id": "b1_e060",
+      "vina_seed": 20261022,
+      "affinity_kcal_mol": -8.372,
+      "top1_rmsd_A": 5.204547939062525,
+      "top1_environment_passed": false
+    },
+    {
+      "conformer_id": "b1_e060",
+      "vina_seed": 20261023,
+      "affinity_kcal_mol": -8.332,
+      "top1_rmsd_A": 5.250649480234396,
+      "top1_environment_passed": false
+    }
+  ],
+  "production_gate_released": false,
+  "selectivity_validated": false,
+  "condition": "flecainide_N19_plus1_protein",
+  "complete": true,
+  "production_code_unchanged": true
+}

@@ -1,0 +1,1876 @@
+{
+  "reference_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\reference.sdf",
+  "receptor_pdbqt": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\receptor.pdbqt",
+  "prepared_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor_distal_filtered\\prepared.pdb",
+  "center": [
+    134.1976129032258,
+    134.01164516129032,
+    137.7760322580645
+  ],
+  "smiles": "COc1ccccc1OC[C@H](O)CN1CCN(CC(=O)Nc2c(C)cccc2C)CC1",
+  "canonical_smiles": "COc1ccccc1OC[C@H](O)CN1CCN(CC(=O)Nc2c(C)cccc2C)CC1",
+  "state": "neutral_CCD",
+  "formalcharge": 0,
+  "formal_charge": 0,
+  "chemistry_usable": true,
+  "species": "Rattus norvegicus",
+  "chain": "A",
+  "construct": {
+    "description": "Sodium channel protein type 5 subunit alpha,Green fluorescent protein",
+    "entity_length": 1838,
+    "source_segments": [
+      {
+        "pdbx_beg_seq_num": 1,
+        "pdbx_end_seq_num": 461,
+        "pdbx_gene_src_scientific_name": "Rattus norvegicus",
+        "pdbx_gene_src_gene": "Scn5a",
+        "pdbx_host_org_cell_line": null
+      },
+      {
+        "pdbx_beg_seq_num": 462,
+        "pdbx_end_seq_num": 871,
+        "pdbx_gene_src_scientific_name": "Rattus norvegicus",
+        "pdbx_gene_src_gene": "Scn5a",
+        "pdbx_host_org_cell_line": null
+      },
+      {
+        "pdbx_beg_seq_num": 872,
+        "pdbx_end_seq_num": 1580,
+        "pdbx_gene_src_scientific_name": "Rattus norvegicus",
+        "pdbx_gene_src_gene": "Scn5a",
+        "pdbx_host_org_cell_line": null
+      },
+      {
+        "pdbx_beg_seq_num": 1581,
+        "pdbx_end_seq_num": 1838,
+        "pdbx_gene_src_scientific_name": "Aequorea victoria",
+        "pdbx_gene_src_gene": "GFP",
+        "pdbx_host_org_cell_line": null
+      }
+    ],
+    "entity_poly_metadata": {
+      "pdbx_strand_id": "A",
+      "rcsb_mutation_count": 0,
+      "rcsb_conflict_count": 5,
+      "rcsb_deletion_count": 0
+    },
+    "uniprot_alignments": [
+      {
+        "provenance_source": "SIFTS",
+        "reference_database_accession": "P15389",
+        "reference_database_name": "UniProt",
+        "aligned_regions": [
+          {
+            "entity_beg_seq_id": 1,
+            "length": 1580,
+            "ref_beg_seq_id": 1
+          }
+        ]
+      },
+      {
+        "provenance_source": "SIFTS",
+        "reference_database_accession": "P42212",
+        "reference_database_name": "UniProt",
+        "aligned_regions": [
+          {
+            "entity_beg_seq_id": 1592,
+            "length": 237,
+            "ref_beg_seq_id": 2
+          }
+        ]
+      }
+    ],
+    "original_construct_headers": [
+      "COMPND    MOL_ID: 1;                                                            ",
+      "COMPND   2 MOLECULE: SODIUM CHANNEL PROTEIN TYPE 5 SUBUNIT ALPHA,GREEN          ",
+      "COMPND   3 FLUORESCENT PROTEIN;                                                 ",
+      "COMPND   4 CHAIN: A;                                                            ",
+      "COMPND   5 SYNONYM: SODIUM CHANNEL PROTEIN CARDIAC MUSCLE SUBUNIT ALPHA,SODIUM  ",
+      "COMPND   6 CHANNEL PROTEIN TYPE V SUBUNIT ALPHA,VOLTAGE-GATED SODIUM CHANNEL    ",
+      "COMPND   7 SUBUNIT ALPHA NAV1.5, RNAV1.5C;                                      ",
+      "COMPND   8 ENGINEERED: YES                                                      ",
+      "SOURCE    MOL_ID: 1;                                                            ",
+      "SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS, AEQUOREA VICTORIA;           ",
+      "SOURCE   3 ORGANISM_COMMON: NORWAY RAT;                                         ",
+      "SOURCE   4 ORGANISM_TAXID: 10116, 6100;                                         ",
+      "SOURCE   5 GENE: SCN5A, GFP;                                                    ",
+      "SOURCE   6 EXPRESSION_SYSTEM: HOMO SAPIENS;                                     ",
+      "SOURCE   7 EXPRESSION_SYSTEM_TAXID: 9606                                        ",
+      "REMARK   2                                                                      ",
+      "REMARK   2 RESOLUTION.    3.20 ANGSTROMS.                                       ",
+      "DBREF  8F6P A    1   658  UNP    P15389   SCN5A_RAT        1    461             ",
+      "DBREF  8F6P A  659  1189  UNP    P15389   SCN5A_RAT      659   1068             ",
+      "DBREF  8F6P A 1190  1898  UNP    P15389   SCN5A_RAT     1137   1845             ",
+      "DBREF  8F6P A 1910  2146  UNP    P42212   GFP_AEQVI        2    238             ",
+      "SEQADV 8F6P GLN A  347  UNP  P15389    GLU   347 CONFLICT                       ",
+      "SEQADV 8F6P MET A 1499  UNP  P15389    ALA  1446 CONFLICT                       ",
+      "SEQADV 8F6P GLU A 1899  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P VAL A 1900  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P LEU A 1901  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P PHE A 1902  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P GLN A 1903  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P GLY A 1904  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P PRO A 1905  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P GLY A 1906  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P SER A 1907  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P MET A 1908  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P VAL A 1909  UNP  P15389              LINKER                         ",
+      "SEQADV 8F6P LEU A 1972  UNP  P42212    PHE    64 CONFLICT                       ",
+      "SEQADV 8F6P THR A 1973  UNP  P42212    SER    65 CONFLICT                       ",
+      "SEQADV 8F6P LEU A 2139  UNP  P42212    HIS   231 CONFLICT                       ",
+      "SEQADV 8F6P GLY A 2147  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P SER A 2148  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P ASP A 2149  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P TYR A 2150  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P LYS A 2151  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P ASP A 2152  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P ASP A 2153  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P ASP A 2154  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P ASP A 2155  UNP  P42212              EXPRESSION TAG                 ",
+      "SEQADV 8F6P LYS A 2156  UNP  P42212              EXPRESSION TAG                 "
+    ],
+    "deletions_in_native_rat_numbering_from_SEQADV": [],
+    "deleted_residues_count_from_SEQADV": 0,
+    "native_segment_dbref": [
+      "DBREF  8F6P A    1   658  UNP    P15389   SCN5A_RAT        1    461",
+      "DBREF  8F6P A  659  1189  UNP    P15389   SCN5A_RAT      659   1068",
+      "DBREF  8F6P A 1190  1898  UNP    P15389   SCN5A_RAT     1137   1845"
+    ],
+    "fusion_segment_dbref": [
+      "DBREF  8F6P A 1910  2146  UNP    P42212   GFP_AEQVI        2    238"
+    ],
+    "caveat": "Engineered rat Nav1.5 construct with GFP/tag sequence. RCSB mutation/deletion counters do not prove full-length native protein; source headers retained for review."
+  },
+  "ligand_audit": {
+    "residue": [
+      "A",
+      "2211"
+    ],
+    "heavy_atoms": 31,
+    "deposited_hydrogens_excluded_from_heavy_reference": 33,
+    "atom_names": [
+      "C10",
+      "C15",
+      "C17",
+      "C20",
+      "C21",
+      "C24",
+      "C26",
+      "C28",
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C12",
+      "C14",
+      "C18",
+      "C19",
+      "C23",
+      "C25",
+      "C27",
+      "C30",
+      "N09",
+      "N13",
+      "N16",
+      "O11",
+      "O22",
+      "O29",
+      "O31"
+    ],
+    "complete_ccd_heavy_graph": true,
+    "stereochemistry": [
+      {
+        "atom_name": "C20",
+        "ccd": "R",
+        "experimental_3d": "R"
+      }
+    ],
+    "coordinates": "8F6P deposited experimental PDB coordinates, exact atom-name matching; no ideal coordinates or minimization",
+    "stereo_caveat": "This validates the deposited XHO model, not enantiopure dosing or clinical enantiomer selectivity.",
+    "smiles": "COc1ccccc1OC[C@H](O)CN1CCN(CC(=O)Nc2c(C)cccc2C)CC1",
+    "formal_charge": 0
+  },
+  "hetero_audit": [
+    {
+      "chain": "A",
+      "residue": "2214",
+      "name": "6OU",
+      "observed_heavy_atoms": 49,
+      "minimum_ligand_distance_A": 3.5044597301153453,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2225",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 12.372002303588536,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2213",
+      "name": "6OU",
+      "observed_heavy_atoms": 49,
+      "minimum_ligand_distance_A": 14.065063135300898,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2226",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 15.13618806040675,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2221",
+      "name": "Y01",
+      "observed_heavy_atoms": 31,
+      "minimum_ligand_distance_A": 15.64154880438634,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2229",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 15.672937727178002,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2222",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 17.20219233121175,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2217",
+      "name": "6OU",
+      "observed_heavy_atoms": 38,
+      "minimum_ligand_distance_A": 18.140932197657307,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2227",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 19.01546423309195,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2228",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 19.1723048431846,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2230",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 19.2124586141389,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2212",
+      "name": "6OU",
+      "observed_heavy_atoms": 36,
+      "minimum_ligand_distance_A": 19.747713513214634,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2215",
+      "name": "6OU",
+      "observed_heavy_atoms": 41,
+      "minimum_ligand_distance_A": 19.823501254823782,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2216",
+      "name": "6OU",
+      "observed_heavy_atoms": 44,
+      "minimum_ligand_distance_A": 19.849266132529944,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2219",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 19.859204868272055,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2218",
+      "name": "Y01",
+      "observed_heavy_atoms": 28,
+      "minimum_ligand_distance_A": 23.114755828258293,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2224",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 24.516553305878876,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2220",
+      "name": "Y01",
+      "observed_heavy_atoms": 27,
+      "minimum_ligand_distance_A": 26.633322905713435,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2209",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 27.340873212097673,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2208",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 30.44030502475295,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2207",
+      "name": "BMA",
+      "observed_heavy_atoms": 11,
+      "minimum_ligand_distance_A": 32.4904387474223,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2204",
+      "name": "BMA",
+      "observed_heavy_atoms": 11,
+      "minimum_ligand_distance_A": 32.86646814003598,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2202",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 33.54157937545579,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2223",
+      "name": "Y01",
+      "observed_heavy_atoms": 35,
+      "minimum_ligand_distance_A": 34.35660037023455,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2206",
+      "name": "BMA",
+      "observed_heavy_atoms": 11,
+      "minimum_ligand_distance_A": 34.54316689303399,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "B",
+      "residue": "2",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 35.259227416379964,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "B",
+      "residue": "1",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 36.173586620626935,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "C",
+      "residue": "1",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 38.95600708491568,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2203",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 39.32757629196085,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2205",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 39.69000764676166,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2210",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 41.2304677756632,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "A",
+      "residue": "2201",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 41.39888604781536,
+      "excluded_from_protein_only_receptor": true
+    },
+    {
+      "chain": "C",
+      "residue": "2",
+      "name": "NAG",
+      "observed_heavy_atoms": 14,
+      "minimum_ligand_distance_A": 43.977812462649865,
+      "excluded_from_protein_only_receptor": true
+    }
+  ],
+  "receptor_audit": {
+    "status": "ok",
+    "signature": {
+      "source_sha256": "96789700500975bd8c2973f8e56cc3c7c07c61301bb30e09d7eaa7182e24f17e",
+      "chain": "A",
+      "center": [
+        134.1976129032258,
+        134.01164516129032,
+        137.7760322580645
+      ],
+      "size": 24.0,
+      "versions": {
+        "rdkit": "2026.3.6",
+        "meeko": "0.8.0",
+        "gemmi": "0.7.5",
+        "pdbfixer": "1.12.0",
+        "openmm": "8.6.1",
+        "numpy": "2.2.6"
+      },
+      "preparer_sha256": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+      "geometry_sha256": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3"
+    },
+    "original_failed_audit": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\receptor\\audit.json",
+    "max_observed_atom_displacement_A": 0.0,
+    "explicit_distant_template_exclusions": {
+      "A:300": {
+        "minimum_distance_to_box_A": 36.7069677419355,
+        "minimum_ligand_distance_A": 47.615729921949125,
+        "heavy_atoms": 8,
+        "attempt": 0,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:336": {
+        "minimum_distance_to_box_A": 19.693967741935495,
+        "minimum_ligand_distance_A": 33.09303505271161,
+        "heavy_atoms": 6,
+        "attempt": 0,
+        "reason": "Newly built CYS336 SG lies 2.278 A from observed CYS281 SG, causing a spurious extra disulfide. Source SSBOND explicitly pairs 281-327 at 2.027 A. Exclude distant 336; preserve the observed 281-327 disulfide."
+      },
+      "A:719": {
+        "minimum_distance_to_box_A": 22.6203421593447,
+        "minimum_ligand_distance_A": 39.74537742933134,
+        "heavy_atoms": 11,
+        "attempt": 0,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:1197": {
+        "minimum_distance_to_box_A": 35.33195803563161,
+        "minimum_ligand_distance_A": 47.20477329677583,
+        "heavy_atoms": 11,
+        "attempt": 1,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:1738": {
+        "minimum_distance_to_box_A": 20.249225837798765,
+        "minimum_ligand_distance_A": 32.27717357514441,
+        "heavy_atoms": 8,
+        "attempt": 2,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:283": {
+        "minimum_distance_to_box_A": 26.750967741935483,
+        "minimum_ligand_distance_A": 38.54109980267817,
+        "heavy_atoms": 11,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:298": {
+        "minimum_distance_to_box_A": 32.30996774193551,
+        "minimum_ligand_distance_A": 43.03741950907375,
+        "heavy_atoms": 8,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:722": {
+        "minimum_distance_to_box_A": 18.410793809506142,
+        "minimum_ligand_distance_A": 35.22026137041008,
+        "heavy_atoms": 8,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:726": {
+        "minimum_distance_to_box_A": 16.720213937492073,
+        "minimum_ligand_distance_A": 33.044657510708134,
+        "heavy_atoms": 8,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:768": {
+        "minimum_distance_to_box_A": 28.76525754676168,
+        "minimum_ligand_distance_A": 43.151202497728846,
+        "heavy_atoms": 9,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:769": {
+        "minimum_distance_to_box_A": 31.072013810624806,
+        "minimum_ligand_distance_A": 44.26563892004725,
+        "heavy_atoms": 8,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:772": {
+        "minimum_distance_to_box_A": 31.471053370993417,
+        "minimum_ligand_distance_A": 45.874523060191045,
+        "heavy_atoms": 8,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:777": {
+        "minimum_distance_to_box_A": 26.450182184065184,
+        "minimum_ligand_distance_A": 40.22615871544288,
+        "heavy_atoms": 12,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:782": {
+        "minimum_distance_to_box_A": 13.58314085451023,
+        "minimum_ligand_distance_A": 27.643880263088974,
+        "heavy_atoms": 14,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      },
+      "A:786": {
+        "minimum_distance_to_box_A": 20.42364525745826,
+        "minimum_ligand_distance_A": 33.27142374470923,
+        "heavy_atoms": 8,
+        "attempt": 3,
+        "reason": "Meeko rejects this residue after PDBFixer; every atom lies >8 A outside the search box. Entire residue explicitly excluded in this diagnostic receptor."
+      }
+    },
+    "retained_observed_heavy_atoms": 8270,
+    "source_observed_heavy_atoms": 8367,
+    "new_heavy_atoms_within_8A_of_reference": [],
+    "missing_loops_built": false,
+    "missing_heavy_atoms_repaired": [
+      {
+        "chain": "A",
+        "residue": "119",
+        "name": "HIS",
+        "missing_atoms": [
+          "CG",
+          "ND1",
+          "CE1",
+          "NE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "123",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "127",
+        "name": "LYS",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "140",
+        "name": "CYS",
+        "missing_atoms": [
+          "SG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "183",
+        "name": "CYS",
+        "missing_atoms": [
+          "SG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "184",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "185",
+        "name": "HIS",
+        "missing_atoms": [
+          "CG",
+          "ND1",
+          "CE1",
+          "NE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "191",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "210",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "220",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "235",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "249",
+        "name": "LYS",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "253",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "255",
+        "name": "MET",
+        "missing_atoms": [
+          "CG",
+          "SD",
+          "CE"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "289",
+        "name": "ASN",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "ND2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "291",
+        "name": "THR",
+        "missing_atoms": [
+          "CG2",
+          "OG1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "296",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "298",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "300",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "301",
+        "name": "VAL",
+        "missing_atoms": [
+          "CG1",
+          "CG2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "303",
+        "name": "ASN",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "ND2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "304",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "336",
+        "name": "CYS",
+        "missing_atoms": [
+          "SG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "355",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "358",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "425",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "427",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "428",
+        "name": "THR",
+        "missing_atoms": [
+          "CG2",
+          "OG1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "429",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "430",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "719",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "721",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "726",
+        "name": "MET",
+        "missing_atoms": [
+          "CG",
+          "SD",
+          "CE"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "745",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "747",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "748",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "751",
+        "name": "GLN",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "NE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "752",
+        "name": "VAL",
+        "missing_atoms": [
+          "CG1",
+          "CG2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "755",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "764",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "765",
+        "name": "MET",
+        "missing_atoms": [
+          "CG",
+          "SD",
+          "CE"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "766",
+        "name": "THR",
+        "missing_atoms": [
+          "CG2",
+          "OG1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "767",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "769",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "770",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "772",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "773",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "775",
+        "name": "TYR",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "OH",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "776",
+        "name": "TYR",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "OH",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "777",
+        "name": "TYR",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "OH",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "778",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "779",
+        "name": "GLN",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "NE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "786",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "788",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "791",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "792",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "793",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "794",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "795",
+        "name": "MET",
+        "missing_atoms": [
+          "CG",
+          "SD",
+          "CE"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "796",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "797",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "808",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "811",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "875",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "876",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "878",
+        "name": "LEU",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1193",
+        "name": "TRP",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "NE1",
+          "CE2",
+          "CZ2",
+          "CH2",
+          "CZ3",
+          "CE3",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1194",
+        "name": "TRP",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "NE1",
+          "CE2",
+          "CZ2",
+          "CH2",
+          "CZ3",
+          "CE3",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1195",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1197",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1198",
+        "name": "LYS",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1200",
+        "name": "CYS",
+        "missing_atoms": [
+          "SG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1202",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1205",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1207",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1210",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1215",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1282",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1291",
+        "name": "ASN",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "ND2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1302",
+        "name": "LYS",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1370",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1372",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1394",
+        "name": "GLU",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "OE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1485",
+        "name": "GLN",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "NE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1499",
+        "name": "MET",
+        "missing_atoms": [
+          "CG",
+          "SD",
+          "CE"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1506",
+        "name": "LYS",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1507",
+        "name": "LYS",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1509",
+        "name": "GLN",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "NE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1522",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1524",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1525",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1526",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1529",
+        "name": "LYS",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1530",
+        "name": "GLN",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "OE1",
+          "NE2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1585",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1586",
+        "name": "HIS",
+        "missing_atoms": [
+          "CG",
+          "ND1",
+          "CE1",
+          "NE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1588",
+        "name": "TYR",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "OH",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1589",
+        "name": "PHE",
+        "missing_atoms": [
+          "CG",
+          "CD1",
+          "CE1",
+          "CZ",
+          "CE2",
+          "CD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1590",
+        "name": "THR",
+        "missing_atoms": [
+          "CG2",
+          "OG1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1594",
+        "name": "ASN",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "ND2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1612",
+        "name": "ASP",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1613",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1626",
+        "name": "VAL",
+        "missing_atoms": [
+          "CG1",
+          "CG2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1627",
+        "name": "ILE",
+        "missing_atoms": [
+          "CG2",
+          "CG1",
+          "CD1"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1736",
+        "name": "ASN",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "ND2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1737",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1738",
+        "name": "ASN",
+        "missing_atoms": [
+          "CG",
+          "OD1",
+          "ND2"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1740",
+        "name": "SER",
+        "missing_atoms": [
+          "OG"
+        ]
+      },
+      {
+        "chain": "A",
+        "residue": "1741",
+        "name": "ARG",
+        "missing_atoms": [
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      }
+    ],
+    "backbone_nitrogen_types": {
+      "N": 1076
+    },
+    "files": {
+      "receptor.pdbqt": "cf591e51f93ccaf126ab9e3b58b51cff0d4e60258aa8d4508206ad65213b174a",
+      "prepared.pdb": "44a98c60a3d506498606f44c16c1b9947d5faeb96710b74794de792a5dd62942",
+      "receptor.json": "86143da7eca259788f7d30b0a348f815e5fdc8c59ca6efd1801f3cdb0bc62757",
+      "meeko_input.pdb": "2307e353acc624df8d92dada598c9d9da65506297ffd436bf6e4919cc4639ee7"
+    }
+  },
+  "metadata": {
+    "pdb_id": "8F6P",
+    "ligand_id": "XHO",
+    "citation": {
+      "country": "UK",
+      "id": "primary",
+      "journal_abbrev": "Nat Cardiovasc Res",
+      "journal_id_ISSN": "2731-0590",
+      "journal_volume": "2",
+      "page_first": "587",
+      "page_last": "594",
+      "pdbx_database_id_DOI": "10.1038/s44161-023-00271-5",
+      "pdbx_database_id_PubMed": 39185478,
+      "rcsb_ORCID_identifiers": [
+        "0000-0003-1284-8052",
+        "0000-0002-7406-7393",
+        "0000-0002-0033-556X",
+        "0000-0002-1039-1581",
+        "0000-0001-5509-3580"
+      ],
+      "rcsb_authors": [
+        "Lenaeus, M.",
+        "Gamal El-Din, T.M.",
+        "Tonggu, L.",
+        "Zheng, N.",
+        "Catterall, W.A."
+      ],
+      "rcsb_journal_abbrev": "Nat Cardiovasc Res",
+      "title": "Structural basis for inhibition of the cardiac sodium channel by the atypical antiarrhythmic drug ranolazine.",
+      "year": 2023
+    },
+    "resolution_A": [
+      3.2
+    ],
+    "source_records": [
+      {
+        "url": "https://files.rcsb.org/download/8F6P.pdb",
+        "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\sources\\8F6P.pdb",
+        "sha256": "96789700500975bd8c2973f8e56cc3c7c07c61301bb30e09d7eaa7182e24f17e"
+      },
+      {
+        "url": "https://files.rcsb.org/download/8F6P.cif",
+        "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\sources\\8F6P.cif",
+        "sha256": "d4d4c0b75f0068bbfdbc3e36aeefea56e38153034086c3c17f1a49cec7ea1f35"
+      },
+      {
+        "url": "https://data.rcsb.org/rest/v1/core/entry/8F6P",
+        "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\sources\\entry.json",
+        "sha256": "2654ec4be78507f845b2268e8a897152fe59328e343a04b17cae205de206d5ca"
+      },
+      {
+        "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/8F6P/1",
+        "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\sources\\polymer_entity_1.json",
+        "sha256": "3e7fc54e04fc2ac0444a6be40f48b63a2ee69f6d29953baf4ae7b38654200243"
+      },
+      {
+        "url": "https://files.rcsb.org/ligands/download/XHO.cif",
+        "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\sources\\XHO.cif",
+        "sha256": "c4f7f58490faca2965e1b8037b6f9861292c6be0d48bc5a17bd2a3140b12e660"
+      },
+      {
+        "url": "https://data.rcsb.org/rest/v1/core/chemcomp/XHO",
+        "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\rat_8f6p\\sources\\XHO_metadata.json",
+        "sha256": "31113fd56636787081de4ebf02b008ece8eb12c0eff84079692701e744cc9d78"
+      }
+    ],
+    "scope": "Rat structural/mechanistic reference only; protein-only receptor excludes contacting 6OU lipid A2214 at 3.504 A"
+  },
+  "production_code_hashes_before": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "production_code_hashes_after": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "script_sha256": "48eb735198e3738ff30cf0f5b6de19ab168f86a5ab41ab37763e13130c82b154",
+  "artifacts_sha256": {
+    "reference_sdf": "7603f97b151994f1139c7d9289baf603411115b786292c0b64f8de27aee581ac",
+    "receptor_pdbqt": "cf591e51f93ccaf126ab9e3b58b51cff0d4e60258aa8d4508206ad65213b174a"
+  }
+}

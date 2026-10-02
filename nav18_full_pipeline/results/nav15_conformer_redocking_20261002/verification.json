@@ -1,0 +1,150 @@
+{
+  "successful_jobs": 90,
+  "production_code_unchanged": true,
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "production_gate_released": false,
+  "tests": {
+    "passed": 62,
+    "subtests_passed": 16
+  },
+  "preservation_evidence": {
+    "completed_jobs": 90,
+    "successful_jobs": 90,
+    "original_42_cached_jobs": {
+      "source": "recovery_20261002/completed_artifacts.json",
+      "artifact_count": 126,
+      "sha256_and_mtime_unchanged": true
+    },
+    "retry_89_cached_jobs": {
+      "source": "timeout_retry_20261002/successful_artifacts.json",
+      "artifact_count": 267,
+      "sha256_and_mtime_unchanged": true
+    },
+    "original_42_assessments_unchanged": true,
+    "production_code_unchanged": true,
+    "original_scoring_contract_unchanged": true,
+    "timeout_retry_same_parameters": true,
+    "failed_attempt_preserved": "timeout_retry_20261002/poses.log.json"
+  },
+  "copied_artifacts": {
+    "report.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\report.json",
+      "sha256": "0510b238694e5993935b61b0cedb703dac2f55fabb96f9e305aa01bfa39eb44e"
+    },
+    "results.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\results.json",
+      "sha256": "ab5b1926723b814d92426e78a672ebe6c87f64f899aab7d2c1ecdb9dbb93281f"
+    },
+    "summary.csv": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\summary.csv",
+      "sha256": "bab08268dcac8e34f726b8f218cd6c41e4b957d232c7e158acd9fdd1a08fef31"
+    },
+    "jobs_summary.csv": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\jobs_summary.csv",
+      "sha256": "c9ccd1d969d9c02ce7d96fed21f5df728b6889cadae9a1a389a7df1dd2bace2a"
+    },
+    "manifest.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\manifest.json",
+      "sha256": "6d38274bc102be0b5ec9acb518f0499e4a1d2960b81ef726369b04e0c8c5e9b2"
+    },
+    "box_definition.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\box_definition.json",
+      "sha256": "88a6d8b07df18067df9998d82441521f296f88ebd0eaaa70c71e5ad55cfe4f46"
+    },
+    "coverage_audit.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\coverage_audit.json",
+      "sha256": "7551e228e45c6d838a5ef0cc574d888b59b18928fcb550c74ecd2c48bbd4bb2d"
+    },
+    "ring_coverage_audit.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\ring_coverage_audit.json",
+      "sha256": "274254d07a9fb22bbbf74cd1a3d1026f3dff37ca5a30eb87fe8bcf7c150fcb39"
+    },
+    "boundary_grid_audit.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\boundary_grid_audit.json",
+      "sha256": "c769c27d426861142c176a22d21d59c3706b8353bc0c6a91dfe2118fb7cc4a76"
+    },
+    "input_integrity.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\input_integrity.json",
+      "sha256": "44db7c31de9100a5395b2a57886fae5625feba468910b216f7ef85f80ae9f858"
+    },
+    "preservation_evidence.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\preservation_evidence.json",
+      "sha256": "75275169cfc52e8909ac0acb9f5b874b8f7857b63b70117be4d3a6f1ce367f0b"
+    },
+    "nav15_sampling_report.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\ligands\\nav15\\report.json",
+      "sha256": "d1058b82b25e2fb3301fc5a73b50b084f28a209f1ce08bec8b0709e98dc120e0"
+    },
+    "nav15_sampling_energy_audit.csv": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\ligands\\nav15\\energy_audit.csv",
+      "sha256": "699c3faf28f0ad2f7a587d6f29d51909ecf9e9d219afb62737f1db1246f8a464"
+    },
+    "nav15_qdn_protonated_sampling_report.json": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\ligands\\nav15_qdn_protonated\\report.json",
+      "sha256": "bfe18531d6a2a73130770dbb7c7beb2faf9004cd8cf708336e45cab38f4d98e7"
+    },
+    "nav15_qdn_protonated_sampling_energy_audit.csv": {
+      "source": "outputs\\nav15_conformer_redocking_20261002\\ligands\\nav15_qdn_protonated\\energy_audit.csv",
+      "sha256": "0f44c7b6ccd47011b00d78f6d35de0fd0d7670eff8766be917db9e445478cf0d"
+    }
+  },
+  "packager_sha256": "dc8917dbfdeabce08b286b9cffc19fbddbd6870f0526186fc653f302770e9888",
+  "generated_artifacts": {
+    "boundary_grid_audit.json": "c769c27d426861142c176a22d21d59c3706b8353bc0c6a91dfe2118fb7cc4a76",
+    "box_definition.json": "88a6d8b07df18067df9998d82441521f296f88ebd0eaaa70c71e5ad55cfe4f46",
+    "comparison.csv": "8587c830ea13e95eba499e56f493b5b8c53be0873c9e386b5045794283389aa0",
+    "coverage_audit.json": "7551e228e45c6d838a5ef0cc574d888b59b18928fcb550c74ecd2c48bbd4bb2d",
+    "input_integrity.json": "44db7c31de9100a5395b2a57886fae5625feba468910b216f7ef85f80ae9f858",
+    "jobs_summary.csv": "c9ccd1d969d9c02ce7d96fed21f5df728b6889cadae9a1a389a7df1dd2bace2a",
+    "manifest.json": "6d38274bc102be0b5ec9acb518f0499e4a1d2960b81ef726369b04e0c8c5e9b2",
+    "nav15_qdn_protonated_sampling_energy_audit.csv": "0f44c7b6ccd47011b00d78f6d35de0fd0d7670eff8766be917db9e445478cf0d",
+    "nav15_qdn_protonated_sampling_report.json": "bfe18531d6a2a73130770dbb7c7beb2faf9004cd8cf708336e45cab38f4d98e7",
+    "nav15_sampling_energy_audit.csv": "699c3faf28f0ad2f7a587d6f29d51909ecf9e9d219afb62737f1db1246f8a464",
+    "nav15_sampling_report.json": "d1058b82b25e2fb3301fc5a73b50b084f28a209f1ce08bec8b0709e98dc120e0",
+    "passing_output_poses.csv": "f9b7c0f6978edcc12f2d4cd85fdeeb1311df0298873eef525e461aedc55e1e42",
+    "passing_output_poses.json": "bea0b12745c915547a215318b63798cc5b3a010aed238000c8dec830ea3b64c3",
+    "preservation_evidence.json": "75275169cfc52e8909ac0acb9f5b874b8f7857b63b70117be4d3a6f1ce367f0b",
+    "README.md": "1460a54e1e14dd22af645ba23753da039157d3ac0b693b97744971af2144f81f",
+    "report.json": "0510b238694e5993935b61b0cedb703dac2f55fabb96f9e305aa01bfa39eb44e",
+    "representative_poses.json": "803316a31b1e159bd815cbe78b3bcf28ea124dd131e35e35ceeb4f273a38fbdf",
+    "results.json": "ab5b1926723b814d92426e78a672ebe6c87f64f899aab7d2c1ecdb9dbb93281f",
+    "ring_coverage_audit.json": "274254d07a9fb22bbbf74cd1a3d1026f3dff37ca5a30eb87fe8bcf7c150fcb39",
+    "summary.csv": "bab08268dcac8e34f726b8f218cd6c41e4b957d232c7e158acd9fdd1a08fef31",
+    "structures\\nav15_experimental.pdb": "1a4e3c9593358163addbab3d9a514d992377a345b7250856e54e4f5f1a746b47",
+    "structures\\nav15_experimental.sdf": "63401d14cd10f6cfbbc28d680610b9e23bad4664c85c492892cdec5d46ea8227",
+    "structures\\nav15_pore20_closest_experimental_diagnostic.pdb": "4f596ef10293c23c1be5728de4917321dfbd051455c99731cd415a383e0a28ff",
+    "structures\\nav15_pore20_closest_experimental_diagnostic.sdf": "2957d9b459ecc5aea8fc900acfedd09b7b27a5e057f85f58055c97e5fe819fe0",
+    "structures\\nav15_pore20_compare.pml": "bc6e45f2407f4a951d5fdb9e85f739a5886dc6b2a616e01634f9bfd20bad6bb7",
+    "structures\\nav15_pore20_lowest_score_top1.pdb": "7c00ff2ccb96f5752e697b8e08e3520cdc17bef98c9d0bef8a70be92fa5a0fc0",
+    "structures\\nav15_pore20_lowest_score_top1.sdf": "0d45f8ba761c5bc6cd792892c536d2027264d837966422a49cb88a27c8dedf0d",
+    "structures\\nav15_qdn_protonated_experimental.pdb": "72ee0a08101b6a509379bdf897276f40dc421db5221a4b2fffce20da03c6644d",
+    "structures\\nav15_qdn_protonated_experimental.sdf": "115d1fb605ac0a34029886b47dc1c5e337a94b16669f58f6fb3d40bb3eba1cee",
+    "structures\\nav15_qdn_protonated_pore20_closest_experimental_diagnostic.pdb": "156989d3bc4c22015110bd3435de322dd0b9b2436ea20ad094b15832095fe80b",
+    "structures\\nav15_qdn_protonated_pore20_closest_experimental_diagnostic.sdf": "3144ae1f8644db0f00dac7b2c7bc9ba55c8043c5fdadac974a25ad4772ddba8b",
+    "structures\\nav15_qdn_protonated_pore20_compare.pml": "b127df72e2ad5c7527597aac03f17d717585e12ed9d353cf57613c5c8c76f892",
+    "structures\\nav15_qdn_protonated_pore20_lowest_score_top1.pdb": "7efd58bfdd30c92ef1aa2b9c967f21d3afaed9bbd2e4a6e0141b737ec24de1f3",
+    "structures\\nav15_qdn_protonated_pore20_lowest_score_top1.sdf": "abca9ce29f78cf2f8c405b4f1592be60ebac9ec9fb62ef435519e5ad581a5f19",
+    "structures\\nav15_qdn_protonated_wide28_closest_experimental_diagnostic.pdb": "9cddb1dd60beda14df984e768c10190a326e0f8a28de41c99080e6b86eebac07",
+    "structures\\nav15_qdn_protonated_wide28_closest_experimental_diagnostic.sdf": "ebb39889f1bc5322ebd23680864dd6f50ea621c7f43e7d5e30865ce333d97568",
+    "structures\\nav15_qdn_protonated_wide28_compare.pml": "e9778c7150e19458e74f6bd16cbff6d33179b961aee08bb5dee6304e3d7d9a42",
+    "structures\\nav15_qdn_protonated_wide28_lowest_score_top1.pdb": "421295edd3f16ce72d19c8c13d6facc53972bef72640e423dcc3b995822b83da",
+    "structures\\nav15_qdn_protonated_wide28_lowest_score_top1.sdf": "5c52291eb476fc216e50a77103a23144f1f0723d1dd8ecd34dae12af2355e259",
+    "structures\\nav15_wide28_closest_experimental_diagnostic.pdb": "78d1b5484a91bc814c032604b2097e175cd34a4dee6b030a4027b8d43781c8a0",
+    "structures\\nav15_wide28_closest_experimental_diagnostic.sdf": "9824375f3950b25972698b7bb3ef052e814eb03dcea1c33702bb77dfaade65af",
+    "structures\\nav15_wide28_compare.pml": "dcaf02c2a51af82b91a7c52287cce46084632a9e19a411b8f8daa3884b0c6bfe",
+    "structures\\nav15_wide28_lowest_score_top1.pdb": "ee6e3515dc2e025c307a9b33d9b1fd98b69ebe07502718a8b928907785fdd459",
+    "structures\\nav15_wide28_lowest_score_top1.sdf": "fa4da0fc1316e0fa8588f84d79362406425c67da55355590de920ea14258abc7"
+  }
+}

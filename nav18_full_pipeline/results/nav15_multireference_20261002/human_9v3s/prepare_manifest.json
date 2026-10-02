@@ -1,0 +1,130 @@
+{
+  "reference_id": "human_9v3s",
+  "pdb_id": "9V3S",
+  "chain": "A",
+  "species": "Homo sapiens",
+  "source_path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\source\\9V3S.cif",
+  "protein_observed_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\protein_observed.pdb",
+  "reference_sdf": null,
+  "ligand_smiles": null,
+  "reference_ccd_unvalidated_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\reference_ccd_unvalidated.sdf",
+  "reference_azo_hypothesis_unvalidated_sdf": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\reference_azo_hypothesis_unvalidated.sdf",
+  "center": [
+    137.3978684210526,
+    137.31576315789474,
+    139.05192105263157
+  ],
+  "box_size_A": 24.0,
+  "ligand_component": "A1EQU",
+  "build": "Human Nav1.5S, N-terminal twin-Strep/FLAG; deletions 461-657, 1066-1187, 1895-2016 (paper author numbering); not a full-length wild-type channel.",
+  "resolution_A": 3.0,
+  "paper_doi": "10.1038/s41467-026-70305-6",
+  "status": "ligand_chemistry_conflict_excluded_from_redocking",
+  "eligible_for_reference_redocking": false,
+  "ligand_chemistry_audit": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\chemical_audit.json",
+  "environment_audit": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\environment_audit.json",
+  "sources": [
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\source\\9V3S.cif",
+      "url": "https://files.rcsb.org/download/9V3S.cif",
+      "sha256": "96a81df8ade21c5c8359009d8cc37297ac8b0b709962df63d3cf2354c8a55c02"
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\source\\A1EQU.cif",
+      "url": "https://files.rcsb.org/ligands/download/A1EQU.cif",
+      "sha256": "18a8daf6cefa1fa924ca4d2a38d8634d792258d7598de53e497ff814699a7bc9"
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\source\\entry.json",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/9V3S",
+      "sha256": "7d2af421eadb80228f8d6d36904050801638096c055a52d6dfa5f27675765a79"
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\source\\polymer_1.json",
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/9V3S/1",
+      "sha256": "b0651243edc776e6da0d835471fe85a7d845a67404d801d8f9f8e06e76679e10"
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\source\\ligand_metadata.json",
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/A1EQU",
+      "sha256": "080e3d3040c341e0c6d8403ae4e5bc2aee673ffbf3b0738f0da4d3086a3e9ba6"
+    },
+    {
+      "path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\source\\paper.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13103313/fullTextXML",
+      "sha256": "b0e709607474e2fe18faa48ac4335ada46d274b113b4fcd223bd96a8624d12b8"
+    }
+  ],
+  "production_code_hashes_before": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "supplementary_access_attempts": [
+    {
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41467-026-70305-6/MediaObjects/41467_2026_70305_MOESM1_ESM.pdf",
+      "outcome": "TLS SSLEOFError in urllib; PDF not retrieved"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13103313/bin/41467_2026_70305_MOESM1_ESM.pdf",
+      "outcome": "HTTP 200 text/html challenge, not PDF; no supplementary chemical drawing verified"
+    }
+  ],
+  "pdb_download_note": "RCSB marks pdb_format_compatible=N because of 5-character ligand ID; original mmCIF retained, protein-only PDB converted using author atom/residue identifiers.",
+  "receptor_pdbqt": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\receptor.pdbqt",
+  "prepared_pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\receptor\\prepared.pdb",
+  "receptor_status": "ok",
+  "receptor_sha256": "04422bfca9914bca87877e1f7c74062a5d135604a61860bfd67ad0d703837888",
+  "reference_geometry": {
+    "contact_residues_4A": [
+      "A:1345:TRP",
+      "A:1416:ALA",
+      "A:1417:THR",
+      "A:1458:SER",
+      "A:1461:THR",
+      "A:1462:LEU",
+      "A:1760:PHE",
+      "A:1764:VAL",
+      "A:370:THR",
+      "A:371:GLN",
+      "A:401:SER",
+      "A:402:PHE",
+      "A:405:VAL",
+      "A:406:ASN"
+    ],
+    "min_protein_heavy_distance_A": 2.5795631413090145,
+    "heavy_pairs_below_2A": 0
+  },
+  "final_geometry_audit": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_multireference_20261002\\human_9v3s\\final_geometry_audit.json",
+  "production_code_hashes_after": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "production_code_unchanged": true,
+  "script_sha256": "d208769553d92051e1ecb0bb20ed6aa753dacd60b299e5c0832331dac724b528"
+}

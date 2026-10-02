@@ -1,0 +1,17 @@
+{
+  "selection_path": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\a803467_space_audit_20261001\\pilot_selection.json",
+  "selection_sha256": "a40ac7a54ae573e77152e0eaa42578c2fa4646443efbe45ecd761134dd5e9651",
+  "rdkit_version": "2026.03.6",
+  "module_sha256": "3bc2a5142447dc0f5e61411640b488e07add5e879e3e1ca2d60d63274abd2985",
+  "num_confs": 20,
+  "max_keep": 5,
+  "random_seed": 20261001,
+  "state_policy": "preserve input charge, tautomer and specified stereo; no salt stripping or neutralization",
+  "unspecified_stereo_policy": "flag for review; no arbitrary stereoisomer embedding",
+  "embedding": "ETKDGv3; single thread; preoptimization RMS pruning 0.5 A",
+  "optimization": "MMFF94s if complete parameters, else UFF; 1000 then 3000 iterations; convergence required",
+  "geometry_checks": "finite coordinates; covalent-radius bond ratio 0.65..1.35; heavy nonbonded distance >=0.60*vdW sum for graph distance>2; stereo identity",
+  "deduplication": "symmetry-aware aligned heavy atom RMSD <0.75 A within same state; then output cap",
+  "energy_comparison": "within the same chemical state and force field only; not affinity or cross-molecule ranking",
+  "preparation_scope": "3D feasibility pilot only; pH-state coverage and docking readiness not established"
+}

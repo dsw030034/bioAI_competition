@@ -1,0 +1,160 @@
+{
+  "signature": {
+    "smiles": "O=C(Nc1ccc(F)cc1F)c1ccc(-c2ccc(Cl)cc2)o1",
+    "candidate_id": "ae87387b13b78885",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "ae87387b13b78885",
+    "smiles": "O=C(Nc1ccc(F)cc1F)c1ccc(-c2ccc(Cl)cc2)o1",
+    "input_smiles": "O=C(Nc1ccc(F)cc1F)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1ccc(F)cc1F)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "ae87387b13b78885:input:ae87387b13b7",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 2084858188,
+    "requested_conformers": 20,
+    "embedded_conformers": 8,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 39.42322745755868,
+      "relative_energy_same_state": 7.966077565300669
+    },
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 38.37360748053442,
+      "relative_energy_same_state": 6.916457588276405
+    },
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 38.373607486314185,
+      "relative_energy_same_state": 6.9164575940561726
+    },
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 47.9128017364596,
+      "relative_energy_same_state": 16.455651844201586
+    },
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 38.37360753563149,
+      "relative_energy_same_state": 6.91645764337348
+    },
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c005",
+      "rdkit_conf_id": 5,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 31.457149892258013,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c006",
+      "rdkit_conf_id": 6,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 31.457149902928478,
+      "relative_energy_same_state": 1.0670465400153262e-08,
+      "duplicate_of": "ae87387b13b78885:input:ae87387b13b7:c005"
+    },
+    {
+      "candidate_id": "ae87387b13b78885",
+      "state_id": "ae87387b13b78885:input:ae87387b13b7",
+      "conformer_id": "ae87387b13b78885:input:ae87387b13b7:c007",
+      "rdkit_conf_id": 7,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 31.45715003225405,
+      "relative_energy_same_state": 1.3999603609704536e-07,
+      "duplicate_of": "ae87387b13b78885:input:ae87387b13b7:c005"
+    }
+  ],
+  "selected_conformer_id": "ae87387b13b78885:input:ae87387b13b7:c005",
+  "files": {
+    "ligand.pdbqt": "e444211f28a2597d797eec682fdfd0c6ab0cf0a8190ab1e3afe9e9af81de3e01",
+    "ligand.sdf": "951cec9e6cd49108291d37f5aeb48196a3e9a22180b2c99c12164dc17f897145"
+  }
+}

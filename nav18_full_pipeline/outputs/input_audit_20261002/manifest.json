@@ -1,0 +1,55 @@
+{
+  "stage": "audit",
+  "settings": {
+    "stage": "audit",
+    "input": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\a803467_expanded_20261001\\all_retained.csv",
+    "smiles_column": "smiles",
+    "label_column": null,
+    "workdir": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\input_audit_20261002",
+    "receptor_dir": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\receptors_v3",
+    "vina": null,
+    "exhaustiveness": 8,
+    "num_modes": 9,
+    "cpu": 2,
+    "workers": 4,
+    "timeout": 600,
+    "num_confs": 20,
+    "preparation_seed": 20261002,
+    "seed": 20261002,
+    "reference_repeats": 5,
+    "vina_seeds": [
+      20261002,
+      20261003,
+      20261004
+    ],
+    "validation_report": null
+  },
+  "code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "6f81e07ad07ab8cab7c740932f4e978a1a819a7c08aca874ff3579c42ccaff4a",
+    "scgd\\validation.py": "4dfee2363eca1a4badaaaebe699ff1626d93c455a959c4b896e1ecb8c743e4c4",
+    "scgd\\workflow.py": "c700f395e038f04b1bb5a864781c9c61c99ea92d2c678b1e69dfcdee4851ebda"
+  },
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "python": "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+  "input_sha256": "d157474623562fca1d94d55a9b4fcd540b7bb98a8d16594c66d27b1fe35c46f4",
+  "validation_report_sha256": null,
+  "receptor_sources": {
+    "nav18": "70f9ef9bfdc3bbe4ea20a003c278037c9ffcf11a70b98d382533424d27a5271a",
+    "nav15": "a165bd0fe7a2ebffcde9a5572fc7195fcf6f8694a291ccb4df7f1ba2eb3dcec3"
+  }
+}

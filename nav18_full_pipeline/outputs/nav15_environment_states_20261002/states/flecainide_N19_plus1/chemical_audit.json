@@ -1,0 +1,92 @@
+{
+  "protonated_index": 24,
+  "source_nitrogen_H_count": 1,
+  "state_nitrogen_H_count": 2,
+  "formal_charge": 1,
+  "carbon_stereo": [
+    {
+      "index": 13,
+      "source_CIP": "R",
+      "state_CIP": "R"
+    }
+  ],
+  "nitrogen_stereo": [
+    {
+      "index": 1,
+      "chiral_tag": "CHI_UNSPECIFIED",
+      "CIP": null
+    },
+    {
+      "index": 24,
+      "chiral_tag": "CHI_UNSPECIFIED",
+      "CIP": null
+    }
+  ],
+  "max_heavy_coordinate_displacement_A": 0.0,
+  "heavy_atom_count": 28,
+  "heavy_bond_count": 29,
+  "state": "flecainide_N19_plus1",
+  "parent_reference": "rat_6uz0",
+  "protonated_ccd_atom_name": "N19",
+  "site_role": "secondary piperidine nitrogen",
+  "nitrogen_sites": [
+    {
+      "index": 1,
+      "ccd_atom_name": "N12",
+      "amide_nitrogen": true,
+      "neighbors": [
+        "C13",
+        "C10"
+      ],
+      "formal_charge": 0
+    },
+    {
+      "index": 24,
+      "ccd_atom_name": "N19",
+      "amide_nitrogen": false,
+      "neighbors": [
+        "C18",
+        "C14"
+      ],
+      "formal_charge": 1
+    }
+  ],
+  "atom_names": [
+    "C10",
+    "N12",
+    "C13",
+    "C15",
+    "C17",
+    "C20",
+    "C22",
+    "C28",
+    "C02",
+    "C05",
+    "C07",
+    "C08",
+    "C09",
+    "C14",
+    "C16",
+    "C18",
+    "C23",
+    "C27",
+    "F01",
+    "F03",
+    "F04",
+    "F24",
+    "F25",
+    "F26",
+    "N19",
+    "O06",
+    "O11",
+    "O21"
+  ],
+  "smiles": "O=C(NC[C@H]1CCCC[NH2+]1)c1cc(OCC(F)(F)F)ccc1OCC(F)(F)F",
+  "stereo_policy": "retain deposited carbon R; no arbitrary nitrogen stereotag",
+  "source_reference_sha256": "a3e6a781796e3b57f871e38a3dda9ff8fbcdac05840c61d4834840c2a9eb70a1",
+  "literature_evidence": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav15_environment_states_20261002\\states\\literature_evidence.json",
+  "literature_evidence_sha256": "62937c3cd28e300e742604be2359e5ec23e954006f2b9d861108230ac5687e30",
+  "experimental_status": "Protonation is modeled, not measured in the deposited experimental ligand; sensitivity control only.",
+  "sdf_roundtrip_max_coordinate_displacement_A": 0.0,
+  "reference_sha256": "2f5fce4860e3713d08b1d552f1d019519b0eacb7a1d8f994a085ec82a7e7c990"
+}

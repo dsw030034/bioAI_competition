@@ -1,0 +1,19 @@
+{
+  "returncode": 2,
+  "workdir_created": false,
+  "stdout": "",
+  "stderr": "usage: score.py [-h] [--stage {audit,reference,candidates}] [--input INPUT]\n                [--smiles-column SMILES_COLUMN] [--label-column LABEL_COLUMN]\n                [--workdir WORKDIR] [--receptor-dir RECEPTOR_DIR] [--resume]\n                [--vina VINA] [--exhaustiveness EXHAUSTIVENESS]\n                [--num-modes NUM_MODES] [--cpu CPU] [--workers WORKERS]\n                [--timeout TIMEOUT] [--num-confs NUM_CONFS]\n                [--preparation-seed PREPARATION_SEED] [--seed SEED]\n                [--reference-repeats REFERENCE_REPEATS]\n                [--vina-seeds VINA_SEEDS [VINA_SEEDS ...]]\n                [--validation-report VALIDATION_REPORT] [--out OUT]\nscore.py: error: Candidate docking requires a passed --validation-report\n",
+  "command": [
+    "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+    "-B",
+    "score.py",
+    "--stage",
+    "candidates",
+    "--input",
+    "../nav1p8-molecule-generator/outputs/a803467_expanded_20261001/all_retained.csv",
+    "--validation-report",
+    "outputs/reference_validation_20261002_iofix/report.json",
+    "--workdir",
+    "outputs\\candidate_gate_check_20261002"
+  ]
+}

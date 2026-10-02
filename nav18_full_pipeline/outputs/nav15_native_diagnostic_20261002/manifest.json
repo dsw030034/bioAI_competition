@@ -1,0 +1,48 @@
+{
+  "stage": "nav15_native_pose_diagnostic",
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "script_sha256": "c377e78f614350ee7e58f266799ebd1a7d06aa59b3074f75c4e38176184fc072",
+  "receptor_sha256": "0575e3b1e27296153085ec7012f4cd09e18afb23d9cca31803cd7785e6baebdc",
+  "prepared_pdb_sha256": "4bba48703e0b62150c1db205f0eb523a06cff55837422329ef6641346785032b",
+  "vina_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1",
+    "numpy": "2.2.6"
+  },
+  "scoring": "vina; default weights; original combined score not used or modified",
+  "box": {
+    "pdb": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\receptors\\6LQA.pdb",
+    "chain": "B",
+    "center": [
+      128.691875,
+      125.578875,
+      137.582083
+    ],
+    "size": 24.0
+  },
+  "cpu_per_job": 2,
+  "workers": 2,
+  "seeds": [
+    20261002,
+    20261003,
+    20261004
+  ],
+  "hydrogen_policy": "RDKit AddHs at fixed heavy coordinates; no H orientation enumeration",
+  "scope": "Native pose and c0_s20261002 global top/closest pose, neutral and +1 QDN; local optimization is diagnostic, not a redocking success."
+}

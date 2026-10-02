@@ -1,0 +1,131 @@
+{
+  "signature": {
+    "smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+    "candidate_id": "nav18",
+    "seed": 20261005,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "nav18",
+    "smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+    "input_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+    "state_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+    "state_id": "nav18:input:dce16c0c1568",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 435587323,
+    "requested_conformers": 20,
+    "embedded_conformers": 6,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "nav18",
+      "state_id": "nav18:input:dce16c0c1568",
+      "conformer_id": "nav18:input:dce16c0c1568:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 48.24866885922165,
+      "relative_energy_same_state": 8.197009002669262
+    },
+    {
+      "candidate_id": "nav18",
+      "state_id": "nav18:input:dce16c0c1568",
+      "conformer_id": "nav18:input:dce16c0c1568:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 40.05166437617521,
+      "relative_energy_same_state": 4.5196228199984034e-06,
+      "duplicate_of": "nav18:input:dce16c0c1568:c003"
+    },
+    {
+      "candidate_id": "nav18",
+      "state_id": "nav18:input:dce16c0c1568",
+      "conformer_id": "nav18:input:dce16c0c1568:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 45.445355163259485,
+      "relative_energy_same_state": 5.3936953067070945
+    },
+    {
+      "candidate_id": "nav18",
+      "state_id": "nav18:input:dce16c0c1568",
+      "conformer_id": "nav18:input:dce16c0c1568:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 40.05165985655239,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "nav18",
+      "state_id": "nav18:input:dce16c0c1568",
+      "conformer_id": "nav18:input:dce16c0c1568:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 47.518651880411895,
+      "relative_energy_same_state": 7.466992023859504
+    },
+    {
+      "candidate_id": "nav18",
+      "state_id": "nav18:input:dce16c0c1568",
+      "conformer_id": "nav18:input:dce16c0c1568:c005",
+      "rdkit_conf_id": 5,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 47.23922928239125,
+      "relative_energy_same_state": 7.187569425838859
+    }
+  ],
+  "selected_conformer_id": "nav18:input:dce16c0c1568:c003",
+  "files": {
+    "nav18_c3.pdbqt": "cb49bc1f89be00cd765c75fe472ed90de7431ecd538c3b026857af9e425f417f",
+    "nav18_c3.sdf": "97e2e5718c3bb37851500c4dda04918024b4e6081035527d7ad5c4b6d4466141"
+  }
+}

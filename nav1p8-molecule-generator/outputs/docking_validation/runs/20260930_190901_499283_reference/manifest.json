@@ -1,0 +1,45 @@
+{
+  "stage": "reference",
+  "config": {
+    "receptors": "../outputs/docking_validation/receptors_v2",
+    "vina_executable": "../vina_1.2.7_win.exe",
+    "output_root": "../outputs/docking_validation/runs",
+    "candidate_csv": "../outputs/round2_reaction/evaluation_final/candidates.csv",
+    "receptor_names": [
+      "nav18"
+    ],
+    "reference_conformers": 3,
+    "candidate_conformers": 3,
+    "embedding_seed": 20260930,
+    "vina_seeds": [
+      20260930,
+      20261001,
+      20261002
+    ],
+    "exhaustiveness": 32,
+    "cpu_per_job": 2,
+    "workers": 4,
+    "timeout_seconds": 900
+  },
+  "input_hashes": {
+    "nav18": {
+      "receptor.pdbqt": "5a2d97d41a42aef9abbf08c47bf315d2b94d9b0963eb431d95d06bc2f5315e7f",
+      "reference.sdf": "fe4b9bd6843d1546c04d86579010cc34856cd0ef1056ddb15c2dd18921b36971",
+      "repaired.pdb": "1bf536b902b55ffc4ef8d5c5a61c7ff02bbec42315d7fdf27693f413e6e6dcef",
+      "box.json": "a7fa020b14a8d8d8011fb7f65e29e50c39b08a9743c48ef5286a4661ce422329"
+    }
+  },
+  "vina_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+  "versions": {
+    "rdkit": "2026.3.6",
+    "meeko": "0.8.0",
+    "gemmi": "0.7.5",
+    "pdbfixer": "1.12.0",
+    "openmm": "8.6.1"
+  },
+  "python": "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+  "validation_report": null,
+  "rmsd_method": "symmetry-corrected heavy atom RMSD in receptor frame; no ligand alignment",
+  "gate_criteria": "all jobs successful; >=80% top1 RMSD <=2 A, zero heavy pairs <2 A, contact recall >=0.5",
+  "limitations": "Rigid protein-only; one input protomer/tautomer; no calibrated subtype selectivity."
+}

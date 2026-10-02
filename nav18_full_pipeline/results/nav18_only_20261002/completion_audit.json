@@ -1,0 +1,278 @@
+{
+  "audit_schema": "nav18_completion_integrity_v1",
+  "audit_started_at_utc": "2026-10-02T23:03:26.619147+00:00",
+  "audit_finished_at_utc": "2026-10-02T23:03:56.671068+00:00",
+  "audit_passed": true,
+  "mode": "nav18_only_exploration",
+  "audit_scope": "Read-only integrity and recorded QA audit; no docking rerun or changed results; only this audit JSON was written.",
+  "workdir": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\nav18_only_20261002",
+  "source_csv": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\a803467_expanded_20261001\\all_retained.csv",
+  "source_sha256": "d157474623562fca1d94d55a9b4fcd540b7bb98a8d16594c66d27b1fe35c46f4",
+  "manifest_sha256": "e2c0c5f3260fcc75ecf4a53fba9fc3fcda8c62e853e8d6b6b787a18c4e5832d4",
+  "expected_candidate_count": 2944,
+  "actual_candidate_count": 2944,
+  "unique_candidate_count": 2944,
+  "status_counts": {
+    "ok": 2931,
+    "deferred": 13
+  },
+  "quality_counts": {
+    "review": 1113,
+    "pass": 1818,
+    "not_assessed": 13
+  },
+  "source_identity_and_metadata_preserved": true,
+  "parent": {
+    "candidate_id": "dce16c0c1568b893",
+    "included_in_2944": false,
+    "docking_status": "ok",
+    "nav18_score": -8.643,
+    "quality_status": "pass",
+    "quality_flags": []
+  },
+  "raw_score_order_count": 1818,
+  "rank_policy": "Only docking_status=ok and quality_status=pass; ascending raw Vina score then candidate_id; not experimental activity/selectivity ranking.",
+  "successful_artifact_bundles_expected_including_parent": 2932,
+  "candidate_artifact_hashes_checked": 20524,
+  "reference_evidence_hashes_checked": 92,
+  "hash_checks_by_category": {
+    "source_hash": 1,
+    "selection_hash": 1,
+    "candidate_artifact_hashes": 20524,
+    "frozen_input_hashes": 6,
+    "source_environment_hashes": 6,
+    "production_code_hashes": 11,
+    "exploration_code_hashes": 2,
+    "vina_binary_hash": 1,
+    "reference_evidence_hashes": 92
+  },
+  "verified_hash_entry_count": 20644,
+  "verified_hash_entries_digest_sha256": "e1055fffaec2d4891b7df44ba57bdb10b4815332a87a828b5227f71b171f4f9d",
+  "check_counts_by_category": {
+    "source_hash": 1,
+    "selection_hash": 1,
+    "library_ids": 2,
+    "source_metadata": 2944,
+    "library_counts": 1,
+    "library_summary": 1,
+    "run_state": 1,
+    "library_csv_matches_json": 2945,
+    "library_rank_matches_json": 1819,
+    "library_rank_count": 1,
+    "pilot_csv_matches_json": 6,
+    "pilot_rank_matches_json": 5,
+    "parent_separate": 1,
+    "pilot_ids": 1,
+    "pilot_library_identity": 4,
+    "parent_status": 1,
+    "pilot_summary": 1,
+    "null_unknown_contract": 2952,
+    "candidate_result_matches_aggregate": 2945,
+    "candidate_success": 2932,
+    "required_artifacts": 2932,
+    "candidate_artifact_hashes": 20524,
+    "candidate_job_status": 2932,
+    "candidate_job_protocol": 2932,
+    "candidate_job_pose_hash": 2932,
+    "candidate_prep_protocol": 2932,
+    "candidate_preparation_success": 2932,
+    "preparation_artifact_hash_consistency": 5864,
+    "candidate_score_lineage": 2932,
+    "candidate_quality_lineage": 2932,
+    "candidate_identity_audit_recorded": 2932,
+    "candidate_pose_paths": 2932,
+    "deferred_preserved": 13,
+    "severe_count_matches_summary": 1,
+    "candidate_folder_count": 1,
+    "frozen_input_hashes": 6,
+    "source_environment_hashes": 6,
+    "production_code_hashes": 11,
+    "production_code_set": 1,
+    "exploration_code_hashes": 2,
+    "vina_binary_hash": 1,
+    "reference_protocol": 1,
+    "reference_gate": 1,
+    "reference_rows": 1,
+    "reference_pass_count": 1,
+    "reference_evidence_hashes": 92,
+    "reference_result_matches_aggregate": 15,
+    "input_audit_ids": 1,
+    "input_audit_state_lineage": 2944
+  },
+  "failure_count": 0,
+  "failures": [],
+  "reference": {
+    "successful": 15,
+    "top1_pass_count": 15,
+    "median_top1_rmsd_A": 0.9160256764960233,
+    "nav18_exploration_eligible": true,
+    "production_gate_released": false
+  },
+  "null_contract": {
+    "nav15_risk": "unknown",
+    "nav15_score": null,
+    "delta": null,
+    "combined_score": null,
+    "production_gate_released": false,
+    "checked_candidate_records": 2949,
+    "csv_empty_cells_match_json_null": true
+  },
+  "geometry": {
+    "interpretation": "Recorded QA for first Vina-ranked pose; counts are not efficacy claims; overlapping flags can count the same candidate multiple times.",
+    "top1_flag_counts": {
+      "box_boundary_within_1A": 955,
+      "outside_requested_box": 158
+    },
+    "top1_flag_combinations": {
+      "box_boundary_within_1A": 955,
+      "none": 1818,
+      "outside_requested_box": 158
+    },
+    "top1_severe_flag_counts": {
+      "outside_requested_box": 158
+    },
+    "candidates_with_any_severe_flag": 158,
+    "top1_intramolecular_geometry_issue_counts": {},
+    "all_mode_count": 26210,
+    "all_mode_flag_counts": {
+      "box_boundary_within_1A": 10894,
+      "outside_requested_box": 1823
+    },
+    "all_mode_intramolecular_geometry_issue_counts": {},
+    "scope_counts": {
+      "expanded_round2": {
+        "docking_ok": 1071,
+        "pass": 696,
+        "review": 375,
+        "severe": 54
+      },
+      "strict": {
+        "docking_ok": 1542,
+        "pass": 906,
+        "review": 636,
+        "severe": 85
+      },
+      "outside_series": {
+        "docking_ok": 318,
+        "pass": 216,
+        "review": 102,
+        "severe": 19
+      }
+    }
+  },
+  "deferred_candidates": [
+    {
+      "candidate_id": "02b5691cbe935ff0",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:9"
+      ]
+    },
+    {
+      "candidate_id": "15858fc2675d63af",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:6"
+      ]
+    },
+    {
+      "candidate_id": "19912c5978960853",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:7"
+      ]
+    },
+    {
+      "candidate_id": "40e6865589e48474",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Atom_Tetrahedral:3"
+      ]
+    },
+    {
+      "candidate_id": "7183623313112249",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:0"
+      ]
+    },
+    {
+      "candidate_id": "7bf9514b295eb2c6",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:7"
+      ]
+    },
+    {
+      "candidate_id": "87c73d864bb082ad",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:7"
+      ]
+    },
+    {
+      "candidate_id": "8e3c58969a194178",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:8"
+      ]
+    },
+    {
+      "candidate_id": "96c55b29d254c5d6",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:7"
+      ]
+    },
+    {
+      "candidate_id": "a218bda8a32d943d",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:0"
+      ]
+    },
+    {
+      "candidate_id": "cdea5151b5d78a0f",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:0"
+      ]
+    },
+    {
+      "candidate_id": "d5da1f1f3d5312af",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:7"
+      ]
+    },
+    {
+      "candidate_id": "e5f3acee9cd47f8a",
+      "defer_reason": "requires_stereochemistry_review",
+      "unspecified_stereo": [
+        "Bond_Double:7"
+      ]
+    }
+  ],
+  "audited_top_level_file_sha256": {
+    "manifest.json": "e2c0c5f3260fcc75ecf4a53fba9fc3fcda8c62e853e8d6b6b787a18c4e5832d4",
+    "library_results.json": "8605223b14385c3a24d67a022cc3ce37a34a3549ca4a62e9790c05443a98e2f6",
+    "library_status.csv": "d1fc3ac121343e342b13aa6053892d98e41475f282bee462bccb8536e95cfed8",
+    "library_raw_score_order.csv": "4d2125106a9db2235a7bb8cda5490f018d7de7f227b91cc60eed1dc179fbabd0",
+    "library_summary.json": "e512eae7d0549e2b597a05eebd93ea0e8123c5fff20027da348e118e3d687acf",
+    "pilot_results.json": "0f9128371080dd8e8cfffd3f8f15343c1faf07c669a5dc741b004955ae5931d7",
+    "pilot_status.csv": "83c99eea1bbd8fc2af7fa101a988d1143cf68a993c25ac49a140f0697ee8dec2",
+    "pilot_raw_score_order.csv": "f8a267cfd5b73d0c9547d92ef32ada52404c0a341f2bcd076f723e762251241b",
+    "pilot_summary.json": "7226da0bb2f767a08fff5299143203ef1fe7971aea94ce2bf7db039300a901a7",
+    "pilot_selection.json": "c85e736eb379f4aedab74db69a170e0ea272a34b4e4e2b9f46bebb88e156152e",
+    "input_audit.json": "37ac299d777497850c9c4ec6a4f1d0140b4ca77fac47123f3719a2df945cb0c6",
+    "input_audit_summary.json": "269c5c34785b47ee77882451ff235007444f12373b3d8ad64ceef5ffded6fb0e",
+    "run_state.json": "f9bf36e76955c6ad5960d2f559e344dc86afadc69131aa37b7b4c5e721d7aff0",
+    "reference/report.json": "8971fcd933208ec99aecea6f5053931de8e557837a5936fb379f87eca8396bce",
+    "reference/results.json": "ecf29415c9434c4b0325ef97aa5020685cf20c3ecade29e09823a1ecf492d0a0"
+  },
+  "limitations": [
+    "Checks verify recorded structures/artifact lineage and recorded QA statistics; docking was not recomputed.",
+    "Nav1.5, cross-target delta and combined score remain unknown; original production gate remains closed.",
+    "Geometry pass and a more negative raw Vina score do not establish better potency or selectivity."
+  ]
+}

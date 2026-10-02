@@ -1,0 +1,97 @@
+[
+  {
+    "reference": "rat_8f6p",
+    "mode": "score_only",
+    "independent_redocking": false,
+    "production_gate_released": false,
+    "status": "ok",
+    "input_geometry": {
+      "contact_residues_4A": [
+        "A:1420:PHE",
+        "A:1421:LYS",
+        "A:1710:THR",
+        "A:1711:THR",
+        "A:1712:SER",
+        "A:1762:PHE",
+        "A:1765:VAL",
+        "A:1766:VAL",
+        "A:371:THR",
+        "A:372:GLN",
+        "A:406:VAL",
+        "A:899:CYS",
+        "A:900:GLY"
+      ],
+      "min_protein_heavy_distance_A": 3.103078632584108,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 0.0,
+      "contact_recall": 1.0,
+      "centroid_displacement_A": 0.0,
+      "geometry_passed": true
+    },
+    "affinity_kcal_mol": -5.704,
+    "artifacts": {
+      "vina_log.json": "9b93901bc2279ee82bb3658951995c7e5fcde0183ad13df027257b4e7617fc5a"
+    }
+  },
+  {
+    "reference": "rat_8f6p",
+    "mode": "local_only",
+    "independent_redocking": false,
+    "production_gate_released": false,
+    "status": "ok",
+    "input_geometry": {
+      "contact_residues_4A": [
+        "A:1420:PHE",
+        "A:1421:LYS",
+        "A:1710:THR",
+        "A:1711:THR",
+        "A:1712:SER",
+        "A:1762:PHE",
+        "A:1765:VAL",
+        "A:1766:VAL",
+        "A:371:THR",
+        "A:372:GLN",
+        "A:406:VAL",
+        "A:899:CYS",
+        "A:900:GLY"
+      ],
+      "min_protein_heavy_distance_A": 3.103078632584108,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 0.0,
+      "contact_recall": 1.0,
+      "centroid_displacement_A": 0.0,
+      "geometry_passed": true
+    },
+    "affinity_kcal_mol": -6.304,
+    "output_geometry": {
+      "contact_residues_4A": [
+        "A:1420:PHE",
+        "A:1710:THR",
+        "A:1711:THR",
+        "A:1712:SER",
+        "A:1762:PHE",
+        "A:1765:VAL",
+        "A:1766:VAL",
+        "A:370:MET",
+        "A:371:THR",
+        "A:372:GLN",
+        "A:402:SER",
+        "A:403:PHE",
+        "A:406:VAL",
+        "A:899:CYS"
+      ],
+      "min_protein_heavy_distance_A": 3.1869410098086313,
+      "heavy_pairs_below_2A": 0,
+      "fixed_frame_rmsd_A": 0.5078146728241326,
+      "contact_recall": 0.8461538461538461,
+      "centroid_displacement_A": 0.083217891596639,
+      "geometry_passed": true
+    },
+    "actual_grid_face_margin_A": 5.734354838709677,
+    "artifacts": {
+      "pose.pdbqt": "deafa8525baaf48cb710b798f85e6ac1bcbece4ea4dc49fc18e762e2c58c65f6",
+      "pose.sdf": "1482250ae11e0dc0979f7fd773bc1f1d2f658919d0ea80a1b2a65b03b2ab08b2",
+      "vina_log.json": "fe1ddeb4b28007a49202e959df93e0c8468bd689082b346ea39f70df464df5c8"
+    }
+  }
+]

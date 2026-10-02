@@ -1,0 +1,194 @@
+{
+  "signature": {
+    "smiles": "C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12",
+    "candidate_id": "nav15",
+    "seed": 20261006,
+    "num_confs": 20,
+    "neutral_qdn_reference": true,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "nav15",
+    "smiles": "C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12",
+    "neutral_qdn_reference": true,
+    "input_smiles": "C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12",
+    "state_smiles": "C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12",
+    "state_id": "nav15:input:9479a13449a2",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "non_amide_amine_review",
+      "aromatic_nitrogen_review"
+    ],
+    "status": "prepared_input_state",
+    "reference_stereo_exception": "Neutral QDN tertiary N omitted; all carbon stereocentres required.",
+    "unspecified_stereo": [],
+    "embedding_seed": 407363279,
+    "requested_conformers": 20,
+    "embedded_conformers": 10,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 114.4121942419772,
+      "relative_energy_same_state": 2.0872597208223738
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 116.86961061211929,
+      "relative_energy_same_state": 4.544676090964458
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 118.0984129716376,
+      "relative_energy_same_state": 5.77347845048277
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 119.16212075380939,
+      "relative_energy_same_state": 6.83718623265456
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 112.32493452115483,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c005",
+      "rdkit_conf_id": 5,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 113.71067426004201,
+      "relative_energy_same_state": 1.3857397388871817,
+      "duplicate_of": "nav15:input:9479a13449a2:c004"
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c006",
+      "rdkit_conf_id": 6,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 117.43103444725449,
+      "relative_energy_same_state": 5.10609992609966
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c007",
+      "rdkit_conf_id": 7,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 114.72866848652033,
+      "relative_energy_same_state": 2.403733965365504,
+      "duplicate_of": "nav15:input:9479a13449a2:c004"
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c008",
+      "rdkit_conf_id": 8,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 115.25441792991857,
+      "relative_energy_same_state": 2.929483408763744,
+      "duplicate_of": "nav15:input:9479a13449a2:c004"
+    },
+    {
+      "candidate_id": "nav15",
+      "state_id": "nav15:input:9479a13449a2",
+      "conformer_id": "nav15:input:9479a13449a2:c009",
+      "rdkit_conf_id": 9,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 115.3109391019928,
+      "relative_energy_same_state": 2.986004580837971
+    }
+  ],
+  "selected_conformer_id": "nav15:input:9479a13449a2:c004",
+  "files": {
+    "nav15_c4.pdbqt": "07c3cf41abf108253c1aa75a1d7558fda9aa3c591a2d0f373c8088c96faaae3c",
+    "nav15_c4.sdf": "1654462ef13d0992c958e1c1bb9aad2a405009f741e7e682c357d84865b4bb53"
+  }
+}

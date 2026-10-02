@@ -1,0 +1,27 @@
+{
+  "candidate_csv": "../outputs/a803467_nav18_nav15_round1/candidates.csv",
+  "output_root": "../outputs/a803467_nav18_nav15_round1",
+  "reference_seed_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+  "vina_executable": "../vina_1.2.7_win.exe",
+  "ligand_preparation_python": "~/miniconda3/envs/vina_clean/python.exe",
+  "receptors": [
+    {
+      "name": "nav18",
+      "receptor_pdbqt": "../outputs/nav18_chainA_complete.pdbqt",
+      "center": [137.204, 136.509, 127.538],
+      "size": [24.0, 24.0, 24.0],
+      "exhaustiveness": 8,
+      "num_modes": 9,
+      "seed": 20260923
+    },
+    {
+      "name": "nav15",
+      "receptor_pdbqt": "../outputs/nav15_chainB_6LQA.pdbqt",
+      "center": [128.691875, 125.578875, 137.582083],
+      "size": [24.0, 24.0, 24.0],
+      "exhaustiveness": 8,
+      "num_modes": 9,
+      "seed": 20260923
+    }
+  ]
+}

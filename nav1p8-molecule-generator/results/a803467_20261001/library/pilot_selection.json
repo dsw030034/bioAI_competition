@@ -1,0 +1,310 @@
+{
+  "source": "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\a803467_expanded_20261001",
+  "policy": "new structures; coverage then diversity; no activity ranking",
+  "candidates": [
+    {
+      "candidate_id": "dce16c0c1568b893",
+      "smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+      "scope": "reference",
+      "methods": [],
+      "event_ids": [],
+      "selection_reason": "A-803467 reference"
+    },
+    {
+      "candidate_id": "434214bd1faf869e",
+      "smiles": "N#Cc1cccc(NC(=O)c2ccc(-c3ccc(C(F)(F)F)cc3)o2)c1",
+      "scope": "strict",
+      "methods": [
+        "amide_recombination",
+        "mol2mol",
+        "site_enumeration"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:site_triple:1284",
+        "expansion:5c7b0676c895:site_triple:1307",
+        "expansion:5c7b0676c895:amide_cross_product:1538",
+        "expansion:5c7b0676c895:mol2mol:10"
+      ],
+      "selection_reason": [
+        "edits:3",
+        "method:amide_recombination",
+        "method:mol2mol",
+        "method:site_enumeration",
+        "origin:shared:amide_recombination+mol2mol+site_enumeration"
+      ],
+      "selection_min_distance": 0.5833333333333333
+    },
+    {
+      "candidate_id": "6f286ae3198cc668",
+      "smiles": "CC(=O)N1CCN(Cc2cccc(NC(=O)c3ccc(-c4ccc(Cl)cc4)o3)c2)CC1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:575"
+      ],
+      "selection_reason": [
+        "edits:2",
+        "fragment:R2/R3=CC(=O)N1CCN(C[*:1])CC1",
+        "origin:exclusive:mol2mol"
+      ],
+      "selection_min_distance": 0.4918032786885246
+    },
+    {
+      "candidate_id": "7f3a546f3ec6060f",
+      "smiles": "CSc1cccc(NC(=O)c2ccc(-c3ccc([N+](=O)[O-])cc3)o2)c1",
+      "scope": "strict",
+      "methods": [
+        "amide_recombination"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:amide_cross_product:189"
+      ],
+      "selection_reason": [
+        "fragment:R2/R3=CS[*:1]",
+        "origin:exclusive:amide_recombination"
+      ],
+      "selection_min_distance": 0.546875
+    },
+    {
+      "candidate_id": "e9b7b281fa139dba",
+      "smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(N4CCOCC4)cc3)o2)cc(OC)c1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:744"
+      ],
+      "selection_reason": [
+        "edits:1",
+        "fragment:R1=C1CN([*:1])CCO1"
+      ],
+      "selection_min_distance": 0.33333333333333337
+    },
+    {
+      "candidate_id": "c5f6502e9184ecce",
+      "smiles": "N#CCc1cc(NC(=O)c2ccc(-c3ccc(Br)cc3)o2)cc(C2=NCCO2)c1",
+      "scope": "strict",
+      "methods": [
+        "site_enumeration"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:site_triple:2154",
+        "expansion:5c7b0676c895:site_triple:2159"
+      ],
+      "selection_reason": [
+        "origin:exclusive:site_enumeration"
+      ],
+      "selection_min_distance": 0.6216216216216216
+    },
+    {
+      "candidate_id": "3f6f2314b414b1db",
+      "smiles": "O=C(Nc1cccc(OCCN2CCCC2)c1)c1ccc(-c2ccccc2)o1",
+      "scope": "strict",
+      "methods": [
+        "amide_recombination",
+        "site_enumeration"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:site_triple:1255",
+        "expansion:5c7b0676c895:site_triple:1987",
+        "expansion:5c7b0676c895:amide_cross_product:436"
+      ],
+      "selection_reason": [
+        "origin:shared:amide_recombination+site_enumeration"
+      ],
+      "selection_min_distance": 0.5285714285714286
+    },
+    {
+      "candidate_id": "70c5a59f9a5b1e42",
+      "smiles": "Cc1cccc(COc2ccc(-c3ccc(C(=O)Nc4cccc(C)c4)o3)cc2)c1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:524"
+      ],
+      "selection_reason": [
+        "fragment:R1=Cc1cccc(CO[*:1])c1"
+      ],
+      "selection_min_distance": 0.5076923076923077
+    },
+    {
+      "candidate_id": "663e1beebe9728dc",
+      "smiles": "O=C(Nc1cccc(C2=NCCN2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:168",
+        "expansion:5c7b0676c895:mol2mol:618"
+      ],
+      "selection_reason": [
+        "fragment:R2/R3=C1CNC([*:1])=N1"
+      ],
+      "selection_min_distance": 0.4852941176470589
+    },
+    {
+      "candidate_id": "db44ad93f74d1259",
+      "smiles": "Cc1cc(CO)cc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)c1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:730"
+      ],
+      "selection_reason": [
+        "fragment:R2/R3=OC[*:1]"
+      ],
+      "selection_min_distance": 0.47540983606557374
+    },
+    {
+      "candidate_id": "54bd211d4e929173",
+      "smiles": "Cc1ccc(S(=O)(=O)Nc2cccc(NC(=O)c3ccc(-c4ccc(Cl)cc4)o3)c2)cc1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:748"
+      ],
+      "selection_reason": [
+        "fragment:R2/R3=Cc1ccc(S(=O)(=O)N[*:1])cc1"
+      ],
+      "selection_min_distance": 0.4626865671641791
+    },
+    {
+      "candidate_id": "ffbc5e1ac8b605d1",
+      "smiles": "Cc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OCCN2CCOCC2)c1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:817"
+      ],
+      "selection_reason": [
+        "fragment:R2/R3=C1CN(CCO[*:1])CCO1"
+      ],
+      "selection_min_distance": 0.4347826086956522
+    },
+    {
+      "candidate_id": "a218bda8a32d943d",
+      "smiles": "N=C(N)c1cccc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+      "scope": "strict",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:771"
+      ],
+      "selection_reason": [
+        "fragment:R2/R3=N=C(N)[*:1]"
+      ],
+      "selection_min_distance": 0.43333333333333335
+    },
+    {
+      "candidate_id": "8b59b199f37d9e78",
+      "smiles": "O=C(Nc1ccc2[nH]ccc2c1)c1ccc(-c2cc(F)cc(F)c2)o1",
+      "scope": "expanded_round2",
+      "methods": [
+        "amide_recombination"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:amide_cross_product:935"
+      ],
+      "selection_reason": [
+        "method:amide_recombination",
+        "origin:exclusive:amide_recombination",
+        "reason:bridge_or_fusion",
+        "reason:non_single_attachment",
+        "reason:offsite_substitution"
+      ],
+      "selection_min_distance": 0.6153846153846154
+    },
+    {
+      "candidate_id": "6930db838d116c4e",
+      "smiles": "O=C(c1ccc(-c2ccc(Cl)cc2)o1)N(CCO)c1ccccc1Cl",
+      "scope": "expanded_round2",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:28"
+      ],
+      "selection_reason": [
+        "method:mol2mol",
+        "origin:exclusive:mol2mol",
+        "reason:amide_NH_changed"
+      ],
+      "selection_min_distance": 0.6206896551724138
+    },
+    {
+      "candidate_id": "238e3f0e9a134078",
+      "smiles": "CCc1cc(C)c(N(C)C(=O)c2ccc(-c3ccncc3)o2)c(C)c1",
+      "scope": "expanded_round2",
+      "methods": [
+        "amide_recombination"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:amide_cross_product:1007"
+      ],
+      "selection_reason": [
+        "reason:full_core_missing"
+      ],
+      "selection_min_distance": 0.6774193548387097
+    },
+    {
+      "candidate_id": "c047db4937471a9c",
+      "smiles": "O=C(Nc1ccc2c(c1)OCO2)c1ccc(-c2cc(Cl)cc(Cl)c2)o1",
+      "scope": "expanded_round2",
+      "methods": [
+        "amide_recombination",
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:amide_cross_product:1091",
+        "expansion:5c7b0676c895:mol2mol:862"
+      ],
+      "selection_reason": [
+        "origin:shared:amide_recombination+mol2mol"
+      ],
+      "selection_min_distance": 0.5272727272727273
+    },
+    {
+      "candidate_id": "e39ef718c0a3ca96",
+      "smiles": "COc1cc(-c2ccc(C(=O)Nc3ccccc3CN(C)C(C)C)o2)cc(OC)c1OC",
+      "scope": "expanded_round2",
+      "methods": [
+        "amide_recombination"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:amide_cross_product:360"
+      ],
+      "selection_reason": [
+        "fingerprint diversity tie breaker"
+      ],
+      "selection_min_distance": 0.6417910447761195
+    },
+    {
+      "candidate_id": "2e548003bc7c5a05",
+      "smiles": "Cc1cccc(NC(=O)c2ccc(-c3ccccc3Cl)o2)c1C",
+      "scope": "expanded_round2",
+      "methods": [
+        "mol2mol"
+      ],
+      "event_ids": [
+        "expansion:5c7b0676c895:mol2mol:199"
+      ],
+      "selection_reason": [
+        "fingerprint diversity tie breaker"
+      ],
+      "selection_min_distance": 0.6417910447761195
+    }
+  ]
+}

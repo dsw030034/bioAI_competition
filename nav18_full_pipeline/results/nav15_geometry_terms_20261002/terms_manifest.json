@@ -1,0 +1,50 @@
+{
+  "diagnostic": "Nav1.5 fixed-pose attribution of original Vina1.2.7 terms",
+  "production_code_hashes": {
+    "score.py": "a98d3cb40d9fb750491ed9451cc69aa7a7556bdc9d7536c7dbb1e25314de87bb",
+    "scgd\\__init__.py": "608a583b0d840d42b569a53144398d76e0af0c1a5697587dd9a7024719251ad3",
+    "scgd\\config.py": "f2acc1631c4f11044c35ce86555b2436d63a4c815008eec0e2874185d0b9b853",
+    "scgd\\docking.py": "90e9fefb3192f1a22afd1bd4f1850f1cfefa5ff1bedf5778079874e607bda5d3",
+    "scgd\\geometry.py": "a4f382307c2b49dcb48e893f1884333fae3cf23f57ddab2f01e8465709621da3",
+    "scgd\\ligand_quality.py": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d",
+    "scgd\\prep.py": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "scgd\\receptors.py": "60d6297040b1fd057780e16d4d7045d19214a55de5d0a6da1e1f933d5a3c4c7b",
+    "scgd\\runtime.py": "64f3ab4ee4feae70eadd3e6b4d789f469fcf3b3c5efb689b0898978d881f0d1a",
+    "scgd\\validation.py": "86349dffbcbf2b7eca1c2f4e0837a3a0ec5976755355e129bd72c25a91b621d5",
+    "scgd\\workflow.py": "a5e94ebd89642ab3d437ac1edbcea5fb84798ba9d1390650b36fed22be60e384"
+  },
+  "script_sha256": "96a6ec8fe104f5eb625159075727e0b11182327308f7a33bd3478ff718da139c",
+  "receptor_path": "D:\\2026-2027_autumn\\bioAI_competition\\nav18_full_pipeline\\outputs\\receptors_20261002\\nav15\\receptor.pdbqt",
+  "receptor_sha256": "0575e3b1e27296153085ec7012f4cd09e18afb23d9cca31803cd7785e6baebdc",
+  "vina_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+  "upstream": "https://github.com/ccsb-scripps/AutoDock-Vina/tree/v1.2.7/src/lib",
+  "upstream_files": {
+    "atom.h": "f07c8c46c17962ab3c0c9c7dd0da6f4eb0ffc6d764c8a4ab78f3e4823d3d0ba2",
+    "atom_constants.h": "b416af5cdcf5a3fe1fd05dac09ed1998731dd0a9fbdefa41e6f9ae97bd2067fd",
+    "atom_type.h": "8664ff682f8feb4bced68fb5f0ec138ebcac6cee37fb1c7e9c9f25cbd937669d",
+    "cache.cpp": "76f11686e8f444b192b4868594af4ae8e424f7939a04b0f70b90f4c6b49d9e4e",
+    "conf_independent.cpp": "84c99b81be5f5e46ef28ee77d63a7152f290c96ef00166ddfb602e1b9814f228",
+    "conf_independent.h": "936321fdfc93709297080b2e72c8aacae05896201f56478e260347c4e4a324f4",
+    "curl.h": "11a9b31f04ba38495203a43dbd9f398474365f84f8450dabd9c6b4689076633e",
+    "grid.cpp": "9c29dbb4fd0da2bedc6481d41a8b15006f4e5ff22fce1d14abf09b91fc462b0a",
+    "model.cpp": "9f356a53be56047f6a8a9b5ebc443ea6cb69db73e69f8d2bbd4bab4afdfb05cc",
+    "non_cache.cpp": "96be2b8fa2b6caa732df40c458d0cec514b9bc3a77d741b945f0f38f97332025",
+    "potentials.h": "ceb6625eaa0a2278193b11e22d0565f854f35442e9a5ee97bed2cc84a0d194a4",
+    "precalculate.h": "6489583c33ace1b55ff8170c83f739af4e2571766457381c7a3062ea18a6b476",
+    "scoring_function.h": "c982b04d140aa1a349213172d34224f0aa6c9d79f96a6afa109a547a001d6c1f",
+    "vina.cpp": "b4cab7558a50766339aece80e5522ff91ecadc376847517d748f9dcdfb3aabf0",
+    "vina.h": "8ec33a87203da3c68ec25014eb4fffdf4368eb3a4baba4283aa57c86f1df364a"
+  },
+  "weights": {
+    "gauss1": -0.035579,
+    "gauss2": -0.005156,
+    "repulsion": 0.840245,
+    "hydrophobic": -0.035069,
+    "hydrogen_bond": -0.587439
+  },
+  "cpu_per_job": 1,
+  "scope": "Original scorer, default weights; no docking, no optimization, no candidate scoring.",
+  "numerical_verification_tolerance_kcal_mol": 0.001,
+  "curl_attribution": "When per-ligand-atom sum >0, distribute upstream 1000/(1000+sum) factor proportionally across pair terms.",
+  "xs_typing_scope": "Receptor-distance bonds; ligand distance bonds without mobility exclusions. Every pose requires independent Vina total agreement."
+}

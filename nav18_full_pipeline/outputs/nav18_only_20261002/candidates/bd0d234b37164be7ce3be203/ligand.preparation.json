@@ -1,0 +1,76 @@
+{
+  "signature": {
+    "smiles": "Cc1cc(C(=O)O)cc(C)c1NC(=O)c1ccc(-c2ccc(Cl)cc2)o1",
+    "candidate_id": "2aa4e74ca08bbec6",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "2aa4e74ca08bbec6",
+    "smiles": "Cc1cc(C(=O)O)cc(C)c1NC(=O)c1ccc(-c2ccc(Cl)cc2)o1",
+    "input_smiles": "Cc1cc(C(=O)O)cc(C)c1NC(=O)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "Cc1cc(C(=O)O)cc(C)c1NC(=O)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "2aa4e74ca08bbec6:input:2aa4e74ca08b",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "carboxylic_acid_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1652173335,
+    "requested_conformers": 20,
+    "embedded_conformers": 2,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "2aa4e74ca08bbec6",
+      "state_id": "2aa4e74ca08bbec6:input:2aa4e74ca08b",
+      "conformer_id": "2aa4e74ca08bbec6:input:2aa4e74ca08b:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 45.33798842241184,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "2aa4e74ca08bbec6",
+      "state_id": "2aa4e74ca08bbec6:input:2aa4e74ca08b",
+      "conformer_id": "2aa4e74ca08bbec6:input:2aa4e74ca08b:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 52.622272611441446,
+      "relative_energy_same_state": 7.284284189029606
+    }
+  ],
+  "selected_conformer_id": "2aa4e74ca08bbec6:input:2aa4e74ca08b:c000",
+  "files": {
+    "ligand.pdbqt": "769471234020082045f63dfd0cd81178ee40b340ec4588289b77b5637fe06a4f",
+    "ligand.sdf": "3495849d30da9653ba0bb5f4cee01157190fa21b29dbef450ef57296cf15914a"
+  }
+}

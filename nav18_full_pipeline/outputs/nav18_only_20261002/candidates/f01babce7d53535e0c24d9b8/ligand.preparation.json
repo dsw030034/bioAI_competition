@@ -1,0 +1,118 @@
+{
+  "signature": {
+    "smiles": "Cc1ccc(-c2ccc(C(=O)Nc3ccc4c(c3)OCO4)o2)cc1",
+    "candidate_id": "dfd9e8225f83a1ee",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "dfd9e8225f83a1ee",
+    "smiles": "Cc1ccc(-c2ccc(C(=O)Nc3ccc4c(c3)OCO4)o2)cc1",
+    "input_smiles": "Cc1ccc(-c2ccc(C(=O)Nc3ccc4c(c3)OCO4)o2)cc1",
+    "state_smiles": "Cc1ccc(-c2ccc(C(=O)Nc3ccc4c(c3)OCO4)o2)cc1",
+    "state_id": "dfd9e8225f83a1ee:input:dfd9e8225f83",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1528590486,
+    "requested_conformers": 20,
+    "embedded_conformers": 5,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "dfd9e8225f83a1ee",
+      "state_id": "dfd9e8225f83a1ee:input:dfd9e8225f83",
+      "conformer_id": "dfd9e8225f83a1ee:input:dfd9e8225f83:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 37.86804369707121,
+      "relative_energy_same_state": 2.360387441058265e-09,
+      "duplicate_of": "dfd9e8225f83a1ee:input:dfd9e8225f83:c003"
+    },
+    {
+      "candidate_id": "dfd9e8225f83a1ee",
+      "state_id": "dfd9e8225f83a1ee:input:dfd9e8225f83",
+      "conformer_id": "dfd9e8225f83a1ee:input:dfd9e8225f83:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 37.868043698790885,
+      "relative_energy_same_state": 4.080064286426932e-09,
+      "duplicate_of": "dfd9e8225f83a1ee:input:dfd9e8225f83:c003"
+    },
+    {
+      "candidate_id": "dfd9e8225f83a1ee",
+      "state_id": "dfd9e8225f83a1ee:input:dfd9e8225f83",
+      "conformer_id": "dfd9e8225f83a1ee:input:dfd9e8225f83:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 45.90407583582959,
+      "relative_energy_same_state": 8.036032141118767
+    },
+    {
+      "candidate_id": "dfd9e8225f83a1ee",
+      "state_id": "dfd9e8225f83a1ee:input:dfd9e8225f83",
+      "conformer_id": "dfd9e8225f83a1ee:input:dfd9e8225f83:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 37.86804369471082,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "dfd9e8225f83a1ee",
+      "state_id": "dfd9e8225f83a1ee:input:dfd9e8225f83",
+      "conformer_id": "dfd9e8225f83a1ee:input:dfd9e8225f83:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 45.34298137424864,
+      "relative_energy_same_state": 7.474937679537817
+    }
+  ],
+  "selected_conformer_id": "dfd9e8225f83a1ee:input:dfd9e8225f83:c003",
+  "files": {
+    "ligand.pdbqt": "e7a8e3f9344de2c458cc19b591e1d6e3a8cb408e7acb43e208451fe63fe172d8",
+    "ligand.sdf": "bce137bda62ab6314e6cbcb9e19fcb880ceef6982167eb3644fa8e30291dfe3a"
+  }
+}

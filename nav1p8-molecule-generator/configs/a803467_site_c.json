@@ -1,0 +1,25 @@
+{
+  "seed_file": "../data/seeds_a803467.smi",
+  "output_dir": "../outputs/a803467_nav18_nav15_round1",
+  "protein_sequence_file": null,
+  "protein_word_size": 5,
+  "site_profile_file": "../data/nav18_site_c_rules.json",
+  "filters": {
+    "similarity_min": 0.35,
+    "qed_min": 0.35,
+    "sa_max": 5.0,
+    "mw_min": 180,
+    "mw_max": 550,
+    "clogp_min": -0.5,
+    "clogp_max": 5.0,
+    "tpsa_min": 15,
+    "tpsa_max": 120,
+    "required_smarts": "C(=O)N",
+    "num_confs": 5,
+    "max_candidates": 20,
+    "protein_word_weight": 0.15,
+    "site_c_weight": 0.15,
+    "selectivity_proxy_weight": 0.10,
+    "reinvent_metric_weight": 0.15
+  }
+}

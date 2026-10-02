@@ -1,0 +1,107 @@
+{
+  "method": "Postselection ordered-atom ring-component alignment and circular torsion delta; no role in sampling, docking or ranking.",
+  "atom_indices_zero_based": {
+    "quinuclidine_bridge": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11
+    ],
+    "quinoline": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ]
+  },
+  "script_sha256": "85f8b2cfb1932d8507ce10a6f58e7864e187bb71d974ef1d18abbb97b0cd6a92",
+  "states": {
+    "nav15": {
+      "selected": 8,
+      "global_pairwise_aligned_heavy_min_A": 0.8679723280993644,
+      "global_vs_experimental_aligned_heavy_range_A": [
+        0.8213132189033869,
+        2.3709048087609466
+      ],
+      "quinuclidine_bridge": {
+        "selected_pairwise_aligned_rmsd_A_range": [
+          0.0020688324294658527,
+          0.054352197149909
+        ],
+        "vs_experimental_aligned_rmsd_A_range": [
+          0.08084365636650165,
+          0.1160178349233824
+        ],
+        "max_selected_ring_torsion_pair_delta_deg": 10.754191053743767,
+        "absolute_experimental_ring_torsion_delta_deg_range": [
+          1.7910041475246885,
+          17.14078215435066
+        ]
+      },
+      "quinoline": {
+        "selected_pairwise_aligned_rmsd_A_range": [
+          0.003907638790728034,
+          0.01819493487273997
+        ],
+        "vs_experimental_aligned_rmsd_A_range": [
+          0.047543485672537696,
+          0.055466668203067684
+        ],
+        "max_selected_ring_torsion_pair_delta_deg": 3.54305744792066,
+        "absolute_experimental_ring_torsion_delta_deg_range": [
+          0.006615754463751955,
+          2.478434248640127
+        ]
+      }
+    },
+    "nav15_qdn_protonated": {
+      "selected": 7,
+      "global_pairwise_aligned_heavy_min_A": 1.2527431736887042,
+      "global_vs_experimental_aligned_heavy_range_A": [
+        0.7826886957239446,
+        2.415273060258546
+      ],
+      "quinuclidine_bridge": {
+        "selected_pairwise_aligned_rmsd_A_range": [
+          0.006597763762379436,
+          0.055735807048108425
+        ],
+        "vs_experimental_aligned_rmsd_A_range": [
+          0.10164882929156716,
+          0.12932893995643369
+        ],
+        "max_selected_ring_torsion_pair_delta_deg": 11.245966411803295,
+        "absolute_experimental_ring_torsion_delta_deg_range": [
+          0.07065756550858282,
+          17.380651458559214
+        ]
+      },
+      "quinoline": {
+        "selected_pairwise_aligned_rmsd_A_range": [
+          0.0036038104209210778,
+          0.03883981490046131
+        ],
+        "vs_experimental_aligned_rmsd_A_range": [
+          0.04768104809680631,
+          0.05759942523601876
+        ],
+        "max_selected_ring_torsion_pair_delta_deg": 7.2268694389680945,
+        "absolute_experimental_ring_torsion_delta_deg_range": [
+          0.004622742981553074,
+          3.7262341025208627
+        ]
+      }
+    }
+  },
+  "interpretation": "Global geometry diversity is mainly ring-to-ring and external torsions; minimized bridge-ring coordinates remain within a narrow family. The experiment does not exclude a ring-conformation sampling limitation."
+}

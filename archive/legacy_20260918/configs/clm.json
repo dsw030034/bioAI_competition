@@ -1,0 +1,12 @@
+{
+  "seeds_file": "../data/seeds.smi",
+  "building_blocks_file": "../data/building_blocks.csv",
+  "backend": "hybrid",
+  "input_smiles": "../outputs/reinvent/sampling.csv",
+  "output_dir": "../outputs/clm",
+  "max_attempts": 100000,
+  "max_candidates": 10000,
+  "filters": {"qed_min": 0.6, "sa_max": 4.0},
+  "conformers": {"enabled": false}
+}
+

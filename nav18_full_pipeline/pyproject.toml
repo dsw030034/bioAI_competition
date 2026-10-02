@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "navgen"
+version = "0.1.0"
+description = "Scaffold-conditioned molecular generation and filtering for Nav1.8 / Nav1.5 selection studies"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "rdkit",
+    "scikit-learn",
+    "joblib",
+]
+
+[project.scripts]
+navgen = "navgen.cli:main"
+navgen-docking = "navgen.cli_docking:main"
+
+[project.optional-dependencies]
+docking = ["meeko==0.8.0", "gemmi==0.7.5", "scipy", "pdbfixer==1.12.0", "openmm==8.6.1"]
+dev = ["pytest", "tomli; python_version < '3.11'"]
+
+[tool.setuptools.packages.find]
+include = ["navgen*", "scgd*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

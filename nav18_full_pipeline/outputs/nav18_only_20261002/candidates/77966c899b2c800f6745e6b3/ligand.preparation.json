@@ -1,0 +1,118 @@
+{
+  "signature": {
+    "smiles": "Cc1ccc(-c2ccc(C(=O)Nc3cc(C(F)(F)F)cc(C(F)(F)F)c3)o2)cc1",
+    "candidate_id": "d35235711611b0df",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "d35235711611b0df",
+    "smiles": "Cc1ccc(-c2ccc(C(=O)Nc3cc(C(F)(F)F)cc(C(F)(F)F)c3)o2)cc1",
+    "input_smiles": "Cc1ccc(-c2ccc(C(=O)Nc3cc(C(F)(F)F)cc(C(F)(F)F)c3)o2)cc1",
+    "state_smiles": "Cc1ccc(-c2ccc(C(=O)Nc3cc(C(F)(F)F)cc(C(F)(F)F)c3)o2)cc1",
+    "state_id": "d35235711611b0df:input:d35235711611",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1824960459,
+    "requested_conformers": 20,
+    "embedded_conformers": 5,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "d35235711611b0df",
+      "state_id": "d35235711611b0df:input:d35235711611",
+      "conformer_id": "d35235711611b0df:input:d35235711611:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 89.72259321235659,
+      "relative_energy_same_state": 8.196064360520822
+    },
+    {
+      "candidate_id": "d35235711611b0df",
+      "state_id": "d35235711611b0df:input:d35235711611",
+      "conformer_id": "d35235711611b0df:input:d35235711611:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 81.52652885183576,
+      "relative_energy_same_state": 0.0
+    },
+    {
+      "candidate_id": "d35235711611b0df",
+      "state_id": "d35235711611b0df:input:d35235711611",
+      "conformer_id": "d35235711611b0df:input:d35235711611:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 89.72247022154161,
+      "relative_energy_same_state": 8.19594136970585
+    },
+    {
+      "candidate_id": "d35235711611b0df",
+      "state_id": "d35235711611b0df:input:d35235711611",
+      "conformer_id": "d35235711611b0df:input:d35235711611:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 81.52652886475083,
+      "relative_energy_same_state": 1.291506634970574e-08,
+      "duplicate_of": "d35235711611b0df:input:d35235711611:c001"
+    },
+    {
+      "candidate_id": "d35235711611b0df",
+      "state_id": "d35235711611b0df:input:d35235711611",
+      "conformer_id": "d35235711611b0df:input:d35235711611:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 81.5271093136386,
+      "relative_energy_same_state": 0.0005804618028406594,
+      "duplicate_of": "d35235711611b0df:input:d35235711611:c001"
+    }
+  ],
+  "selected_conformer_id": "d35235711611b0df:input:d35235711611:c001",
+  "files": {
+    "ligand.pdbqt": "13f626172bc9250b6a923b3b5c58e37267a14fe25f95937fa3e18656fe841939",
+    "ligand.sdf": "c601d7c344989a8123b45a85fe0d8120ec89a01697ea2b86d52a55e339cde6c4"
+  }
+}

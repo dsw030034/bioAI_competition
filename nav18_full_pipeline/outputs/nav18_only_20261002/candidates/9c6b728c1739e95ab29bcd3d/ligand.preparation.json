@@ -1,0 +1,120 @@
+{
+  "signature": {
+    "smiles": "O=C(Nc1ccc(N2CCCC2)cc1)c1ccc(-c2ccc(Cl)cc2)s1",
+    "candidate_id": "7f99c78480eb426c",
+    "seed": 20261012,
+    "num_confs": 20,
+    "neutral_qdn_reference": false,
+    "versions": {
+      "rdkit": "2026.3.6",
+      "meeko": "0.8.0",
+      "gemmi": "0.7.5",
+      "pdbfixer": "1.12.0",
+      "openmm": "8.6.1",
+      "numpy": "2.2.6"
+    },
+    "preparer_sha256": "0ea9dae2cf50e5c08f1aa7244c04c2292a933d40a6563202fa80d9de94978556",
+    "quality_sha256": "8eac1dcb70de855e11a6a00312b8cfed3e4b0ca8fe5b8aaf4b5140e942d2d29d"
+  },
+  "status": "ok",
+  "state": {
+    "candidate_id": "7f99c78480eb426c",
+    "smiles": "O=C(Nc1ccc(N2CCCC2)cc1)c1ccc(-c2ccc(Cl)cc2)s1",
+    "input_smiles": "O=C(Nc1ccc(N2CCCC2)cc1)c1ccc(-c2ccc(Cl)cc2)s1",
+    "state_smiles": "O=C(Nc1ccc(N2CCCC2)cc1)c1ccc(-c2ccc(Cl)cc2)s1",
+    "state_id": "7f99c78480eb426c:input:7f99c78480eb",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "non_amide_amine_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 398900542,
+    "requested_conformers": 20,
+    "embedded_conformers": 5,
+    "force_field": "MMFF94s",
+    "retained_conformers": 1
+  },
+  "conformers": [
+    {
+      "candidate_id": "7f99c78480eb426c",
+      "state_id": "7f99c78480eb426c:input:7f99c78480eb",
+      "conformer_id": "7f99c78480eb426c:input:7f99c78480eb:c000",
+      "rdkit_conf_id": 0,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 32.142495185110725,
+      "relative_energy_same_state": 3.755435784569272e-08,
+      "duplicate_of": "7f99c78480eb426c:input:7f99c78480eb:c004"
+    },
+    {
+      "candidate_id": "7f99c78480eb426c",
+      "state_id": "7f99c78480eb426c:input:7f99c78480eb",
+      "conformer_id": "7f99c78480eb426c:input:7f99c78480eb:c001",
+      "rdkit_conf_id": 1,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 36.29345586157184,
+      "relative_energy_same_state": 4.150960714015476
+    },
+    {
+      "candidate_id": "7f99c78480eb426c",
+      "state_id": "7f99c78480eb426c:input:7f99c78480eb",
+      "conformer_id": "7f99c78480eb426c:input:7f99c78480eb:c002",
+      "rdkit_conf_id": 2,
+      "force_field": "MMFF94s",
+      "status": "valid_over_output_cap",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 36.26733644275997,
+      "relative_energy_same_state": 4.124841295203602
+    },
+    {
+      "candidate_id": "7f99c78480eb426c",
+      "state_id": "7f99c78480eb426c:input:7f99c78480eb",
+      "conformer_id": "7f99c78480eb426c:input:7f99c78480eb:c003",
+      "rdkit_conf_id": 3,
+      "force_field": "MMFF94s",
+      "status": "redundant_geometry",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 32.142975787022635,
+      "relative_energy_same_state": 0.0004806394662679736,
+      "duplicate_of": "7f99c78480eb426c:input:7f99c78480eb:c004"
+    },
+    {
+      "candidate_id": "7f99c78480eb426c",
+      "state_id": "7f99c78480eb426c:input:7f99c78480eb",
+      "conformer_id": "7f99c78480eb426c:input:7f99c78480eb:c004",
+      "rdkit_conf_id": 4,
+      "force_field": "MMFF94s",
+      "status": "retained",
+      "geometry_issues": [],
+      "minimization_return_codes": [
+        0
+      ],
+      "energy_kcal_mol": 32.14249514755637,
+      "relative_energy_same_state": 0.0
+    }
+  ],
+  "selected_conformer_id": "7f99c78480eb426c:input:7f99c78480eb:c004",
+  "files": {
+    "ligand.pdbqt": "5dac6bb2912c3774e903e2f474f8c47998608b59b7b4dce2652a04b6436f7fe0",
+    "ligand.sdf": "56e9ca5215170284059d00c6cb9376d63e8081d6a0fa5e980e2d210b3d83ab02"
+  }
+}

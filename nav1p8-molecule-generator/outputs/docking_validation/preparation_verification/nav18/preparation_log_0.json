@@ -1,0 +1,20 @@
+{
+  "command": [
+    "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+    "-m",
+    "meeko.cli.mk_prepare_receptor",
+    "--read_pdb",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\repaired.pdb",
+    "-p",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\receptor.pdbqt",
+    "--write_pdb",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\prepared.pdb",
+    "-j",
+    "D:\\2026-2027_autumn\\bioAI_competition\\nav1p8-molecule-generator\\outputs\\docking_validation\\preparation_verification\\nav18\\receptor.json",
+    "--default_altloc",
+    "A"
+  ],
+  "returncode": 1,
+  "stdout": "Template padding will be used.\n\u001b[32m gasteiger charges will be read from template file \n \u001b[0m\n",
+  "stderr": "[RDKit] ERROR:[19:14:58] Explicit valence for atom # 3 O, 3, is greater than permitted\nTraceback (most recent call last):\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\polymer.py\", line 2534, in _pdb_to_residue_mols\n    pdbmol, _, missed_altloc, needed_altloc = _aux_altloc_mol_build(\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\utils\\rdkitutils.py\", line 415, in _aux_altloc_mol_build\n    _ = Chem.SanitizeMol(pdbmol)\nrdkit.Chem.rdchem.AtomValenceException: Explicit valence for atom # 3 O, 3, is greater than permitted\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"D:\\Annaconda2026\\envs\\rdkit\\lib\\runpy.py\", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File \"D:\\Annaconda2026\\envs\\rdkit\\lib\\runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\cli\\mk_prepare_receptor.py\", line 1257, in <module>\n    sys.exit(main())\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\cli\\mk_prepare_receptor.py\", line 720, in main\n    polymer = Polymer.from_pdb_string(\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\polymer.py\", line 1653, in from_pdb_string\n    tmp_raw_input_mols = cls._pdb_to_residue_mols(\n  File \"D:\\2026-2027_autumn\\bioAI_competition\\.venv\\lib\\site-packages\\meeko\\polymer.py\", line 2541, in _pdb_to_residue_mols\n    raise RuntimeError(msg) \nRuntimeError: unable to build rdkit mol for residue ARG corresponding to key A:121\n"
+}

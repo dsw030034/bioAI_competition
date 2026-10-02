@@ -1,0 +1,524 @@
+[
+  {
+    "candidate_id": "dce16c0c1568b893",
+    "smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+    "scope": "reference",
+    "methods": [],
+    "event_ids": [],
+    "selection_reason": "A-803467 reference",
+    "input_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+    "state_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)cc(OC)c1",
+    "state_id": "dce16c0c1568b893:input:dce16c0c1568",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 713556611,
+    "requested_conformers": 20,
+    "embedded_conformers": 8,
+    "force_field": "MMFF94s",
+    "retained_conformers": 2
+  },
+  {
+    "candidate_id": "ddefa465e5b4adc2",
+    "smiles": "CCOc1ccc(-c2ccc(C(=O)Nc3cccc(C)c3)o2)cc1",
+    "scope": "strict",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:54"
+    ],
+    "selection_reason": [
+      "edits:3",
+      "fragment:R1=CCO[*:1]",
+      "fragment:R2/R3=C[*:1]",
+      "method:mol2mol",
+      "origin:exclusive:mol2mol"
+    ],
+    "selection_min_distance": 0.5,
+    "input_smiles": "CCOc1ccc(-c2ccc(C(=O)Nc3cccc(C)c3)o2)cc1",
+    "state_smiles": "CCOc1ccc(-c2ccc(C(=O)Nc3cccc(C)c3)o2)cc1",
+    "state_id": "ddefa465e5b4adc2:input:ddefa465e5b4",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 870902471,
+    "requested_conformers": 20,
+    "embedded_conformers": 11,
+    "force_field": "MMFF94s",
+    "retained_conformers": 4
+  },
+  {
+    "candidate_id": "646e36d93ca5e25f",
+    "smiles": "O=C(Nc1cc(F)cc(F)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "strict",
+    "methods": [
+      "amide_recombination",
+      "site_enumeration"
+    ],
+    "event_ids": [
+      "a803467:site_pair:8",
+      "a803467:amide_recombination:21"
+    ],
+    "selection_reason": [
+      "edits:2",
+      "method:amide_recombination",
+      "method:site_enumeration",
+      "origin:shared:amide_recombination+site_enumeration"
+    ],
+    "selection_min_distance": 0.3111111111111111,
+    "input_smiles": "O=C(Nc1cc(F)cc(F)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1cc(F)cc(F)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "646e36d93ca5e25f:input:646e36d93ca5",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1993947794,
+    "requested_conformers": 20,
+    "embedded_conformers": 4,
+    "force_field": "MMFF94s",
+    "retained_conformers": 2
+  },
+  {
+    "candidate_id": "77cf7ef7b686fe66",
+    "smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(O)cc3)o2)cc(OC)c1",
+    "scope": "strict",
+    "methods": [
+      "amide_recombination"
+    ],
+    "event_ids": [
+      "a803467:amide_recombination:13"
+    ],
+    "selection_reason": [
+      "edits:1",
+      "fragment:R1=O[*:1]",
+      "origin:exclusive:amide_recombination"
+    ],
+    "selection_min_distance": 0.2093023255813954,
+    "input_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(O)cc3)o2)cc(OC)c1",
+    "state_smiles": "COc1cc(NC(=O)c2ccc(-c3ccc(O)cc3)o2)cc(OC)c1",
+    "state_id": "77cf7ef7b686fe66:input:77cf7ef7b686",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "phenol_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 803859639,
+    "requested_conformers": 20,
+    "embedded_conformers": 5,
+    "force_field": "MMFF94s",
+    "retained_conformers": 2
+  },
+  {
+    "candidate_id": "0205270466cff529",
+    "smiles": "O=C(Nc1cccc(Cl)c1)c1ccc(-c2ccc([N+](=O)[O-])cc2)o1",
+    "scope": "strict",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:41"
+    ],
+    "selection_reason": [
+      "fragment:R1=O=[N+]([O-])[*:1]",
+      "fragment:R2/R3=Cl[*:1]"
+    ],
+    "selection_min_distance": 0.4716981132075472,
+    "input_smiles": "O=C(Nc1cccc(Cl)c1)c1ccc(-c2ccc([N+](=O)[O-])cc2)o1",
+    "state_smiles": "O=C(Nc1cccc(Cl)c1)c1ccc(-c2ccc([N+](=O)[O-])cc2)o1",
+    "state_id": "0205270466cff529:input:0205270466cf",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 5990972,
+    "requested_conformers": 20,
+    "embedded_conformers": 7,
+    "force_field": "MMFF94s",
+    "retained_conformers": 4
+  },
+  {
+    "candidate_id": "42c412dee8bd0c06",
+    "smiles": "O=C(Nc1cccc(C2=NCCO2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "strict",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:2",
+      "a803467:mol2mol:4",
+      "a803467:mol2mol:63",
+      "a803467:mol2mol:78",
+      "a803467:mol2mol:80",
+      "a803467:mol2mol:85",
+      "a803467:mol2mol:95",
+      "a803467:mol2mol:98",
+      "a803467:mol2mol:99"
+    ],
+    "selection_reason": [
+      "fragment:R2/R3=C1COC([*:1])=N1"
+    ],
+    "selection_min_distance": 0.4642857142857143,
+    "input_smiles": "O=C(Nc1cccc(C2=NCCO2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1cccc(C2=NCCO2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "42c412dee8bd0c06:input:42c412dee8bd",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "imine_or_amidine_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 2124863880,
+    "requested_conformers": 20,
+    "embedded_conformers": 9,
+    "force_field": "MMFF94s",
+    "retained_conformers": 5
+  },
+  {
+    "candidate_id": "6d31568a8b12cd44",
+    "smiles": "O=C(Nc1cccc(OCCN2CCCC2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "strict",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:20"
+    ],
+    "selection_reason": [
+      "fragment:R2/R3=C1CCN(CCO[*:1])C1"
+    ],
+    "selection_min_distance": 0.44067796610169496,
+    "input_smiles": "O=C(Nc1cccc(OCCN2CCCC2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1cccc(OCCN2CCCC2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "6d31568a8b12cd44:input:6d31568a8b12",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "non_amide_amine_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1199007241,
+    "requested_conformers": 20,
+    "embedded_conformers": 19,
+    "force_field": "MMFF94s",
+    "retained_conformers": 5
+  },
+  {
+    "candidate_id": "b21c804752417c66",
+    "smiles": "N#CCc1cccc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+    "scope": "strict",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:40"
+    ],
+    "selection_reason": [
+      "fragment:R2/R3=N#CC[*:1]"
+    ],
+    "selection_min_distance": 0.42307692307692313,
+    "input_smiles": "N#CCc1cccc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+    "state_smiles": "N#CCc1cccc(NC(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+    "state_id": "b21c804752417c66:input:b21c80475241",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 292938733,
+    "requested_conformers": 20,
+    "embedded_conformers": 13,
+    "force_field": "MMFF94s",
+    "retained_conformers": 5
+  },
+  {
+    "candidate_id": "3ee013cff8b065fa",
+    "smiles": "O=C(Nc1cccc(N2CCOCC2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "strict",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:8",
+      "a803467:mol2mol:57",
+      "a803467:mol2mol:61",
+      "a803467:mol2mol:90"
+    ],
+    "selection_reason": [
+      "fragment:R2/R3=C1CN([*:1])CCO1"
+    ],
+    "selection_min_distance": 0.4098360655737705,
+    "input_smiles": "O=C(Nc1cccc(N2CCOCC2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1cccc(N2CCOCC2)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "3ee013cff8b065fa:input:3ee013cff8b0",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "non_amide_amine_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 615535111,
+    "requested_conformers": 20,
+    "embedded_conformers": 8,
+    "force_field": "MMFF94s",
+    "retained_conformers": 4
+  },
+  {
+    "candidate_id": "6303cc9e0370efba",
+    "smiles": "COc1cccc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)c1",
+    "scope": "strict",
+    "methods": [
+      "site_enumeration"
+    ],
+    "event_ids": [
+      "a803467:site_pair:43",
+      "a803467:site_pair:74"
+    ],
+    "selection_reason": [
+      "origin:exclusive:site_enumeration"
+    ],
+    "selection_min_distance": 0.3921568627450981,
+    "input_smiles": "COc1cccc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)c1",
+    "state_smiles": "COc1cccc(NC(=O)c2ccc(-c3ccc(C#N)cc3)o2)c1",
+    "state_id": "6303cc9e0370efba:input:6303cc9e0370",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 493018392,
+    "requested_conformers": 20,
+    "embedded_conformers": 9,
+    "force_field": "MMFF94s",
+    "retained_conformers": 4
+  },
+  {
+    "candidate_id": "4b09c376b3b7ac62",
+    "smiles": "O=C(Nc1cccc(O)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "strict",
+    "methods": [
+      "mol2mol",
+      "site_enumeration"
+    ],
+    "event_ids": [
+      "a803467:site_pair:2",
+      "a803467:site_pair:65",
+      "a803467:mol2mol:35"
+    ],
+    "selection_reason": [
+      "origin:shared:mol2mol+site_enumeration"
+    ],
+    "selection_min_distance": 0.31999999999999995,
+    "input_smiles": "O=C(Nc1cccc(O)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1cccc(O)c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "4b09c376b3b7ac62:input:4b09c376b3b7",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "phenol_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 747796777,
+    "requested_conformers": 20,
+    "embedded_conformers": 8,
+    "force_field": "MMFF94s",
+    "retained_conformers": 4
+  },
+  {
+    "candidate_id": "71f3f3f1edc46956",
+    "smiles": "O=C(Nc1ccc2[nH]ccc2c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "expanded_round2",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:42"
+    ],
+    "selection_reason": [
+      "method:mol2mol",
+      "origin:exclusive:mol2mol",
+      "reason:bridge_or_fusion",
+      "reason:non_single_attachment",
+      "reason:offsite_substitution"
+    ],
+    "selection_min_distance": 0.40384615384615385,
+    "input_smiles": "O=C(Nc1ccc2[nH]ccc2c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1ccc2[nH]ccc2c1)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "71f3f3f1edc46956:input:71f3f3f1edc4",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1915163454,
+    "requested_conformers": 20,
+    "embedded_conformers": 8,
+    "force_field": "MMFF94s",
+    "retained_conformers": 4
+  },
+  {
+    "candidate_id": "dc573a9a7f40e037",
+    "smiles": "COc1cc(OC)cc(N(C)C(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+    "scope": "expanded_round2",
+    "methods": [
+      "amide_recombination"
+    ],
+    "event_ids": [
+      "a803467:amide_recombination:0"
+    ],
+    "selection_reason": [
+      "method:amide_recombination",
+      "origin:exclusive:amide_recombination",
+      "reason:amide_NH_changed"
+    ],
+    "selection_min_distance": 0.3877551020408163,
+    "input_smiles": "COc1cc(OC)cc(N(C)C(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+    "state_smiles": "COc1cc(OC)cc(N(C)C(=O)c2ccc(-c3ccc(Cl)cc3)o2)c1",
+    "state_id": "dc573a9a7f40e037:input:dc573a9a7f40",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1287642889,
+    "requested_conformers": 20,
+    "embedded_conformers": 18,
+    "force_field": "MMFF94s",
+    "retained_conformers": 5
+  },
+  {
+    "candidate_id": "0667e35dc0616e1f",
+    "smiles": "O=C(Nc1ccc2c(c1)OCO2)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "expanded_round2",
+    "methods": [
+      "amide_recombination",
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:amide_recombination:15",
+      "a803467:mol2mol:33"
+    ],
+    "selection_reason": [
+      "origin:shared:amide_recombination+mol2mol"
+    ],
+    "selection_min_distance": 0.38,
+    "input_smiles": "O=C(Nc1ccc2c(c1)OCO2)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "O=C(Nc1ccc2c(c1)OCO2)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "0667e35dc0616e1f:input:0667e35dc061",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1370544783,
+    "requested_conformers": 20,
+    "embedded_conformers": 7,
+    "force_field": "MMFF94s",
+    "retained_conformers": 3
+  },
+  {
+    "candidate_id": "a346f2992ecc1a60",
+    "smiles": "COc1cc(NC(=O)c2ccc(-c3ccncc3)o2)cc(OC)c1",
+    "scope": "expanded_round2",
+    "methods": [
+      "amide_recombination"
+    ],
+    "event_ids": [
+      "a803467:amide_recombination:8"
+    ],
+    "selection_reason": [
+      "reason:full_core_missing"
+    ],
+    "selection_min_distance": 0.25,
+    "input_smiles": "COc1cc(NC(=O)c2ccc(-c3ccncc3)o2)cc(OC)c1",
+    "state_smiles": "COc1cc(NC(=O)c2ccc(-c3ccncc3)o2)cc(OC)c1",
+    "state_id": "a346f2992ecc1a60:input:a346f2992ecc",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "aromatic_nitrogen_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1346655824,
+    "requested_conformers": 20,
+    "embedded_conformers": 7,
+    "force_field": "MMFF94s",
+    "retained_conformers": 2
+  },
+  {
+    "candidate_id": "016186e5924c0e7b",
+    "smiles": "CC(C)N(C)Cc1ccccc1NC(=O)c1ccc(-c2ccc(Cl)cc2)o1",
+    "scope": "expanded_round2",
+    "methods": [
+      "mol2mol"
+    ],
+    "event_ids": [
+      "a803467:mol2mol:7"
+    ],
+    "selection_reason": [
+      "fingerprint diversity tie breaker"
+    ],
+    "selection_min_distance": 0.5254237288135593,
+    "input_smiles": "CC(C)N(C)Cc1ccccc1NC(=O)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_smiles": "CC(C)N(C)Cc1ccccc1NC(=O)c1ccc(-c2ccc(Cl)cc2)o1",
+    "state_id": "016186e5924c0e7b:input:016186e5924c",
+    "formal_charge": 0,
+    "state_policy": "input_state_preserved",
+    "protonation_status": "not_predicted",
+    "tautomer_status": "not_enumerated",
+    "state_review_hints": [
+      "non_amide_amine_review"
+    ],
+    "status": "prepared_input_state",
+    "unspecified_stereo": [],
+    "embedding_seed": 1375629820,
+    "requested_conformers": 20,
+    "embedded_conformers": 16,
+    "force_field": "MMFF94s",
+    "retained_conformers": 5
+  }
+]

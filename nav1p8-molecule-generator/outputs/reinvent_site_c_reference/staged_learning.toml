@@ -1,0 +1,61 @@
+run_type = "staged_learning"
+device = "cpu"
+tb_logdir = "outputs\\reinvent_site_c_reference\\tensorboard"
+
+[parameters]
+prior_file = "F:\\\u5927\u4e09\u79cb\\\u795e\u79d8\u6bd4\u8d5b\\models\\reinvent4\\mol2mol_medium_similarity.prior"
+agent_file = "F:\\\u5927\u4e09\u79cb\\\u795e\u79d8\u6bd4\u8d5b\\models\\reinvent4\\mol2mol_medium_similarity.prior"
+summary_csv_prefix = "outputs\\reinvent_site_c_reference\\rl_run"
+smiles_file = "outputs\\reinvent_site_c_reference\\mol2mol_inputs.smi"
+batch_size = 64
+randomize_smiles = true
+
+[learning_strategy]
+type = "dap"
+sigma = 64
+rate = 0.0001
+
+[diversity_filter]
+type = "IdenticalMurckoScaffold"
+bucket_size = 25
+minscore = 0.4
+
+[[stage]]
+chkpt_file = "outputs\\reinvent_site_c_reference\\stage1.chkpt"
+termination = "simple"
+max_score = 0.75
+min_steps = 5
+max_steps = 50
+
+[stage.scoring]
+type = "geometric_mean"
+
+[[stage.scoring.component]]
+[stage.scoring.component.QED]
+[[stage.scoring.component.QED.endpoint]]
+name = "QED"
+weight = 1.0
+
+[[stage.scoring.component]]
+[stage.scoring.component.MolecularWeight]
+[[stage.scoring.component.MolecularWeight.endpoint]]
+name = "MW"
+weight = 1.0
+transform.type = "double_sigmoid"
+transform.low = 180.0
+transform.high = 550.0
+transform.coef_div = 550.0
+transform.coef_si = 20.0
+transform.coef_se = 20.0
+
+[[stage.scoring.component]]
+[stage.scoring.component.SlogP]
+[[stage.scoring.component.SlogP.endpoint]]
+name = "LogP"
+weight = 1.0
+transform.type = "double_sigmoid"
+transform.low = -0.5
+transform.high = 5.0
+transform.coef_div = 5.0
+transform.coef_si = 10.0
+transform.coef_se = 10.0

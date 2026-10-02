@@ -1,0 +1,178 @@
+{
+  "raw_records": 5635,
+  "unique_by_scope": {
+    "expanded_round2": 1072,
+    "strict": 1543,
+    "outside_series": 329,
+    "seed_copy": 1
+  },
+  "contributions": [
+    {
+      "method": "site_enumeration",
+      "scope": "strict",
+      "raw_rows": 2916,
+      "unique_structures": 1495,
+      "exclusive_structures": 1097,
+      "shared_structures": 398
+    },
+    {
+      "method": "site_enumeration",
+      "scope": "expanded_round2",
+      "raw_rows": 0,
+      "unique_structures": 0,
+      "exclusive_structures": 0,
+      "shared_structures": 0
+    },
+    {
+      "method": "site_enumeration",
+      "scope": "outside_series",
+      "raw_rows": 0,
+      "unique_structures": 0,
+      "exclusive_structures": 0,
+      "shared_structures": 0
+    },
+    {
+      "method": "site_enumeration",
+      "scope": "seed_copy",
+      "raw_rows": 0,
+      "unique_structures": 0,
+      "exclusive_structures": 0,
+      "shared_structures": 0
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "strict",
+      "raw_rows": 424,
+      "unique_structures": 406,
+      "exclusive_structures": 11,
+      "shared_structures": 395
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "expanded_round2",
+      "raw_rows": 925,
+      "unique_structures": 916,
+      "exclusive_structures": 864,
+      "shared_structures": 52
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "outside_series",
+      "raw_rows": 267,
+      "unique_structures": 261,
+      "exclusive_structures": 260,
+      "shared_structures": 1
+    },
+    {
+      "method": "amide_recombination",
+      "scope": "seed_copy",
+      "raw_rows": 3,
+      "unique_structures": 1,
+      "exclusive_structures": 0,
+      "shared_structures": 1
+    },
+    {
+      "method": "mol2mol",
+      "scope": "strict",
+      "raw_rows": 439,
+      "unique_structures": 90,
+      "exclusive_structures": 37,
+      "shared_structures": 53
+    },
+    {
+      "method": "mol2mol",
+      "scope": "expanded_round2",
+      "raw_rows": 477,
+      "unique_structures": 208,
+      "exclusive_structures": 156,
+      "shared_structures": 52
+    },
+    {
+      "method": "mol2mol",
+      "scope": "outside_series",
+      "raw_rows": 182,
+      "unique_structures": 69,
+      "exclusive_structures": 68,
+      "shared_structures": 1
+    },
+    {
+      "method": "mol2mol",
+      "scope": "seed_copy",
+      "raw_rows": 1,
+      "unique_structures": 1,
+      "exclusive_structures": 0,
+      "shared_structures": 1
+    }
+  ],
+  "constraint_counts_multilabel": [
+    {
+      "scope": "expanded_round2",
+      "reason": "amide_NH_changed",
+      "description": "二级酰胺 NH 改变",
+      "unique_structures": 68
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "bridge_or_fusion",
+      "description": "外部片段跨位点连接或形成稠环",
+      "unique_structures": 196
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "full_core_missing",
+      "description": "完整三环核心不匹配",
+      "unique_structures": 68
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "non_single_attachment",
+      "description": "取代基连接键不是单键",
+      "unique_structures": 69
+    },
+    {
+      "scope": "expanded_round2",
+      "reason": "offsite_substitution",
+      "description": "声明位点以外出现取代",
+      "unique_structures": 979
+    },
+    {
+      "scope": "outside_series",
+      "reason": "full_core_missing",
+      "description": "完整三环核心不匹配",
+      "unique_structures": 329
+    },
+    {
+      "scope": "outside_series",
+      "reason": "round2_core_missing",
+      "description": "旧 ROUND2 核心也不匹配",
+      "unique_structures": 329
+    }
+  ],
+  "overlap_patterns": {
+    "strict": {
+      "site_enumeration": 1097,
+      "amide_recombination+site_enumeration": 345,
+      "amide_recombination+mol2mol+site_enumeration": 50,
+      "mol2mol": 37,
+      "amide_recombination": 11,
+      "mol2mol+site_enumeration": 3
+    },
+    "expanded_round2": {
+      "amide_recombination": 864,
+      "amide_recombination+mol2mol": 52,
+      "mol2mol": 156
+    },
+    "outside_series": {
+      "amide_recombination": 260,
+      "mol2mol": 68,
+      "amide_recombination+mol2mol": 1
+    }
+  },
+  "strict_changed_site_counts": {
+    "3": 1220,
+    "2": 296,
+    "1": 27
+  },
+  "strict_outside_vocabulary": 48,
+  "invalid_rows": 1
+}

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+    "-m",
+    "meeko.cli.mk_prepare_receptor",
+    "--read_pdb",
+    "outputs\\receptors_20261002\\nav15\\repaired.pdb",
+    "-p",
+    "outputs\\receptors_20261002\\nav15\\receptor.pdbqt",
+    "--write_pdb",
+    "outputs\\receptors_20261002\\nav15\\prepared.pdb",
+    "-j",
+    "outputs\\receptors_20261002\\nav15\\receptor.json",
+    "--default_altloc",
+    "A"
+  ],
+  "python": "D:\\2026-2027_autumn\\bioAI_competition\\.venv\\Scripts\\python.exe",
+  "returncode": 0,
+  "stdout": "Template padding will be used.\n\u001b[32m gasteiger charges will be read from template file \n \u001b[0m\n\nFiles written:\n outputs\\receptors_20261002\\nav15\\receptor.json <-- parameterized receptor\n  outputs\\receptors_20261002\\nav15\\prepared.pdb <-- processed receptor PDB\noutputs\\receptors_20261002\\nav15\\receptor.pdbqt <-- static (i.e., rigid) receptor input file\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 10.094000000000051
+}

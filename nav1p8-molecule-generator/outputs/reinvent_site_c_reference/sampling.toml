@@ -1,0 +1,12 @@
+run_type = "sampling"
+device = "cpu"
+
+[parameters]
+model_file = "F:\\\u5927\u4e09\u79cb\\\u795e\u79d8\u6bd4\u8d5b\\models\\reinvent4\\mol2mol_medium_similarity.prior"
+smiles_file = "outputs\\reinvent_site_c_reference\\mol2mol_inputs.smi"
+sample_strategy = "multinomial"
+temperature = 1.0
+output_file = "outputs\\reinvent_site_c_reference\\sampling_mol2mol.csv"
+num_smiles = 4
+unique_molecules = true
+randomize_smiles = true

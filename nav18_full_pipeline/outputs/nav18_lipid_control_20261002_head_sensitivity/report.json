@@ -1,0 +1,34 @@
+{
+  "diagnostic_only": true,
+  "production_gate_unchanged": true,
+  "summaries": [
+    {
+      "state": "no_lipid_baseline",
+      "expected": 15,
+      "successful": 15,
+      "top1_pass_count": 11,
+      "top1_pass_including_lipid_count": 11,
+      "median_top1_rmsd_A": 0.9192323536516765,
+      "median_affinity_kcal_mol": -8.549,
+      "top1_lipid_overlap_count": 4
+    },
+    {
+      "state": "ccd_acid_plus1",
+      "expected": 15,
+      "successful": 15,
+      "top1_pass_count": 15,
+      "top1_pass_including_lipid_count": 15,
+      "median_top1_rmsd_A": 0.9048829537570018,
+      "median_affinity_kcal_mol": -8.623,
+      "top1_lipid_overlap_count": 0
+    }
+  ],
+  "criteria": "Unchanged RMSD<=2 A, no protein heavy pairs<2 A, contact recall>=0.5; additionally no lipid heavy pairs<2 A.",
+  "limitations": [
+    "Only the 22 observed lipid heavy atoms are retained; C16 capped with H, missing12 distal carbon atoms not modeled.",
+    "Lipid is fixed; this does not describe membrane dynamics or candidate-induced displacement.",
+    "Same inputs and seeds are matched explanatory controls, not held-out prospective validation.",
+    "The lipid state is an explicit model assumption; no bound-state protonation measurement is available.",
+    "Does not validate affinity/selectivity or authorize a full candidate screen."
+  ]
+}

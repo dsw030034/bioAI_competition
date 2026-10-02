@@ -1,0 +1,23 @@
+{
+  "config": "configs\\demo.json",
+  "output_dir": "outputs\\my_first_run",
+  "seed_file": "F:\\\u5927\u4e09\u79cb\\\u795e\u79d8\u6bd4\u8d5b\\data\\seeds.smi",
+  "filters": {
+    "similarity_min": 0.35,
+    "qed_min": 0.35,
+    "sa_max": 5.0,
+    "mw_min": 180,
+    "mw_max": 550,
+    "clogp_min": -0.5,
+    "clogp_max": 5.0,
+    "tpsa_min": 15,
+    "tpsa_max": 120,
+    "required_smarts": [
+      "C(=O)N"
+    ],
+    "num_confs": 5,
+    "max_candidates": 20
+  },
+  "version": "0.1.0",
+  "status": "ready"
+}
